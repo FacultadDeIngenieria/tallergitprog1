@@ -6,3 +6,6 @@ lechuga
 tomate
 huevo
 pan
+
+salsa: 
+barbacoa
