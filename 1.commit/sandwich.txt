@@ -1,4 +1,7 @@
 pan
 queso
 medallón
+jamon
+lechuga
+tomate
 pan
