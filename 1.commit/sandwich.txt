@@ -1,4 +1,7 @@
 pan
+huevo
+jamon 
 queso
-medallón
+medallón x2
+lechuga
 pan
