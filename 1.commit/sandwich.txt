@@ -4,4 +4,5 @@ medallón
 jamon
 lechuga
 tomate
+salsa
 pan
