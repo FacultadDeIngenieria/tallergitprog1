@@ -2,5 +2,5 @@ pan
 queso
 tomate
 lechuga
-medallón
+salsa
 pan
