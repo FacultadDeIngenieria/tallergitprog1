@@ -2,3 +2,6 @@ pan
 queso
 medallón
 pan
+Tomate
+Lechuga
+Queso
