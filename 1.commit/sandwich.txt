@@ -4,3 +4,8 @@ medallón
 pan
 Carne humana
 Lechuga no vegana
+
+Salsas: 
+Ketchup
+Mayonesa
+Cheddar
