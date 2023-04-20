@@ -2,6 +2,8 @@ pan
 mayonesa
 tomate
 tomate
+panceta
+jamón
 queso
 medallón
 mayonesa
