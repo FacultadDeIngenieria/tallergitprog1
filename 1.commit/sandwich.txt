@@ -2,3 +2,5 @@ pan
 queso
 medallón
 pan
+Carne humana
+Lechuga no vegana
