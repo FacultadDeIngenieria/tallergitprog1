@@ -1,0 +1,11 @@
+1.1)
+1. Para crear un comando se usa el comando: init
+2. Para que un directorio deje de ser controlado por git tengo que usar el comando: git rm -r --cached <directory-name>
+3. Si agregas un archivo a un directorio que ya está siendo controlado por Git, entonces ese archivo estará siendo controlado por Git automáticamente.
+4. Para agregar un archivo al repositorio local, hay que usar el siguiente: git add <file-name>
+5. Para determinar qué archivos han sido modificados en el repositorio local hay que usar: git status
+6. Para hacer un commit: git commit -m "mensaje del commit"
+7. Un commit es un registro en el historial de cambios que se le hicieron a un archivo	 
+
+1.2)
+3. 
