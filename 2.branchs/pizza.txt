@@ -1,4 +1,8 @@
 queso
+anana
 salsa de tomate
+<<<<<<< HEAD
 cebolla
+=======
+>>>>>>> anana
 masa de pizza
