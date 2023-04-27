@@ -1,3 +1,11 @@
+                                   Teoria
+1)git ini
+2) git rm
+3)no
+4)git add
+5)git status
+6)git commit
+7)captura los cambios en el repository en el momento del commit
 
                                    Practica
 
