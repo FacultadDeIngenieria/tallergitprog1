@@ -47,10 +47,11 @@ El mensaje se utiliza para proporcionar contexto y descripción sobre los cambio
 ++aceitunas
   pan)
 
- 1.2.14 Después de ejecutar el comando git status, la salida de git status mostrará que el archivo sandwich2.txt ha sido eliminado y el archivo sandwich2_feo.txt ha sido añadido.
+1.2.14 
+ 1.2.14 Después de ejecutar el comando git status, la salida de git status mostrará que el archivo archivo sandwich2_feo.txt ha sido modificado. Para confirmar este cambio, debemos hacer un commit con los cambios utilizando el comando git commit -m y agregar el mensaje, en mi caso escribí: "Renombro archivo a sandwich2_feo.txt"
 
- la salida de git log --oneline mostrará un nuevo commit con un mensaje de confirmación:
+Después de hacer el commit, la salida de git log --oneline mostrará un nuevo commit con el mensaje de confirmación que escribí anteriormente: "Renombro archivo a sandwich2_feo.txt"
 
-1.2.15 Después de ejecutar este comando, la salida de git status mostrará que el archivo ha sido eliminado (en rojo)
+1.2.15 Después de ejecutar este comando, la salida de git status mostrará que el archivo ha sido eliminado (en rojo) Para confirmar este cambio, debemos hacer un commit con los cambios utilizando el comando git commit -m y escribimos el mensaje de confirmación que en mi caso fue "Elimino archivo sandwich2_feo.txt"
 
-1.2.16 Después de cada línea de información de confirmación, git log --stat muestra una lista de los archivos que se modificaron en ese commit, junto con estadísticas sobre los cambios que se realizaron en cada archivo.
+1.2.16 Después de cada línea de información de confirmación, git log --stat muestra una lista de los archivos que se modificaron en ese commit, junto con estadísticas sobre los cambios que se realizaron en cada archivo. Podemos ver que se realizó un commit con el mensaje "Elimino archivo sandwich2_feo.txt"
