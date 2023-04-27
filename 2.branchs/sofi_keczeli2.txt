@@ -39,3 +39,21 @@ albahaca y orégano y aclara que fue en la branch experimento.
 2.2.10 Veo lo mismo que en el punto anterior (6) pero ahora tmb veo el 
 mensaje cuando commiteé la pizza con ananá en la branch ananá (entre 
 paréntesis en verde)
+
+2.2.13 Vi que había commiteado la ultima versión con la cebolla en la 
+pizza.
+
+2.2.15 Veo que anana es parte de mi main branch
+
+2.2.16 anana
+
+2.2.18 que experimento es parte de mi main
+
+2.2.19 git lo hizo automáticamente porque no había conflictos entre mis 
+branchs
+
+2.2.20 anana y experimento
+
+2.2.23 ahora no hay ramas mergeadas porque las eliminé
+
+2.2.24
