@@ -1,0 +1,57 @@
+PREGUNTAS 1
+1. Para inicializar un repositorio local, se debe ejecutar el comando "git init" en la terminal dentro del directorio que se desea convertir en un repositorio.
+
+2. Para hacer que un directorio deje de ser controlado por Git, se debe ejecutar el comando "git rm --cached <nombre-del-directorio>". Esto eliminará el directorio de la lista de archivos que Git está rastreando y lo eliminará del control de versiones.
+
+3. Sí, si se agrega un archivo a un directorio que ya está siendo controlado por Git, el archivo se agregará automáticamente al control de versiones. No es necesario hacer ninguna acción adicional.
+
+4. Para agregar un archivo al repositorio local, se debe ejecutar el comando "git add <nombre-del-archivo>" en la terminal. Esto agregará el archivo al área de preparación de Git para que pueda ser incluido en el próximo commit.
+
+5. Para determinar qué archivos han sido modificados, se debe ejecutar el comando: "git status" en la terminal. Esto mostrará una lista de archivos que han sido modificados y que están listos para ser confirmados en el siguiente commit. El color rojo indica que los archivos han sido modificados pero aún no se han agregado al área de preparación de Git para incluirlos en el próximo commit. Cuando se agrega un archivo modificado al área de preparación utilizando el comando "git add", el color del archivo en la lista de archivos modificados cambia a verde. Esto indica que el archivo ha sido agregado al área de preparación y está listo para ser incluido en el próximo commit.
+
+6. El comando utilizado para hacer un commit es "git commit -m <mensaje-explicativo>". Esto tomará los cambios agregados al área de preparación y los registrará como un nuevo commit en el historial de versiones de Git.
+El mensaje se utiliza para proporcionar contexto y descripción sobre los cambios realizados en el commit. Esto ayuda a otros desarrolladores a entender lo que se ha modificado en el código y por qué se realizó el cambio. Además, es útil para los desarrolladores que trabajan en el mismo proyecto. Cuando se tiene un historial de commits bien documentado, es más fácil de mantener y entender el código. Los mensajes del commit pueden ser utilizados para buscar cambios específicos en el historial de versiones de Git, lo que hace que sea más fácil rastrear los cambios y revertirlos si es necesario.
+
+7. Un commit es una foto, un screenshot de los cambios realizados en los archivos de un repositorio en un momento específico. Es un registro permanente de los cambios realizados en el código y puede incluir un mensaje que describa los cambios y la razón por la que se realizaron. Los commits son esenciales para el control de versiones y permiten a los desarrolladores realizar un seguimiento de los cambios y retroceder en el tiempo en caso de que algo salga mal.
+
+1.2.3 Veo que sandwich.txt esta modificado, ya fue commiteado antes y hay un archivo miligrimoldi.txt que es nuevo, y nuca fue agregado a git. 
+
+1.2.5 Despues de hacer git add sandwich.txt, el archivo paso a estar en staging en lugar de modified. Y sigo viendo mi txt en rojo poruqe esta en modified
+
+1.2.7 Después de hacer el commit, no se ve mas el archivo sandwich solo se ve el miligrimoldi.txt.
+
+1.2.9 Git log me muestra el historial de commits de la branch, y esta ordenado de mas actual a mas viejo.
+
+1.2.10.1 Este comando muestra una lista de los commits en una sola línea. Cada línea incluye un identificador corto del commit (hash), seguido de su mensaje de confirmación. Esto permite una visualización más compacta del historial de commits.
+
+1.2.10.2 Este comando muestra información estadística sobre los cambios realizados en cada archivo en cada commit. Para cada archivo modificado en un commit, se muestra una línea que indica cuántas líneas fueron agregadas y eliminadas en ese archivo. Además, también muestra el nombre del archivo y la fecha del commit. (Este comando es más detallado que el anterior)
+
+1.2.11 El comando permite comparar los cambios realizados en un archivo entre dos commits y obtener una visión detallada de las diferencias en el contenido del archivo. 
+-En primer lugar se encuentran los encabezados de archivo, que muestran el nombre del archivo que se ha modificado  la ruta del archivo en el repositorio: (ejemplo: --- a/1.commit/sandwich.txt
++++ b/1.commit/sandwich.txt)
+-Las líneas que aparecen en el resultado con un signo "+" delante indican las líneas que se han agregado al archivo en el segundo commit en comparación con el primer commit. (el texto es de color verde)
+
+-Las líneas que aparecen en el resultado con un signo "-" delante indican las líneas que se han eliminado del archivo en el segundo commit en comparación con el primer commit. (el texto es de color rojo)
+
+-Las líneas que aparecen en el resultado sin signo "+" ni "-" delante son líneas que no han cambiado entre los dos commits. (el texto es blanco)
+(ejemplo:  pan
+  queso
+  medallón
+ -cebolla caramelizada
++ guacamole
+ -KETCHUPPP
+ -medallon de pollo rebozado
+ -lechuga
+++KETCHUPPPP
+++cebolla caramelizada
+++aceitunas
+  pan)
+
+1.2.14 
+ 1.2.14 Después de ejecutar el comando git status, la salida de git status mostrará que el archivo archivo sandwich2_feo.txt ha sido modificado. Para confirmar este cambio, debemos hacer un commit con los cambios utilizando el comando git commit -m y agregar el mensaje, en mi caso escribí: "Renombro archivo a sandwich2_feo.txt"
+
+Después de hacer el commit, la salida de git log --oneline mostrará un nuevo commit con el mensaje de confirmación que escribí anteriormente: "Renombro archivo a sandwich2_feo.txt"
+
+1.2.15 Después de ejecutar este comando, la salida de git status mostrará que el archivo ha sido eliminado (en rojo) Para confirmar este cambio, debemos hacer un commit con los cambios utilizando el comando git commit -m y escribimos el mensaje de confirmación que en mi caso fue "Elimino archivo sandwich2_feo.txt"
+
+1.2.16 Después de cada línea de información de confirmación, git log --stat muestra una lista de los archivos que se modificaron en ese commit, junto con estadísticas sobre los cambios que se realizaron en cada archivo. Podemos ver que se realizó un commit con el mensaje "Elimino archivo sandwich2_feo.txt"
