@@ -1,4 +1,12 @@
+oregano
+albahaca 
 queso
 salsa de tomate
+<<<<<<< HEAD
 cebolla
 masa de pizza
+=======
+masa de pizza
+
+
+>>>>>>> anana
