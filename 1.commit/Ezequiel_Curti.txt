@@ -1,0 +1,33 @@
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   sandwich.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Ezequiel_Curti.txt
+        ../tallergitprog1/
+
+Sandwich estaba commited desde antes y por eso aparece por encima de Ezequiel_Curti.txt
+
+On branch Ezequiel_Curti
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   sandwich.txt
+
+Despues de hacer git add Sandwich cambio de rojo a verde pero Ezequiel_Curti.txt sigue igual
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Ezequiel_Curti.txt
+        ../tallergitprog1/
+
+Despues de hacer el codigo "git commit -m", no se ve mas el archivo sandwich y solo se ve en rojo Ezequiel_Curti.txt
+
+Git Log me muestra el historial de branchs, el orden en el que aparecen es según el ultimo archivo modificado
+
+Si hago el code "git log --oneline", no aparecen ni la fecha ni el author de la ultima modificación
+
+Si hago el code "git log --stat", aparecen simbolos de + y - que significan la cantidad de modificaciones en los archivos
+
+Al hacer el code "git mv" el archivo "sandwich2.txt" fue borrado y en su lugar lo suplanta "sandwich2_feo.txt"
