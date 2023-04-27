@@ -31,3 +31,11 @@ dicho proyecto, como lanzamientos oficiales.
 2.1.10 tenés que estar en el commit al que le querés asignar la tag con el 
 comando "git checkout <hash_del_commit>" y dsp usas el comando "git tag 
 <nombre_tag>".
+
+2.2.6 Veo algo similar a cuando uso el comando git log --oneline pero 
+ahora en la prte superior tmb veo mis mensajes y commits cuando agregué 
+albahaca y orégano y aclara que fue en la branch experimento.
+
+2.2.10 Veo lo mismo que en el punto anterior (6) pero ahora tmb veo el 
+mensaje cuando commiteé la pizza con ananá en la branch ananá (entre 
+paréntesis en verde)
