@@ -1,0 +1,7 @@
+3.1.1) Un conflicto como tal no es algo bueno pero tampoco algo malo, solo es una aviso de parte de git indicando que al momento de realizar un merge ocurrio una sobreescritura de dos versiones del mismo archivo entre las 2 branch que se planean juntar.
+
+3.1.2) La mejor forma de evitar un conflicto en git a la hora de realizar un merge es trabajar lo mas organizado posible, ya sea en grupo o con un proyecto en solitario, es recomendable ir actualizandolo o trabajar de forma independiente en ramas diferentes para evitar conflictos.
+
+3.2.10) Noto que abajo de todo me indica que la diferencia entre la branch main y la suprema/bife, es justamente lo que figura debajo de pan rallado en el texto que cambia en milanesa.txt
+
+3.2.11) No noto nada fuera de lo normal, solamente el archivo donde contesto las preguntas teoricas como un archivo preparado para realizarle un commit.
