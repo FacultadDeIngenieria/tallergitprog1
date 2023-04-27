@@ -1,8 +1,13 @@
+oregano
+albahaca
 queso
 anana
 salsa de tomate
 <<<<<<< HEAD
+<<<<<<< HEAD
 cebolla
 =======
 >>>>>>> anana
+=======
+>>>>>>> experimento
 masa de pizza
