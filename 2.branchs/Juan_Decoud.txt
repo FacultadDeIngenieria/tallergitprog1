@@ -24,10 +24,28 @@
 
 2.2.13) Noto errores, o eso parece indicar el git graph respecto a pizza.txt por cambios que hice en otras branch
 
-2.2.15) No me permite realizar un merge debido a que hay conflictos entre los archivos y me pide hacer un fix para realizar correctamente un merge.
+2.2.14) Al realizar el merge con la branch ananá tuve que corregir los errores y una vez hecho eso pude realizar el merge correctamente.
+
+2.2.15) Cuando vuelvo a colocar el git praph, arriba de todo se desprende una flecha de forma de barra inversa indicando que se "mergeo" correctamente la main con anana.
 
 2.2.16) Las branch mergeadas son:
+	2023
+	* Juan_Decoud (main)
+	anana
+	ejercicio_2
+	experimento
+	main
+
+2.2.18) Veo que se mergeo con la branch principal
+
+2.2.19) En este caso ya se habia hecho porque por error lo mergee antes, pero el merge manual lo tuve que realizar antes con la branch anana.
+
+2.2.20) Las mismas que antes. 
+
+2.2.23) Estan mergeadas:
 		2023
-		Juan_Decoud
+		* Juan_Decoud
 		ejercicio_2
 		main
+
+2.2.24) Observo que ya no aparecen la branch de anana y experimento, unicamente los commits que realicé
