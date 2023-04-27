@@ -1,0 +1,56 @@
+1.1. Preguntas
+¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+
+Para inicializar un nuevo repositorio local con Git, se debe ejecutar el comando "git init" en la carpeta que deseas convertir en un repositorio.
+Esto creará un nuevo subdirectorio oculto llamado ".git" en la carpeta actual. Este subdirectorio contiene todos los archivos necesarios para el control de versiones y la administración de cambios en tu proyecto.
+Para inicializar un repositorio local, sigue estos pasos:
+- Abre una terminal o consola en la carpeta que deseas convertir en un repositorio.
+- Ejecuta el comando "git init" en la terminal.
+- Git creará el subdirectorio ".git" y te informará que el repositorio se ha inicializado correctamente.
+Una vez que el repositorio se ha inicializado, puedes comenzar a agregar archivos, hacer confirmaciones (commits) y administrar los cambios en tu proyecto utilizando los comandos de Git.
+
+¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+
+Para hacer que un directorio o archivo deje de ser controlado por Git, se debe utilizar el comando "git rm" con la opción "--cached". Esto eliminará el archivo o directorio del índice de Git, pero lo mantendrá en tu sistema de archivos. Luego, se debe agregar el archivo o directorio a un archivo ".gitignore" para evitar que se agregue accidentalmente nuevamente en el futuro.
+
+Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+
+Sí, si agregas un archivo a un directorio que ya está siendo controlado por Git, ese archivo también estará siendo controlado por Git automáticamente.
+Git rastrea los cambios en todo el directorio y sus subdirectorios, por lo que cualquier archivo nuevo que se agregue al directorio se incluirá en el control de versiones de Git. Para asegurarte de que el archivo esté siendo controlado por Git, puedes ejecutar el comando "git status" para ver si aparece como un archivo no rastreado.
+
+¿Qué comando se utiliza para agregar un archivo al repositorio local?
+
+Para agregar un archivo al repositorio local utilizando Git, se utiliza el comando "git add". Este comando agrega los cambios realizados en un archivo o conjunto de archivos al área de preparación (también conocida como índice), donde se pueden preparar para hacer una confirmación (commit) en el repositorio.
+
+¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+
+Para determinar qué archivos fueron modificados en tu repositorio local, puedes utilizar el comando "git status". Este comando muestra el estado actual del directorio de trabajo y resalta los archivos que han sido modificados desde el último commit.
+
+¿Qué comando se utiliza para hacer un commit?
+
+Para hacer un commit en Git, se utiliza el comando "git commit". Este comando guarda permanentemente los cambios realizados en el área de preparación (también conocida como índice) en el historial de versiones del repositorio.
+
+En sus propias palabras, Que es un commit?
+
+Un commit es una operación que guarda permanentemente los cambios realizados en los archivos del repositorio en el historial de versiones del repositorio. Un commit crea una instantánea de los cambios realizados en el área de preparación.
+Cada commit en Git tiene un identificador único, llamado hash de commit, que se utiliza para identificar y diferenciar los diferentes commits en el historial de versiones del repositorio. Además, cada commit tiene un mensaje descriptivo que explica los cambios realizados en el commit.
+Los commits son una parte fundamental del flujo de trabajo en Git, ya que permiten a los desarrolladores trabajar en diferentes versiones de un proyecto y mantener un historial detallado de los cambios realizados. Además, los commits facilitan la colaboración entre varios desarrolladores al proporcionar un medio para rastrear y revertir los cambios realizados en el código fuente.
+
+1.2. Ejercicio Práctico
+1.2.3 El comando "git status" muestra el estado actual del repositorio Git, incluyendo información sobre los archivos modificados y los cambios pendientes de confirmar (commit). Veo que sandwich.txt esta modificado, ya fue commiteado antes y hay un archivo pilar_silveyra.txt que es nuevo y nunca fue agregado a git.
+1.2.5 Despues de hacer git add sandwich.txt, el archivo paso a estar en staging en lugar de modified. Y sigo viendo pilar_silveyra.txt en rojo porque esta en modified. Después de ejecutar "git add", los archivos se añaden al área de preparación (staging area) de Git, lo que significa que los cambios se han preparado para ser confirmados en el próximo commit. En la salida de "git status", los archivos añadidos aparecerán en la sección "Changes to be committed", y se mostrará el nombre de cada archivo que se ha añadido al área de preparación. 
+1.2.7 Ahora, no hay nada en el estado de sandwich.txt porque ya se subio por lo tanto no hay nada acerca del estado del archivo. El comando "git commit" es utilizado para confirmar los cambios realizados en los archivos del repositorio y guardarlos en el historial de cambios. La opción "-m" se utiliza para especificar un mensaje que describe los cambios realizados.
+Una vez que se ejecuta el comando "git commit -m", los cambios realizados en el repositorio son guardados permanentemente en el historial de cambios y ya no aparecen en el estado del área de preparación.  
+1.2.9 El comando "git log" muestra el historial de confirmaciones (commits) en un repositorio Git. Por defecto, la salida muestra una lista de los commits en orden cronológico inverso, es decir, empezando por el commit más reciente. En mi caso, el commit mas reciente fue el del mensaje de "Agrego salsa."
+1.2.10 
+- git log --oneline: muestra una versión abreviada del historial de confirmaciones. Cada commit se muestra en una sola línea, para que sea más fácil de leer, y si no se busca tanto detalle. Solo se muestra la información básica, como el hash de la confirmación y el mensaje del commit.
+- git log --stat muestra información estadística sobre los cambios en el repositorio de Git. En lugar de mostrar la lista completa de commits, muestra una lista de los archivos modificados en cada commit, junto con las estadísticas de inserción y eliminación de líneas. Esta opción es útil para obtener información rápida sobre cómo ha evolucionado el repositorio en términos de número de cambios y cantidad de código modificado.
+1.2.11 El comando git diff se utiliza para mostrar las diferencias entre dos commits en un repositorio de Git.
+Cuando ejecutas git diff sin ningún argumento adicional, se mostrarán las diferencias entre el directorio de trabajo y el índice.
+1.2.14 Luego de hacer mv, el archivo con el nombre anterior aparece eliminado y el nuevo, es decir, sandwich2_feo.txt aparece siendo modificado.
+Git detecta que se ha movido un archivo y lo marca como "renombrado" en su historial. Esto significa que el archivo anterior se marca como eliminado y el archivo nuevo se marca como agregado. En términos de git status, esto significa que el archivo se muestra como eliminado en el directorio de trabajo y agregado al área de preparación.
+cuando se ejecuta el comando git log --oneline después de hacer un commit mv, no se verá un nuevo registro sobre ese archhivo ya que no es un commit confimado y esta lista solo muestra aquellas confirmaciones realizadas. 
+1.2.15 Al ejecutar "git status" después de hacer un "commit" de "rm" (es decir, después de eliminar un archivo y hacer un commit de ese cambio), la salida muestra que el archivo que fue eliminado ha sido "eliminado" y que este cambio está listo para ser confirmado en el siguiente commit.
+- Después de haber ejecutado el comando "rm" para eliminar un archivo, cuando ejecuto el comando "git log --oneline" no veo ninguna referencia de ese archivo ya que no fue un comando confirmado.
+El comando "git log --oneline" muestra una lista de confirmaciones (commits) en una sola línea, y un mensaje descriptivo que resume los cambios realizados en esa confirmación. Este comando muestra solo las confirmaciones que están en la rama actual en la que te encuentras.
+1.2.16 El comando "git log --stat" muestra un resumen estadístico de los cambios realizados en cada confirmación (commit) en la rama actual. Esto significa que puedo ver todos los commit confirmados como por ejemplo la confirmacion del archivo sandwich.txt al ser agregado al repositorio local. Este comando presenta el autor, la fecha, el hash, el mensaje y los archivos modoficados y puedo ver de forma sintetica todo lo que fui haciendo. El resumen estadístico se muestra en un formato tabular, donde cada fila representa una confirmación y las columnas representan la información mencionada anteriormente.
