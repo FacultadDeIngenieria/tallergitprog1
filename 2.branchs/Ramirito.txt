@@ -1,27 +1,21 @@
 2.1.1 Un branch es una versión alternativa de un proyecto de software que se deriva de la rama principal o de otra rama existente.
-
 2.1.2 Los desarrolladores utilizan ramas para trabajar en nuevas características o correcciones de errores sin afectar la versión principal del proyecto.
-
 2.1.3 Si estás en la rama principal, para crear una rama hay que correrel comando "git branch <nombre_de_tu_rama>".
-
 2.1.4 Para cambiar de branch se corre el comando "git checkout <nombre_de_tu_rama>".
-
 2.1.5 Para eliminar una rama existente, hay que correr el comando "git branch -d <nombre_de_la_rama>".
-
 2.1.6 Para crear una rama y moverte automáticamente a ella podemos correr el comando "git checkout -b <nombre-de-la-rama>".
-
 2.1.7 En el contexto de la informática, el término "merge" se refiere a la operación de combinar dos o más conjuntos de datos en uno solo. Por lo general, se utiliza para combinar diferentes >
-
 2.1.8 Una vez que se está en la rama correcta, se debe ejecutar el comando "git merge <rama_a_combinar>" para combinar la rama especificada con la rama actual. Este comando comparará los camb>
-
 2.1.9 Un tag en Git es una referencia a un punto específico en la historia de un repositorio de Git. Es una forma de etiquetar o marcar una versión específica del código para poder referirse >
-
 2.1.10 Para hacer un tag en git hay que correr el comando "git tag <nombre-del-tag>"
-
-
 
 2.2.6 git graph nos muestra los progresos de las diferentes branch y de los ultimos commits
 2.2.10 me muestra creada la brunch "anana" y con ella el ultimo cambio de lo que agregue a la pizza con su comentario del trabajo.
 2.2.13 me muestra lo agregado en la branch master, en mi caso, Ramiro_Quevedo_Mendoza
 2.2.15 Nos muestra que se juntaron ambas branch (master y anana) en la master
 2.2.16 Las branch que estan dentro de Ramiro_Quevedo_Mendoza son main y anana
+2.2.18 Al igual que con la branch anana, nos muestra que la branch expermiento quedo dentro de Ramiro_Quevedo_Mendoza
+2.2.19 La unicon entre Ramiro_Quevedo_Mendoza y anana la tuve que hacer manual, entre Expermento y Ramiro_Quevedo_Mendoza se hizp automatico porque guardo el procedimiento del primero.
+2.2.20 Estan junts las branch main, experimento y anana
+2.2.23 Quedo unicamente main.
+2.2.24 no hay cambios ya que solo mustra los commits de las branch y noque pasa con ellas.
