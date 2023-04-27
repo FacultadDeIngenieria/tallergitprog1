@@ -1,4 +1,6 @@
 pan
+jamon
+ketchup
 queso
 medallón
 pan
