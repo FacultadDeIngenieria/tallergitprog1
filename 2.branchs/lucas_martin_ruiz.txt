@@ -1,0 +1,16 @@
+				Teorica					
+
+1)es una version del codigo en la que estoy trabajando
+2)porque se puede trabajar en dos cosas diferentes sin la necesidad de estar 
+en el mismo codigo
+3)git branch <nombre_branch_nuevo>
+4)git checkout <nombre_de_branch>
+5)git branch -d <nombre_de_branch>
+6)git checkout <nombre_branch_nueva>
+7)es unir dos branches 
+8)git merge <branch_para_mergear>
+9)es un punto de referencia en un punto especifico de la historia del 
+repositoio
+10)git tag <nombre_tag>
+
+				Practica
