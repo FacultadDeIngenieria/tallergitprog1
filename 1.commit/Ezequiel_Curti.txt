@@ -31,3 +31,7 @@ Si hago el code "git log --oneline", no aparecen ni la fecha ni el author de la 
 Si hago el code "git log --stat", aparecen simbolos de + y - que significan la cantidad de modificaciones en los archivos
 
 Al hacer el code "git mv" el archivo "sandwich2.txt" fue borrado y en su lugar lo suplanta "sandwich2_feo.txt"
+
+Al hacer "git log --oneline", se actualiza el historial de branchs 
+
+Al borrar 
