@@ -1,0 +1,18 @@
+
+                                   Practica
+
+3)sandwich.txt esta modificado, pero falta agregarlo a "Staged" para poder commiterlo
+lucas_martin_ruiz.txt falta agregarlo al .git
+5)sandwich.txt esta "staged" y esta listo para ser commiteado
+7)No hay nada para commitear, pero hay archivos que no estan en el repositorio
+9) muestra los commits en el branch de mas reciente a mas viejo, estando primero lo
+ mas reciente
+10.1)Muestra los commits solo mostrando los comentarios 
+10.2)Muestra los commits con los cambios mas detallados
+11)muestra las differencia que cambiaron en cada arcivo en este caso sndwich
+14) muestra que se borro el archivo sandwic2.txt y que falta commitearo. el 
+git log muestra hasta el commit donde se cambio el nombre de sandwich2 a 
+sandwich_feo
+git
+15) en git status me sale que falta agregar y commitera el archivo lucas_martin_ruiz.txt
+16)muestra los cambios en cada commit. En el ultimo muestra que se borraron 2 archivos
