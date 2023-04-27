@@ -1,1 +1,3 @@
-O3.2.10 Observo que entre Ramiro_Quevedo_Mendoza y suprema me muestra que hay una diferencia en lomo y pollo porque ya hice un commit de las branch, en cambio con bife no me marca nada porque aun no hago el commit, una vez que lo haga me mostrara la misma diferencia con lomo y bife
+3.2.10 Observo que entre Ramiro_Quevedo_Mendoza y suprema me muestra que hay una diferencia en lomo y pollo porque ya hice un commit de las branch, en cambio con bife no me marca nada porque aun no hago el commit, una vez que lo haga me mostrara la misma diferencia con lomo y bife
+3.2.12 Si, pude juntar las branch una vez que hice commit en todos los archivos.
+3.2.13 Si y ya cion todos los archivos subidos anteriormente para juntar las branches Ramiro_Quevedo_Mendoza y bife, esta se hace rapidamente
