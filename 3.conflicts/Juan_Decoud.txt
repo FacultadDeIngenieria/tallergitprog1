@@ -5,3 +5,11 @@
 3.2.10) Noto que abajo de todo me indica que la diferencia entre la branch main y la suprema/bife, es justamente lo que figura debajo de pan rallado en el texto que cambia en milanesa.txt
 
 3.2.11) No noto nada fuera de lo normal, solamente el archivo donde contesto las preguntas teoricas como un archivo preparado para realizarle un commit.
+
+3.2.12) Si, pude realizar correctamente el merge bife
+
+3.2.13) No, no funcionó porque detectó un error y me pide que lo arregle por mi cuenta
+
+3.2.14) Me indica los archivos con color rojo que debo reparar para realizar correctamente el commit
+
+3.2.15) El archivo milanesa.txt tiene las correcciones de la parte que se debe fixear porque git nota sobreescritura
