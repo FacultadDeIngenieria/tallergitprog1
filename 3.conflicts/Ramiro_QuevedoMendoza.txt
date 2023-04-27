@@ -1,0 +1,1 @@
+O3.2.10 Observo que entre Ramiro_Quevedo_Mendoza y suprema me muestra que hay una diferencia en lomo y pollo porque ya hice un commit de las branch, en cambio con bife no me marca nada porque aun no hago el commit, una vez que lo haga me mostrara la misma diferencia con lomo y bife
