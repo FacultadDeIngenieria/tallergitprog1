@@ -1,3 +1,29 @@
+PARTE TEÓRICA
+--------------------------------------------------------------------------------------------------
+1.1.1
+Se utiliza el comando "git init"
+
+1.1.2
+Se utiliza el comando "git rm -r" seguido del nombre del directorio
+
+1.1.3
+Si, cualquier archivo subido a un directorio controlado por Git, tambien será controlado por Git
+
+1.1.4
+Se utiliza el comando "git add" y el nombre del archivo
+
+1.1.5
+Se utilizar el comando "git status"
+
+1.1.6
+"git commit" más el nombre del archivo y, si uno quiere evitar abrir el nano para agregar el comentario, le suma "-m" y el comentario que desee entre comillas ""
+
+1.1.7
+Un commit es la "fase final" de una versión de un archivo, es una forma de guardar una versión con los cambios que uno desee, en lugar de guardar una version por CADA cambio hecho y, así, tener todo mucho más ordenado.
+
+
+PARTE PRÁCTICA
+----------------------------------------------------------------------------------------------------
 1.2.3 
 On branch sergio_morero
 Changes not staged for commit:
@@ -56,8 +82,14 @@ Explicación: Te explica cada commit hecho en una sola línea, carece de ciertos
 1.2.10.2
 Explicación: Este git log te muestra aun mas datos que el git original, incluyendo la cantidad de cambios hechos (agregados, borrados, etc.) 
 
+1.2.11
+Explicación: Aparecen (en color verde) todos los cambios agregados a los aarchivos a comparar, y, en rojo, los ingredientes eliminados/borrados.
+
 1.2.14
 Explicación: No cambia nada, puesto que al commitear el archivo de nuevo, no se refleja cambio alguno en "git status", sino en el git log
 
 1.2.15
-Explicación: Aparecen todos los commits hechos (sandiwch , sandwich2, y sandwichfeo, en el caso de este último, aparece el nombre que tenia el archivo antes de ser renombrado.
+Explicación: Ahora, al hacer "git status" nos aparece "sandich2_feo" como borrado del repositorio, sin embargo, en el git log --oneline aún quedo guardado el commit con el archivo antes de ser borrado.
+
+1.2.16
+Explicación: Aparecen todos los commits hechos (sandiwch , sandwich2, y sandwichfeo, en el caso de este último, además, aparece el nombre que tenia el archivo antes de ser renombrado), inclusives los de los archivos eliminados (puesto que ya había una version guardada de ese archivo).
