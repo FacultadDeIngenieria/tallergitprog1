@@ -1,0 +1,19 @@
+1.1
+1- Un repositorio local se inicializa usando git init
+2- Para que un directorio deje de ser controlado por git deberiamos usar el comando rm -rf .git
+3- si
+4- para agregra un archivo al repositorio local se usa el comando git add
+5- Para determinar que archivos fueron modificados se debe usar el comando git status
+6- para hacer un commit se utiliza git commit  
+
+
+1.2)
+3- sandwich.txt esta modificado, ya fue comiteado antes y hay un archivo marco_schenker.txt
+5- despues de hacer git add sandwich.txt, sandwich.txt paso a estar en el stage 
+7- Despues de hacer el comit sandwich.txt, no hay ningun archivo ni modificado ni en stage
+9- El orden de los commits aparecen del más nuevo al más viejo. Ahora el primero que aparecio fue el Agrego las Salsas
+10- con git log --oneline estan ordenados los commitsbde el mas actual al mas viejo y el git log --stat tiene todos los registros, de la fecha y hora de los commits ejecutados. Ademas aparecen las modificaciones que hiciste en los commits.
+11- El git diff compara los comits y luego presenta los cambios que hubo entre ellas
+14- En la salida del comando git status, me aparece que cambio el nombre del archivo, apareciendo como un nuevo archivo. Despues de ejecutar git log --oneline, aparece el nuevo archivo pero, a diferencia del resto muestra (HEAD -> marco_schenker) Sandwich feo
+15- Luego de usar git status, aparece una linea que muestra que sandwich2_feo se elimino
+16- Luego de ejecutar git log --stat, veo una lista de todos los commits que se realizaron (ordenanos por fecha del mas reciente al mas viejo), incluyendo el ultimo commit del archivo que se elimino. Ademas, los commits estan enumerados por una linea de codigo y se muestran las modificaciones que se hicieron en cada uno de ellos con +++ verdes (si se agregaron cosas) o +++ rojas (si se eliminaron cosas).
