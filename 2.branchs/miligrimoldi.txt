@@ -1,3 +1,33 @@
+Preguntas: 
+2.1.1 Un branch es una línea de desarrollo independiente que se crea a partir de una rama existente, y que permite trabajar en cambios de manera aislada del código principal. Cada branch tiene su propio historial de commits y puede tener cambios específicos que no están presentes en la rama principal del repositorio.
+
+2.1.2 Los branches pueden ser útiles para trabajar en nuevas funcionalidades o cambios importantes sin afectar la rama principal del repositorio, lo que permite a los desarrolladores trabajar de manera independiente sin interrumpir el trabajo de los demás. Los branches también pueden ser útiles para corregir errores o bugs en una versión específica del código, o para probar nuevas ideas o experimentos sin afectar el flujo de trabajo principal.
+-Permite trabajar en nuevas características o experimentos sin afectar la rama principal. Esto significa que puedes crear un branch para trabajar en una nueva funcionalidad o corrección de errores sin temor a que se rompa el código de la rama principal.
+
+-Facilita el trabajo en equipo. Cada miembro del equipo puede trabajar en su propia rama para implementar sus cambios sin afectar el trabajo de los demás. Esto hace que sea fácil colaborar en un proyecto grande y evitar conflictos al fusionar cambios.
+
+-Ayuda a mantener el historial de cambios organizado. Cada branch es una línea de tiempo independiente, lo que significa que puedes trabajar en diferentes características o experimentos simultáneamente sin tener que preocuparte por mezclar los cambios.
+
+-Permite probar nuevas características o experimentos antes de incorporarlos en la rama principal. Una vez que se completa el trabajo en una rama, se puede fusionar con la rama principal después de haberlo probado y asegurado que funciona correctamente.
+
+2.1.3 Para crear una nueva branch se puede usar el comando git branch seguido del nombre que se le va a dar a la nueva rama.
+
+2.1.4 Para cambiar a una rama específica, se puede usar el comando git checkout seguido del nombre de la rama a la que se quiere cambiar.
+
+2.1.5 Para eliminar una rama, se puede usar el comando git branch -d seguido del nombre de la rama que se quiere eliminar.
+
+2.1.6 Para crear una nueva branch y cambiar a ella en un solo paso, se puede usar el comando git checkout -b seguido del nombre que se quiere dar a la nueva rama.
+
+2.1.7 Un merge es la acción de combinar los cambios de una rama en otra. Esto es útil cuando se trabaja en diferentes características o experimentos en ramas separadas y se quiere combinar el trabajo en una sola rama, como la rama principal.
+
+2.1.8 Para realizar un merge, primero se debe estar en la rama en la que se desea fusionar los cambios. Luego, ejecuta el comando git merge seguido del nombre de la rama que se va a fusionar.
+
+2.1.9 Un tag es una marca que se agrega a un commit específico para señalar un punto importante en la historia del repositorio, como una versión de lanzamiento o una versión estable. A diferencia de las ramas, los tags no cambian ni afectan el historial de los commits. Un tag sirve para identificar de manera única un commit específico en la historia del repositorio.Una vez creado un tag, es posible acceder a ese punto específico de la historia del repositorio mediante el nombre del tag. Esto es útil para volver a versiones anteriores del proyecto o para comparar diferentes versiones del código.
+
+2.1.10 Para crear un tag, se puede usar el comando git tag seguido del nombre que quieras dar al tag y del hash del commit al que deseas agregarlo. También se puede agregar un mensaje al tag utilizando la opción -a seguida de una descripción.
+
+2.2 EJERCICIO PRÁCTICO
+
 2.2.6 git graph muestra los cambios realizados en la rama experimento en mi caso, los ultimos commits que realice fueron: 
 e1f3686 (HEAD -> experimento) agrego oregano
 * a60b2fe agrego albahaca
@@ -26,6 +56,9 @@ ahora las barras que estaban a la izquierda en rojo, cambiaron de color a verde
  2023
 * main
   miligrimoldi
+
+2.2.24 Como eliminé dos ramas, al ejecutar el comando "git graph", el gráfico mostrará que las ramas ya no existen en el historial de commits. Las ramas eliminadas ya no se muestran en la lista y los commits que se hayan realizado en esas ramas se fusionarán en la rama principal
+
 
 
 
