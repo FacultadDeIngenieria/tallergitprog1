@@ -1,0 +1,21 @@
+1.1.1)se inicializa mediante el comando git init
+1.1.2)Mediante el comando rm -rf .git se elimina la carpeta ".git" para eliminar completamente el control de versiones
+1.1.3)si
+1.1.4)se utiliza el comando git add
+1.1.5)git status
+1.1.6) se utiliza el comando git commit -m 
+1.1.7)un "commit" se refiere a los cambios realizados en el código de un proyecto
+
+1.2.3) veo que el archivo sandwich.txt ya fue commiteado antes y que fue modificado. el archivo Agostina_Fares.txt es nuevo y no fue agragado a git. 
+1.2.5) ahora el archivo sandwich.txt aparece en verde, implicando que esta staged, mientras que el archivo Agostina_Fares se mantiene en rojo, ya que sigue en modified
+1.2.7) el archivo sandwich.txt ya no aparece porque fue commiteado, solo aparece el archivo Agostina_Fares.txt
+1.2.9) Apareden todos los commits de la branch del más reciente al más antiguo
+1.2.10.1) git log --oneline muestra los archivos modificados y cuantas modificaciones se realizaron
+1.2.10.2) git log --stat muestra los archivos modificados y la candidad de modificaciones
+1.2.11) El comando git diff muestra las diferencias entre 2 commits
+1.2.14) Antes de realizar el commit aparecia el archivo sandwich2_feo.txt en verde porque estaba staged, y luego del commit desapareció
+1.2.15) Antes de realizar el commit aparecio el archivo sandwich.txt como eliminado
+1.2.16) Al usar el comando git log --stat se ve un resumen de todos los commits realizados y las modificaciones que se realizaron en cada uno
+
+
+
