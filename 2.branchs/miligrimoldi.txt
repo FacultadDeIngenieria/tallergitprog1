@@ -1,0 +1,32 @@
+2.2.6 git graph muestra los cambios realizados en la rama experimento en mi caso, los ultimos commits que realice fueron: 
+e1f3686 (HEAD -> experimento) agrego oregano
+* a60b2fe agrego albahaca
+
+2.2.10 git graph muestra una representación visual del historial de commits en el repositorio, con ramas, bifurcaciones y fusiones. En este caso me muestra el commit que hice en la branch anana: ce79a39 (HEAD -> anana) agrego anana y a la izquierda de los otros commits con una linea roja indicando que esos fueron en otro branch. 
+
+2.2.13 muestra los commits que realice y el último fue 24b8793 (HEAD -> main) agrego cebolla. Me indica que lo realice en la branch main y también muestra, como antes, una barra adelante de los otros commits en rojo. 
+
+2.2.15 me muestra los commits y el último fue: b594337 (HEAD -> main) Merge branch 'anana'
+ahora las barras que estaban a la izquierda en rojo, cambiaron de color a verde 
+
+2.2.16 Las branches que están "mergeadas" a main son 2023 y anana
+
+2.2.18 observo los commits anteriores junto con el último que fue 60731fb (HEAD -> main) Merge branch 'experimento' las barras a la izquierda que estan en verde, son de las branches que estan "mergeadas" a main, las del sandwich (el TP pasado) estan en rojo.
+
+2.2.19 En cuanto a si tuve que hacer un merge manual o Git lo hizo automáticamente, esto depende de si hay conflictos entre los cambios realizados en ambas ramas. Si los cambios son compatibles, Git hará la fusión automáticamente y yo no teno que intervenir. Sin embargo, si hay conflictos, Git detendrá la fusión y me pide que resuelva manualmente los conflictos antes de que la fusión se complete. En este caso, como los cambios eran compatibles, Git lo hizo automáticamente y yo no tuve que intervenir. 
+
+2.2.20 Ahora, las branches "mergeadas" son:   
+  2023
+  anana
+  experimento
+* main
+  miligrimoldi
+
+2.2.23 Ahora solamente están "mergeadas":
+ 2023
+* main
+  miligrimoldi
+
+
+
+
