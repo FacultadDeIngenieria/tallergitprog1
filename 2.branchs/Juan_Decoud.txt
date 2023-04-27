@@ -27,7 +27,7 @@
 2.2.15) No me permite realizar un merge debido a que hay conflictos entre los archivos y me pide hacer un fix para realizar correctamente un merge.
 
 2.2.16) Las branch mergeadas son:
-                2023
-                Juan_Decoud
-                ejercicio_2
-                main
+		2023
+		Juan_Decoud
+		ejercicio_2
+		main
