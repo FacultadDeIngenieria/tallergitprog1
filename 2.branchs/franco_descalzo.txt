@@ -1,0 +1,24 @@
+Ejercicio 2:
+2.1. Preguntas
+
+1. Un branch es una línea de desarrollo independiente que se deriva de una rama principal 
+2. Permiten trabajar en una nueva funcionalidad, corrección de errores u otra tarea sin afectar el código de la rama principal.
+3. Para crear una nueva branch se utiliza el comando git branch <nombre-branch>. 
+4. Para cambiar a una branch específica se usa el comando git checkout <nombre-branch>.
+5. Para eliminar una branch se usa el comando git branch -d <nombre-branch>.
+6. Para crear una nueva rama y entrar a la misma se usa el comando git checkout -b <nombre-branch>.
+7. Un merge es el proceso de combinar los cambios de una rama en otra. Cuando fusionas una rama en otra, los cambios de ambas ramas se combinan en una sola rama.
+8. Para realizar un merge hay que estar en el branch que vas a fusionar con y usas el comando git merge <nombre-rama>.
+9. Un tag es una referencia a un punto específico en la historia del repositorio. 
+10. Para crear un tag se usa el comando git tag <nombre-tag>. Esto creará un nuevo tag con el nombre especificado en el commit actual. Para agregar una descripción a la etiqueta, puedes utilizar el comando git tag -a <nombre-tag> -m "<descripción>".
+
+2.2. Ejercicio Practico
+6. Observo todos los commit osea cambios en los branches. Muestra quienes hicieron los commits, que modificaron y cuando.
+10. Veo todos lo cambios en los branches y ahora hay otro que es el que cree el branch "anana".
+15. Observo que los cambios que se hicieron en el branch anana ahora estan en el branch experimento_master.
+18. Observo todos los cambio hecho en los branches que fueron merged.
+19. Git lo hizo automaticamente porque no hubo ningun conflicto que necesite que lo tenga que hacer manual.
+20. anana y main estan merged.
+23. Ninguna.
+24. Los branches que fueron eliminados ya no estan en la data que muestra el comando git graph.
+
