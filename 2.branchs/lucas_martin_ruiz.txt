@@ -14,3 +14,11 @@ repositoio
 10)git tag <nombre_tag>
 
 				Practica
+
+6)se ven los committs de lo mas nuevo a lo mas viejos
+10) puedo ber los branches que salen del main y se separan
+13)puedo ver un un commmit en el main
+15)veo como la branch anana volvio a la main
+git
+16)las branches mergeadas a la main son anana y 2023
+
