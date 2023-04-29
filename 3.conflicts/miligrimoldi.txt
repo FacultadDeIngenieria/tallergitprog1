@@ -1,0 +1,56 @@
+
+
+3.1. Preguntas:
+
+3.1.1 Un conflicto ocurre cuando hay dos o más cambios en diferentes ramas que afectan las mismas líneas de código. Esto significa que Git no puede determinar automáticamente qué cambio es el correcto, lo que resulta en un conflicto que debe ser resuelto manualmente por el usuario.Esto puede ocurrir cuando se intenta fusionar dos ramas con cambios conflictivos, cuando se intenta aplicar un cambio en una rama que ya ha sido modificado por otro usuario o cuando se intenta aplicar un parche o cambio que entra en conflicto con el código existente.
+
+Aunque un conflicto puede parecer algo malo, en realidad es una señal de que dos o más personas están trabajando activamente en el mismo proyecto. Resolver conflictos es una parte natural del trabajo en equipo y puede llevar a una mejor calidad de código y a una comprensión más profunda del proyecto.
+
+3.1.2 Aunque no se pueden evitar completamente los conflictos en Git, se pueden tomar medidas para reducir su frecuencia y su impacto en el proyecto. Resolver conflictos puede ser una tarea tediosa y llevar tiempo para eso esta bueno utilizar algunas de las estrategias para evitar conflictos, estas son:
+
+-Trabajar en ramas separadas: Al trabajar en ramas separadas, se reduce la probabilidad de que dos desarrolladores modifiquen el mismo archivo al mismo tiempo y generen un conflicto. Cada desarrollador puede trabajar en su propia rama y hacer merge con la rama principal de forma regular.
+
+-Comunicación y coordinación: Una buena comunicación y coordinación entre los miembros del equipo puede ayudar a evitar conflictos en Git. Si un desarrollador sabe que otro está trabajando en un archivo en particular, pueden coordinarse para evitar cambios conflictivos en el mismo archivo.
+
+-Utilizar herramientas de control de versiones: Las herramientas de control de versiones, como Git, tienen características que ayudan a reducir la probabilidad de conflictos. Por ejemplo, Git permite trabajar en ramas separadas y fusionar los cambios de forma segura y controlada.
+
+-Realizar pruebas y revisiones de código: Antes de hacer merge con la rama principal, es recomendable realizar pruebas y revisiones de código para detectar y corregir errores. Esto ayuda a reducir la probabilidad de conflictos y a mejorar la calidad del código.
+
+3.2 EJERCICIO PRÁCTICO
+
+3.2.10 El resultado de git diff main suprema es una lista de los cambios en cada archivo que difieren entre las dos ramas, junto con información sobre qué líneas han sido agregadas, eliminadas o modificadas en cada cambio. Muestra las diferencias entre las dos ramas, lo que te permite ver los cambios realizados en ambas ramas y compararlos. En este caso me muestra los cambios en la rama suprema que aún no se han fusionado con la rama principal. Como agrege cosas, me muetra el texto que agregue en verde junto con los +. Git diff main bife muestra lo mismo que el comando anterior. Si ejecuto el comando git diff suprema bife me muestra el cambio que hice en el archivo milanesa.txt:  
+pan rallado
+-pollo
+\ No newline at end of file
++bife
+\ No newline at end of file
+
+3.2.11 Git status permite ver rápidamente el estado actual de tu repositorio y te ayuda a determinar qué cambios necesitan ser confirmados o descartados. En este caso, me muestra lo siguiente: 
+On branch main
+Your branch is ahead of 'origin/main' by 13 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+3.2.12 Si, Updating fb979da..1667a77
+Fast-forward
+ 2.branchs/miligrimoldi.txt   | 33 +++++++++++++++++++++++++++++++++
+ 3.conflicts/milanesa.txt     |  2 +-
+ 3.conflicts/miligrimoldi.txt |  0
+ 3 files changed, 34 insertions(+), 1 deletion(-)
+ create mode 100644 3.conflicts/miligrimoldi.txt
+
+ 3.2.13 Cuando corrí el comando git merge suprema me apareció: Already up to date. Esto significa que no es necesario hacer una fusión ya que la rama actual ya contiene todos los cambios de la rama que estás tratando de fusionar. 
+
+ 3.2.14 On branch main
+Your branch is ahead of 'origin/main' by 15 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+3.2.15 En el archivo milanesa.txt veo la siguiente lista:
+pan rallado
+bife
+no aparece lo que había escrito en la branch suprema que en vez de bife decia pollo. 
+
+

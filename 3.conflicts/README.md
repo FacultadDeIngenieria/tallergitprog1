@@ -40,7 +40,7 @@ Para volver a `milanesa.txt` a su estado original, debe buscar el commit que lo 
 ```bash
 git checkout [commit ID] -- 3.conflicts/milanesa.txt
 
-# ó
+# 
 
 git checkout [commit ID] -- milanesa.txt
 
