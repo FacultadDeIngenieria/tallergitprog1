@@ -10,3 +10,6 @@
 2.1.10: Para hacer un tag se debe usar el comando git tag.
 
 2.2.6: Se ve el historial de commits, tanto en la branch experimento como en la branch bang_santiago
+2.2.10: Aparecen unas barras rojas detrás de los resultados.
+2.2.13: Esas barras rojas representan las branches
+2.2.15: Hay una ramificación de anana que luego se vuelve a unir a main
