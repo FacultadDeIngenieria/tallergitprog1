@@ -1,11 +1,4 @@
 pan
-cebolla_caramelizada
-panceta
-queso_cheddar
-salsa_golf
+queso
 medallón
-mayonesa
-queso_cheddar
-medallón
-ketchup
 pan
