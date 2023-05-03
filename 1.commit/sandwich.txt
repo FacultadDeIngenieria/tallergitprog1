@@ -1,4 +1,8 @@
 pan
 queso
 medallón
+mayonesa
+mostaza
+tomate
+lechuga
 pan
