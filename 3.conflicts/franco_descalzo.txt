@@ -1,0 +1,15 @@
+Ejercicio 3:
+3.1. Preguntas
+1. Un conflicto en Git ocurre cuando hay dos o más cambios que afectan a las mismas líneas en un archivo o archivos diferentes. Esto puede suceder cuando dos o más personas trabajan en la misma rama y realizan cambios incompatibles, o cuando se trabaja en diferentes ramas y se intenta fusionarlas. El conflicto en sí mismo no es ni bueno ni malo, simplemente indica que hay un problema que debe ser resuelto. 
+2. Trabajar en ramas separadas: esto minimiza la cantidad de personas trabajando en el mismo código al mismo tiempo y reduce la probabilidad de que se produzcan conflictos.
+Mantener actualizado el repositorio: antes de realizar cualquier cambio, asegúrese de tener la última versión del código en su rama para evitar conflictos causados por cambios realizados por otros desarrolladores.
+Comunicación entre desarrolladores: si se trabaja en equipo, es importante comunicar los cambios que se van a realizar y asegurarse de que no se dupliquen los esfuerzos.
+Resolver conflictos con prontitud: en caso de que se produzcan conflictos, es importante resolverlos rápidamente para evitar que se propaguen y se conviertan en un problema mayor.
+
+3.2. Ejercicio Practico
+10. Muestra las diferencias entre los branches main con bife y suprema.
+11. Observo que fue modificado y que no esta para ser commiteado.
+12. Si
+13. Si
+14. Veo lo que se modifico  y los commits que faltan.
+15. Quedo pollo.
