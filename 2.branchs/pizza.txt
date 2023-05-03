@@ -1,3 +1,4 @@
 queso
-salsa de tomate
+salsa de tomate 
+cebolla
 masa de pizza
