@@ -7,3 +7,15 @@ Sí, se puede evitar un conflicto:
 - manteniendo buena organizacion en el escritorio, con nombres de archivos y carpetas claros 
 - realizar de a pequeños cambios y verificar que esten bien en vez de cambios grandes 
 - trabajar en ramas separadas para que, si ocurre algun problema, no se arruine todo el proyecto y que sea mas facil de detectar y de arreglar
+
+PRACTICA 
+3.2.10 
+En el archivo "milanesa.txt" se reemplazó "lomo" por "pollo". 
+
+
+ La rama "principal" tenía "lomo" en esa línea, mientras que la rama "bife" tenía "bife". ahora la línea tiene "lomo" y "bife" en líneas separadas en distintas ramas. 
+
+
+
+
+
