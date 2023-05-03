@@ -1,0 +1,58 @@
+Ejercicio 1.1:
+1) Un repositorio local se inicializa utilizando el comando git init
+2) Se utiliza el comando "git rm -r" seguido del nombre del directorio
+3) Si, cualquier archivo agregado a un directorio que ya está siendo controlado por git tambien sera controlado por git.
+4) Para agregar un archivo al repositorio local se debe utilizar el comando git add
+5) Con el comando git status
+6) Para hacer un commit se utiliza el comando git commit
+7) Cuando hacemos un commit, lo que estamos haciendo es guardar los cambios de nuestro proyecto.
+
+
+Ejercicio 1.2:
+1.2.3: yo veo que esta sandwich en modificados y ya estaba commiteado desde antes, y esta el archivo que cree Felipe_Rawson.txt el cual no fue agregado a git aun.
+
+
+1.2.5: despues de hacer git add sandwich.txt el archivo paso de modified a estar en staging.
+
+1.2.7: despues de hacer el commit no se ve mas el archivo sandwich y solo se ve el Felipe_Rawson.txt
+
+1.2.9: El comando git log nos muestra el historial de los commits, los de arriba son los mas recientes.
+
+commit 3993fce026e3aa1173ad435806ac60f142e39f0f (HEAD -> Felipe_Rawson)
+Author: FelipeRawson <feliperawson111@gmail.com>
+Date:   Thu Apr 20 15:27:41 2023 -0300
+
+    Agrego salsas
+
+commit af0b9a22eb5a35d09bd3016689faf2c7f8036263
+Author: FelipeRawson <feliperawson111@gmail.com>
+Date:   Thu Apr 20 15:20:10 2023 -0300
+
+    Agrego mi sandwich.txt
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD, origin/2023, main, 2023)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01
+Author: Sebastian Iglesias <sebastian@getcaribou.com>
+Date:   Mon Apr 17 21:58:56 2023 -0300
+
+    Initial commit - repo setup
+
+commit 140733d1b371966335eace561a02d3464af47664
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Mon Apr 17 20:02:55 2023 -0300
+
+    Initial commit 
+
+1.2.10.1 el comando git log --oneline nos muestra los commits pero mucho mas resumido.
+1.2.10.2 el comando git log --stat nos muestra los commits pero con cambios mas especificos.
+
+1.2.14 Al correr el comando de "git ststus" no note ningun cambio, y al hacer git log --oneline simplemente note el cambio del nuevo commit con su respectivo mensaje.
+
+1.2.15 Al hacer git status me aparece que borre el archivo sandwich2_feo.txt ( deleted:    sandwich2_feo.txt)
+1.2.16 Al usar el comando git log --stat lo que veo es el resumen bien detallado de todos los commits que fui haciendo.
+
