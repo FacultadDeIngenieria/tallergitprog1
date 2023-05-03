@@ -1,0 +1,28 @@
+PARTE TEÓRICA
+---------------------------------
+3.1.1
+Un conflicto es un problema que ocurre generalmente cuando se intenta editar la misma linea desde 2 repositorios locales diferentes, o se intenta editar un archivo ya eliminado. Esto es algo bueno porque Git se asegura de no reescribir información por error, si Git lo hiciese de forma automática, se podría perder informacion valiosa o sobreescribir información inutil.
+
+3.1.2
+Si, por ejemplo, haciendo lo que la terminal te indique que hagas ("commitear" archivos que se mezclaron o que tiraban "error", en algunos casos) 
+
+
+PARTE PRÁCTICA
+----------------------------------
+3.2.10
+Observo que que se eliminó la palabra "lomo" y se agregó la palabra "pollo" en el archivo "milanesa.txt" en la branch "suprema". Y lo mismo en el archivo de la branch "bife", en  donde aparece que elimine "lomo" y agregué "bife".
+
+3.2.11
+Observo que no aparece ninguna de las versiones de "milanesa.txt" (pues todas estan commiteadas en 3 branchs diferentes). Solo aparece el archivo "sergio_morero.txt", pues es el que estoy editando con las respuestas de este ejercicio y, por lo tanto, aun no commitee.
+
+3.2.12
+Si, el merge funcionó.
+
+3.2.13
+No, el merge falló y me salió un Conflict de "content"(contenido), asumo que es porque en master ya existe el mismo archivo pero con otros cambios (los realizados al hacer merge "bife") y Git no quiere sobreescribir datos de forma automática.
+
+3.2.14
+Observo lo mismo que en el anterior "git status" pero con la diferencia de que ahora me "salta" que tengo caminos sin "mergear" completamente, además, me tira que el archivo "milanesa.txt" fue "both modified", lo que creo que significa que fue modificado en 2 branches diferentes, ocasionando que no se pueda hacer el merge automaticamente.
+
+3.2.15
+En el archivo aparecen tanto los cambios de las branchs "suprema" y "bife", pero no aparece la palabra "lomo"(es el unico cambio en el que ambos commits coinciden, ambos eliminaron esa palabra).
