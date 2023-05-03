@@ -1,0 +1,64 @@
+PARTE TEÓRICA
+-----------------------------------
+2.1.1
+Una branch es una rama, un conjunto de commits que se desprenden de otro ya creado. La Branch principal se suele llamar master/main, y las otras que derivan de esta se llaman "feature branches"
+
+2.1.2
+Pueden ser útitles porque permiten trabajan el mismo archivo desde diferentes computadoras a la vez, permite agregar diferentes características a la MAIN BRANCH y sirve para no superponer datos pre-existentes.
+
+2.1.3
+Una branch se crea mediante el comando "git branch" seguido del nombre que se le quiera dar a esa branch y, por ultimo, con el nombre de la branch desde la que surje.
+
+2.1.4
+Para poder cambiar de branch en branch se utiliza el comando "git checkout" + nombre del branch.
+
+2.1.5
+Una branch se elimina mediante el comando "git branch -d " seguido del nombre del branch que se quiere eliminar.
+
+2.1.6
+Con el comando "git checkout -b " + el nombre de la branch que se quiera crear (pienso que lo que hace este comando es buscar y dirigirte a la branch con ese nombre, siempre y cuando exista, en el caso contrario, crea una nueva con ese mismo nombre).
+
+2.1.7
+Un merge es una "fusión" entre 2 branches y sus respectivos commits, por lo general se da entre una "feature branch" (creada a partir de la branch principal) y la "main branch".
+
+2.1.8
+Un merge se realiza mediante el comando "git merge" seguido del nombre de la branch con la que se quiere "mergear" (la otra es en la que estamos parados).
+
+2.1.9
+Un tag es una nota que se le puede poner a un commit, ya sea para diferenciarlo de otros como para poder explicar que cambios/datos contiene ese commit.
+
+2.1.10
+Un tag se crea mediante el comando "git tag -a ´nombre del tag´ -m ´mensaje que se le quiere agregar al tag´ ".
+
+
+PARTE PRÁCTICA
+------------------------------------
+2.2.6
+Aparecen todos los commits (y sus comentarios) hechos en todo el proyecto, tanto los del "main branch", como los de "sergio_morero" y además, los de la branch actual "experimento".
+
+2.2.10
+Observo que ahora se agregó la nueva branch que creé y su commit agregado "Anana agregada". Además se ve como todas las branchs derivan de la "main branch", porque están marcadas con un "|/".
+
+2.2.13
+Observo que volví a cambiar de branch (aparece otro |/, indicando un cambio de branch), además de estar el commit recién hecho.
+
+2.2.15
+Al inicio no me dejaba hacer el merge, me pedía añadir archivos al repositorio, lo hice (pizza.txt) y, finalmente, se solucionó el conflicto y se pudo hacer el merge. El "git graph", haciendo que ahora las barritas rojas ("|"" y "|/") cambiasen a color verde, mostrando (pienso yo) que esa branch ahora se encuentra entrelazada con la main branch.
+
+2.2.16
+Tanto la branch "2023" como la branch "anana" estan "mergeadas" a la "main branch".
+
+2.2.18
+Observo que ahora la branch experimento (y los cambios que esta poseía) se encuentra conectada tanto con "main" como con "anana"
+
+2.2.19
+Tuve que hacer un merge manual, pues al intentar hacerlo de forma automática, ocurría un "conflict", que tuve que arreglar manualmente. El mensaje que me tiraba GitBash decía "Merging is not possible because you have unmerged files.hint: Fix them up in the work tree, and then use 'git add/rm <file>' as appropriate to mark resolution and make a commit.", hice lo que decía despues de "hint" y ambas branches pudieron "mergearse"
+
+2.2.20
+Las branches "mergeadas" a master/main son "2023", "anana" y "experimento"
+
+2.2.23
+Ahora la única branch "mergeada" a master/main es "2023", puesto que las otras 2 fueron borradas.
+
+2.2.24
+Observo que los commits siguen siendo los mismos que la última vez, solo que esta vez no está indicado de qué "branch" salió cada commit (es decir, aparecen los commits como si todos se hubiesen comitteado desde la "main branch").
