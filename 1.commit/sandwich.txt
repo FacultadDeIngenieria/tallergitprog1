@@ -1,10 +1,4 @@
-Pan
-Lechuga
-Tomate
-Jamon
-Queso
-medallón de carne
-Ketchup
-Chimichurri
-Mayonesa
-Pan
+pan
+queso
+medallón
+pan
