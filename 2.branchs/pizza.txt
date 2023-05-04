@@ -1,3 +1,5 @@
+oregano
+albahaca
 queso
 <<<<<<< HEAD
 cebolla
