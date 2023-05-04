@@ -1,0 +1,19 @@
+2.1.1 Un branch es una copia de un proyecto que te permite realizar cambios en el proyecto sin afectar el código principal. 
+2.1.2 Son útiles cuando trabajas en nuevas funcionalidades o arreglos de errores sin afectar al código existente.
+2.1.3 con el comando git Branch se crea una nueva Branch
+2.1.4con el comando git checkout y el nombre del la Branch
+2.1.5 con git Branch -d
+2.1.6 git brach -b
+2.1.7 Un merge es la combinación de cambios de un branch en otro. Un tag es una etiqueta que se utiliza para marcar versiones específicas del código. 
+2.1.9 es una referencia a un commit 
+2.1.10 con git tag  se crea un tag
+
+
+2.2.6 con el comando git graph podemos observar el historial de commits que se han realizado
+2.2.10 se puede ver el cambio de Branch y los cambios que he realizado
+2.2.13 podemos ver que como estoy en main se ve de forma diferente en graph
+2.2.14 observó los cambio que hecho antes
+2.2.16 estan mergeadas los Branch Tomas_Monteiro, anana y experimento
+2.2.23 estan mergeadas solo Tomas_Monteiro
+2.2.24 ahora no se ven los Branch que borre
+

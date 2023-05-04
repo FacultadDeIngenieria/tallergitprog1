@@ -1,0 +1,11 @@
+3.1.1 Un conflicto en Git ocurre cuando hay cambios en el mismo archivo en diferentes ramas y no se pueden fusionar automáticamente. Para evitar conflictos, trabaja en ramas separadas y fusiona con frecuencia. Si ocurre un conflicto, debes decidir qué cambios mantener y cómo combinarlos. Los conflictos pueden ser vistos como oportunidades para mejorar el código, pero también pueden retrasar el trabajo.
+3.1.2 Trabajar en ramas separadas.
+Fusionar con frecuencia.
+Comunica cambios importantes.
+Usar herramientas de control de versiones
+3.2.10 puedo ver los cambios que hice
+3.2.11 puedo ver que milanesa a sido modificado
+3.2.12 si funciono
+3.2.13 no funciona ya que si hacia merg se sobreescribian y se cancelo solo.
+3.2.15 puedo ver bife
+

@@ -1,0 +1,27 @@
+1.1 Git init
+1.2 Git git rm --cached
+1.3 si ese archivo esta siendo controlado por git si, este seguira siendo controlado por git.
+1.4 Git add
+1.5 Git status
+1.6 Git commit -m 
+1.7 Un commit es como hacer una foto de los cambios que hice en mis archivos, y guardarlo en el historial del proyecto. Así puedo volver a versiones anteriores y compartir los con mis compañeros.
+
+
+
+
+
+1.2.3 veo que sandiwch.txt esta modificado, ya que fue commiteado antes y hay un archivo tomas_monteiro.txt que es nuevo y nunca fue agregado a git.
+
+1.2.5 Despues de hacer git add sandwich. txt, el archivo paso a estar en staging en Lugar de modified. Y sigo viendo mi txt en rojo, porque esta en modified
+
+1.2.7 Despues de hacer el commit, no se ve más el archivo sandwich y solo se ve el Tomas_monteiro. txt.
+
+1.2.9 git log muestra una lista de cambios que se han realizado en el repositorio, aparece del mas reciente al mas antiguo 
+
+1.2.11 este comando muestra la diferencia entre los archivos y aparece en diferentes colores segun quien lo edito 
+
+1.2.14 muestra que no hay cambios pendientes despues de hacer un commit con el cambio de nombre del archivo, mientras que la salida de git log --oneline muestra una entrada adicional para el nuevo commit.
+
+1.2.15 el oneline nos confirma que el archivo ha sido borrado de forma exitosa
+
+1.2.16 muestra el el archivo ha sido borrado 
