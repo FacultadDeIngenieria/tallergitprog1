@@ -1,0 +1,217 @@
+1. git init
+2. git rm
+3. No
+4. fetch
+5. git diff
+6. git commit
+7. guarda tus cambios en un estado previo al final
+
+""
+On branch Santiago_Garrote
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   sandwich.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Santiago_Garrote.txt
+""
+En la branch Santiago_Garrote hay dos archivos, sandwich.txt y este en el que se esta escribiendo, ninguno de estos esta commited pero Santiago_Garrote no esta ni trackeado
+
+""
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   sandwich.txt
+""
+Ahora sandwich fue actualizado y solo falta que sea commited
+""
+On branch Santiago_Garrote
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Santiago_Garrote.txt
+
+""
+Ahora sandiwch.txt esta commited pero Santiago_Garrote sigue igual
+
+""
+commit f7cd97fca1f8bf2cd5a01378cec1b6c583ac1638 (HEAD -> Santiago_Garrote)
+Author: Santiago-Garrote <sgarrote@mail.austral.edu.ar>
+Date:   Thu Apr 20 15:20:41 2023 -0300
+
+    Agrego salsas
+
+commit 72324a4979f3775744c634e2f0de2553765fe0fa
+Author: Santiago-Garrote <sgarrote@mail.austral.edu.ar>
+Date:   Thu Apr 20 15:14:53 2023 -0300
+
+    Agrego mi sandwich.txt
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD, main, 2023)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01
+Author: Sebastian Iglesias <sebastian@getcaribou.com>
+Date:   Mon Apr 17 21:58:56 2023 -0300
+
+    Initial commit - repo setup
+
+commit 140733d1b371966335eace561a02d3464af47664
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Mon Apr 17 20:02:55 2023 -0300
+
+    Initial commit
+""
+Esto explica todos los commits que fueron realizados en esta branch mostrando los comentarios de los commits como "agrego salsas" o "Agrego mi sandwich", va desde el ultimo cambio hasta el primero
+
+""
+f7cd97f (HEAD -> Santiago_Garrote) Agrego salsas
+72324a4 Agrego mi sandwich.txt
+579a34f (origin/main, origin/HEAD, main, 2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+786904f Initial commit - repo setup
+140733d Initial commit
+""
+--oneline Hace lo mismo que log pero brinda la informacion mas resumida, en una linea
+
+""
+commit f7cd97fca1f8bf2cd5a01378cec1b6c583ac1638 (HEAD -> Santiago_Garrote)
+commit f7cd97fca1f8bf2cd5a01378cec1b6c583ac1638 (HEAD -> Santiago_Garrote)
+Author: Santiago-Garrote <sgarrote@mail.austral.edu.ar>
+Date:   Thu Apr 20 15:20:41 2023 -0300
+
+    Agrego salsas
+
+ 1.commit/sandwich.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f7cd97fca1f8bf2cd5a01378cec1b6c583ac1638 (HEAD -> Santiago_Garrote)
+Author: Santiago-Garrote <sgarrote@mail.austral.edu.ar>
+Date:   Thu Apr 20 15:20:41 2023 -0300
+
+    Agrego salsas
+
+ 1.commit/sandwich.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 72324a4979f3775744c634e2f0de2553765fe0fa
+Author: Santiago-Garrote <sgarrote@mail.austral.edu.ar>
+Date:   Thu Apr 20 15:14:53 2023 -0300
+
+    Agrego mi sandwich.txt
+
+ 1.commit/sandwich.txt | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD, main, 2023)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+ README.md | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01
+Author: Sebastian Iglesias <sebastian@getcaribou.com>
+Date:   Mon Apr 17 21:58:56 2023 -0300
+
+    Initial commit - repo setup
+
+ .gitignore               |  2 ++
+ 1.commit/README.md       | 55 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1.commit/sandwich.txt    |  4 ++++
+ 2.branchs/README.md      | 78 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2.branchs/pizza.txt      |  3 +++
+ 3.conflicts/README.md    | 48 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 3.conflicts/milanesa.txt |  2 ++
+ README.md                | 55 +++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 8 files changed, 245 insertions(+), 2 deletions(-)
+
+commit 140733d1b371966335eace561a02d3464af47664
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Mon Apr 17 20:02:55 2023 -0300
+
+    Initial commit
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+""
+--stat Hace lo mismo que log pero con muchisima mas precision e informacion
+
+""
+diff --git a/1.commit/sandwich.txt b/1.commit/sandwich.txt
+index eb7cbc2..24077cd 100644
+--- a/1.commit/sandwich.txt
++++ b/1.commit/sandwich.txt
+@@ -2,6 +2,6 @@ pan
+ queso
+ bacon
+ jamon
+-ketchup
+ medallón
++ketchup
+ pan
+""
+Me indica las diferencias entre los dos commits y donde y cuantas cosas se cambiaron
+
+"
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    sandwich2.txt -> sandwich_feo.txt
+"
+Muestra que un nombre fue renombrad, muestra el nombre antigua y el actual
+"
+31548f9 (HEAD -> Santiago_Garrote) sandiwch 2
+"
+Muestra la creacion de sandwich 2
+"
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    sandwich2.txt
+"
+ Muestra que falta commitear el borrado del archivo
+"
+31548f9 (HEAD -> Santiago_Garrote) sandiwch 2
+"
+Sigue igual que antes
+
+"
+commit 788f1b5a66650bffdf2a9f74e1db5d505ab3f9a1 (HEAD -> Santiago_Garrote)
+Author: Santiago-Garrote <sgarrote@mail.austral.edu.ar>
+Date:   Thu Apr 27 14:35:03 2023 -0300
+
+    Deleted sandwich 2
+
+ 1.commit/sandwich2.txt | 4 ----
+ 1 file changed, 4 deletions(-)
+
+commit 31548f9182528f1f3fa3b7fc159b5c6bb1dd031c
+Author: Santiago-Garrote <sgarrote@mail.austral.edu.ar>
+Date:   Thu Apr 27 14:25:51 2023 -0300
+
+    sandiwch 2
+
+ 1.commit/sandwich2.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit f7cd97fca1f8bf2cd5a01378cec1b6c583ac1638
+Author: Santiago-Garrote <sgarrote@mail.austral.edu.ar>
+Date:   Thu Apr 20 15:20:41 2023 -0300
+
+    Agrego salsas
+
+ 1.commit/sandwich.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 72324a4979f3775744c634e2f0de2553765fe0fa
+Author: Santiago-Garrote <sgarrote@mail.austral.edu.ar>
+Date:   Thu Apr 20 15:14:53 2023 -0300
+
+    Agrego mi sandwich.txt
+
+ 1.commit/sandwich.txt | 5 ++++-
+"
+Muestra todo el trabajo hecho en el repositorio
