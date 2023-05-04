@@ -1,5 +1,5 @@
 1.1 Preguntas:
-1.
+1. 
 2.
 3.
 4.
@@ -49,6 +49,6 @@ Date:   Mon Apr 17 20:02:55 2023 -0300
 10.2 El git log --stat es el git log pero con más detalles
 11 el git diff muestra los diferentes "origenes" de los datos
 11.1 el git difftool --tool=meld <hash> te deja comparar y editar files
-14
-15
-16
+14 El nombre cambió de sandwich2.txt a sandwich2_feo.txt 
+15 ya no aparece el sandwich2_feo
+16 Nos muestra los cambios hechos
