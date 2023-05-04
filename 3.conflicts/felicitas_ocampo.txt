@@ -1,0 +1,24 @@
+3.conflicts
+3.1 preguntas
+1.un conflicto ocurre cuando hay dos o mas cambios realizados en el mismo archivo en diferentes ramas y se intenta hacer un merge de esas ramas. 
+los conflictos pueden ser buenos o malos. los conflictos son parte del desarrollo colaborativo en equipo y al haber un conflicto esto puede significar que los miembros del equipo estan funcionando en colaboracion. sin embargo, los conflictos pueden atrasar el proceso del desarrollo.
+2.los conflictos se pueden evitar utilizando practicas de desarrollo como el desarrollo en ramas separadas, la comunicacion clara y frecuente entre los miembros.ademas de esto, se pueden utilizar herramientas de colaboracion y gestion de de proyectos para ayudar a gestionar el flujo de trabajo. 
+
+3.2 
+10. lo que se puede observar es la diferencia entre la rama main y la rama suprema. 
+tambien muestra que el archivo "milanesa.txt" ha sido modificado en ambas ramas y que hay un conflicto. 
+aparte de esto, muestra con un signo "-" el elemento que se elimino y con el signo "+" el elemento que se agrego.  
+11. lo que se puede observar luego de hacer git status es que dentro de la branch "main" se realizaron cambios en el archivo "milanesa.txt" que no se han agregado para ser confirmados en el proximo commit. 
+12. el comando git merge bife funciono.
+13. el comando git merge suprema no funciono, por que hay un problemaque tiene que ser resuelto antes de que se puede hacer un merge. 
+14. lo que se observa luego de realizar el comando git status, es que estoy parada en la rama "main", que la rama local "main" tiene un commit que aun no se ha subido al repositorio remoto "origin/main".
+ademas de esto, muestra que hay conflictos que aun no han sido resueltos, los arcivos estan en un estado que se llama "unmerged paths".se debe solucionar el problema y luego ejecutar el comando "git commit". 
+15. 
+pan rallado
+<<<<<<< HEAD
+bife
+=======
+pollo
+>>>>>>> suprema
+
+lo que se observa es que el archivo "milanesa.txt" tiene un problema de merge. las lineas entre "<<<< HEAD" y "===", representan los cambios que se hicieron en la rama "main", y entre las lineas "===" y ">>>>> suprema" representa los cambios de la rama "suprema". 
