@@ -1,0 +1,8 @@
+1- Surge un conflicto cuando dos ramas independientes han editado la misma línea de un archivo o cuando un archivo se ha eliminado en una rama, pero editado en la otra. No es bueno ni malo
+2- Normalmente los conflictos surgen cuando dos personas han cambiado las mismas líneas de un archivo o si un desarrollador ha eliminado un archivo mientras otro lo estaba modificando.
+3.10- en el git diff master suprema se observan lineas de texto y en git diff master bife no se observa nada
+3.11- se obrserva que estoy en la branch master y que milanesa.txt esta modificada
+3.12- si funciona
+3.13- no funciona
+3.14- en el git status se observa mi archivo txt con mi nombre y que milanesa txt fue modificada
+3.15- observo pan rallado y bife 

@@ -1,0 +1,20 @@
+1- un grupo de commits que crea una sola narrativa es un branch
+2- pueden ser ultiles porque permiten crear listas o eleminar ramas del sistema segun sea necesario
+3- para crear una branch hay que poner el comando git branch
+4- una branch se cambia con git checkout
+5- una branch se elimina con git branch -d
+6- una branch se crea y se cambia en un solo paso git checkout -b
+7- una merge permite tomar las líneas independientes de desarrollo creadas por git branch e integrarlas en una sola rama.
+8- se realiza un merge usando el comando git merge
+9- etiquetas de refencias que aputan a puntos concretos en el historial de git
+10- un tag se crea usando git tag
+2.6- se ven los ultimos commits de los mas nuevos a los mas viejos
+2.10- se observa los ultimos commits que hice despues de agregar el anana
+2.13- se observa que hice un commit desde la branch master con el nombre pizza con cebolla
+2.15- se observa como una union 
+2.16- estan mergeadas 2023, main, anana, las cuales estan mergeadas a master
+2.18- se observa que se creo un commit con nombre experimento
+2.19- si tuve que crear el merge de anana y master
+2.20- estan mergeadas las de antes y ademas la de experimento
+2.23- las que estan mergeadas son 2023 y main
+2.24- se orbservan los nuevos commits menos lo que elimene

@@ -1,0 +1,20 @@
+1.1
+1- se inicia con el comando git init
+2- usando el comando rm -rf.git
+3- si
+4- usando el comando git add
+5- git status
+6- git commit
+7- captura una instantánea de los cambios preparados en ese momento del proyecto
+
+
+ 
+3- sandiwch.txt esta modificado, ya fue comitiado antes y hay un archivo ignacio_pacheco.txt
+5- despues de poner git status, sandwich.txt paso a estar en el stage 
+7- no hay ningun estado comiteado, por eso no se ve el archivo sandwich.txt
+9- los commits aparecen en el orden de el mas reciente al mas viejo, ahora aparece primero el "agrego las salsas"
+10- en git log --oneline esta ordenado de mayor a menor con los commits mas recientes y en git log --stat tiene todos los registros con hora y fecha, tambien que modificanes hiciste de los commits ejecutados
+11.1- dentro del git difftool se puede observar la carpeta 1.commit/sandwich.txt, depues de poner git difftool --tool=meld con 2 codigos, se puede observar todas los archivos y lo que contienen 
+14- el comando git status hago el cambio de nombre que aparece como un nuevo archivo y en git log --oneline aparece el nuevo archivo 
+15- en la salida del comando git status muestra en una linea el archivo
+16- luego de ver la bitacora usando git log --stat veo la lista de todos los commits que he realizado por fecha y hora.
