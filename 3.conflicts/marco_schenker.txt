@@ -1,0 +1,12 @@
+3.1 
+1. Los conflictos se crean cuando dos desarrolladores han cambiado las mismas líneas en un archivo, o si un desarrollador eliminó un archivo mientras otro lo estaba modificando. En estos casos, Git no puede determinar automáticamente qué es correcto, y surge un "conflicto"
+Es bueno que existan conflictos de Git: Git no sobrescribirá silenciosamente una de dos modificaciones diferentes.
+2.Para evitar que se produzcan conflictos, los desarrolladores trabajan en ramas aisladas independientes. La función principal del comando git merge es combinar ramas independientes y resolver los cambios en conflicto.
+
+3.2 
+10. observo los cambios que hice en milanesa.txt, elimine lomo, y agregue bife, y con git diff main bife no veo nada. 
+11. Cuando cambie de rama y ejecuto git status lo que observo es al archivo milanesa.txt en el estado modificado
+12. Si
+13. No
+14. Luego de volver a ejecutar git status, observo los mismo que en el paso 11, que la rama esta adelantada a la main por dos commits y que milanesa.txt se modifico.
+15. Veo el pan rallado y bife
