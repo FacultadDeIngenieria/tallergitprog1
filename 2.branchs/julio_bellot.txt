@@ -1,0 +1,18 @@
+1. Es una rama del trabajo principal el cual es trabajado a parte
+2. Porque así podes trabajar de forma remota cada parte sin afectar el trabajo final hasta que unan las branch
+3. Con el comando git branch <nombre>
+4. Con el comando git checkout <nombre>
+5. Con el comando git branch -d <nombre> / git branch -D <nombre> la diferencia entre la "d" y la "D" es que la mayuscula fuerza la eliminación sin importar que tenga algo que no commiteaste
+6.Con el comando git checkout -b <nombre>
+7. Te une dos brachs
+8. Con el comando git merge 
+9. Es un comando con el cual podes ver los cambios más importantes de lo que se hizo
+10. con el comando git tag -a <nombre>
+-------------------------------------------------------------
+6. Puedo observar que tengo una separación de branch con los commits que se hicieron
+10. Puedo ver los commits que se hicieron en el branch anana
+13. los commits que hubierón en la branch master
+15. A simple vista no se ve ningun cambio solo que la branch anana se unio a master
+18. Lo mismo que en la anterios la union de las branchs a la principal
+19. automatico, porque había un conflicto el cual el both lo soluciono
+24. No vio cambio alguno
