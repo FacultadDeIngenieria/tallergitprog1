@@ -1,8 +1,3 @@
-oregano
-albahaca
 queso
-anana
 salsa de tomate
-cebolla
-experimento_master
 masa de pizza
