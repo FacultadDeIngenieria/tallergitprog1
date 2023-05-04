@@ -1,11 +1,4 @@
 pan
 queso
-jamon
 medallón
-lechuga
-tomate
-huevo
 pan
-
-salsa: 
-barbacoa
