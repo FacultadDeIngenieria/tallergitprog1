@@ -1,13 +1,4 @@
-1.1 Preguntas:
-1. 
-2.
-3.
-4.
-5.
-6.
-7.
-
-1.2 Ejercicio Práctico
+1 Ejercicio Práctico
 3. Te dice que uses el "git add <file>..." para guardar los cambios hechos a dicho file o que uses "git restore <file>..." para borrar los combios hechos al file.
 5. Te pone que o no hay un file sin guardar o que el francisco_donzelli.txt queda sin guardar
 7. ya no se ve el sandwich.txt, solo aparece francisco_donzelli.txt
