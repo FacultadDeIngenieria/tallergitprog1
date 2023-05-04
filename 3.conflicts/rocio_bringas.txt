@@ -15,6 +15,9 @@ En el archivo "milanesa.txt" se reemplazó "lomo" por "pollo".
 
  La rama "principal" tenía "lomo" en esa línea, mientras que la rama "bife" tenía "bife". ahora la línea tiene "lomo" y "bife" en líneas separadas en distintas ramas. 
 
+ 3.2.12 
+ Si, se pudo hacer el merge automaticamente sin conflictos.
+
 
 
 
