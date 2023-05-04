@@ -1,0 +1,76 @@
+Preguntas:
+a.	¿Cómo se inicializa un repositorio local? (¿qué comando se debe ejecutar?)
+b.	¿Cómo hago para que un directorio deje de ser controlado por git? (¿qué comando se debe ejecutar?)
+c.	Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+d.	¿Qué comando se utiliza para agregar un archivo al repositorio local?
+e.	¿Cómo determino que archivos fueron modificados? (¿qué comando se debe ejecutar?)
+f.	¿Qué comando se utiliza para hacer un commit? 
+g.	En sus propias palabras, ¿qué es un commit?
+
+Respuesta:
+a.	Para inicializar un nuevo repositorio local se usa el comando “git init”, se debe ejecutar el comando desde Git en CMD creará un nuevo subdirectorio.
+
+b.	Para eliminar un directorio de Git sin eliminar los archivos se debe usar el comando “git rm”, después para confirmar la eliminación se usa el comando “git commit -m” y terminar con “rm -rf directorio” para poder eliminarlo del sistema de archivos local.
+
+c.	Para poder confirmar que el archivo está siendo controlado por Git, puedes usar el comando "git status" en la terminal dentro del directorio en cuestión. Si el archivo es nuevo, Git lo mostrará como un archivo sin seguimiento, pero si el archivo ya existía y fue modificado, Git lo mostrará como un archivo modificado.
+
+d.	El comando "git add nombre del archivo” para agregar el archivo especificado y para agregar todos los archivos modificados en tu directorio actual, utiliza el comando "git add" (agregando antes el código de la siguiente pregunta para saber si el archivo se modificó o no). Por último, se utiliza el comando "git commit -m”, lo que pasa después es que aparece en el historial de modificaciones. Para terminar, se tiene que poner “git push” lo que hace es mandar al repositorio remoto.
+
+e.	Para poder determinar si un archivo se debe usar el comando “git status”. Al ejecutar el comando lo que transcurre se crea un listado de los archivos que se han sido modificados desde el último “commit“ pero los archivos modificados se mostrarían a parte con información adicional con la fecha de la última modificación y el nombre de la rama actual. Para ver los cambios realizados en el archivo “git diff (nombre del archivo)”.
+
+f.	Para usar el comando “commit” en Git se debe usar “git commit”. Este comando se usa después de haber realizado cambios en un repositorio local y haberlos agregado al área de preparación utilizando el comando “git add”.
+
+g.	Un commit es una acción en la que se guardan los cambios realizados en un repositorio de versionamiento de código. En Git, un commit representa un punto en la historia del proyecto donde se han realizado ciertos cambios en uno o varios archivos, y se registra una descripción o mensaje que describe de manera breve los cambios realizados.
+Practica:
+Para que sirve: La salida del comando explica que ambos archivos estan en estado "modified", sandwich.txt aparece arriba porque ya habia sido commiteado antes, mientras que el archivo enrique_fernandez aún no ha sido agregado al repositorio. Necesitaría hacerle un git add.
+
+1.2.5
+Para que sirve: Ahora el archivo sandwich.txt está en color verde porque está en la fase "staged", osea, está listo para ser commiteado.
+
+1.2.7
+Para que sirve: Ahora el archivo sandwich.txt no aparece mas en el git status, pues este ya está commiteado y subido al repositorio.
+
+1.2.9
+Author: SherrifAUS <128739815+SherrifAUS@users.noreply.github.com>
+Date:   Thu Apr 21 19:12:43 2023 -0300
+
+    Agrego salsas
+
+commit  ddb0dc305f30426edf6ea592e1eb9d7a53ab9d5e
+Author: SherrifAUS <128739815+SherrifAUS@users.noreply.github.com>
+Date:   Thu Apr 25 19:12:43 2023 -0300
+
+    Agrego mi sandwich.txt
+
+Author: SherrifAUS <128739815+SherrifAUS@users.noreply.github.com>
+Date:   Thu Apr 27 17:12:43 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+Para que sirve: Git log muestra todos los commits hechos, cada uno con su "codigo/dni" único, estan ordenados del mas reciente (arriba) al mas viejeo (abajo).
+    Initial commit
+
+1.2.10.1
+Para que sirve: Te explica cada commit hecho en una sola línea, carece de ciertos datos, como el creador y la fecha, igualmente siguen apareciendo de arriba a abajo, del mas reciente al más viejo
+
+Para que sirve: El registro de Git muestra todas las confirmaciones, cada una con su "código/ID" único, ordenadas desde la más reciente (arriba) a la más antigua (abajo).
+    compromiso inicial
+
+1.2.10.1
+Para que sirve: explica cada compromiso realizado en una línea, faltan algunos datos como el creador y la fecha, todavía se muestran de arriba a abajo, del más reciente al más antiguo
+
+1.2.10.2
+Para que sirve: este registro de git muestra más datos que el git original, incluida la cantidad de cambios (adiciones, eliminaciones, etc.) realizados
+
+1.2.11
+Para que sirve: Todos los cambios agregados a los archivos que se comparan se muestran (verde), los componentes eliminados/eliminados se muestran en rojo.
+
+1.2.14
+Para que sirve: nada cambió porque cuando el archivo se volvió a confirmar, no se reflejaron cambios en el "estado de git", sino en el registro de git
+
+
+1.2.15
+Para qué sirve: ahora, cuando hacemos "git status", vemos que "sandich2_feo" se eliminó del repositorio; sin embargo, en git log --oneline, la confirmación del archivo antes de la eliminación aún se guarda.
+
+1.2.16
+Qué hace: muestra todas las confirmaciones (sandiwch, sandwich2 y sandwichugly, en este último caso también aparece el nombre del archivo antes de que se renombrara), incluidas las confirmaciones en las que se eliminó el archivo (porque ya había una versión guardada del archivo).
