@@ -1,0 +1,24 @@
+preguntas teoricas:
+1. un branch es una rama o division del codigo en git
+2. pueden ser utiles los branches porque son de gran utilidad para que varios programadores puedan trabajar en el codigo de un proyecto al mismo tiempo
+3.para crear un branch tenemos que utilizar el comando: git branch nombre de la branch
+4. para cambiar de una branch a otra, debemos haer uso del comando: git branch -a y luego git checkout (nombre de la otra branch). 
+5. para eliminar una branch, usamos el comando: git branch -d (nombre de branch a eliminar)
+6. para crear una nueva branch y cambiar a esa: git switch -c 
+7. un merge es la combinacion de branches
+8. para realizar un merge, se hace uso del comando: git merge
+9. los tags son etiquetas que se usan para poder señalar algun dato en una parte del codigo, como la version. 
+10. para crear un tag, hay que escribir el comando: git tag -a el nombre del tag -m "y un comentario"
+
+2.2.6. con el comando git graph puedo observar todos comentarios de los archivos que fueron creados anteriormente en las branches y que estan separados por branches tambien. 
+2.2.10 con el git graph veo todos los comentarios de todos los archivos de todas las branches como antes, pero ahora tambien veo el comentario del ultimo commit
+2.2.13 usando el git graph logro observar que ahora aparece el comentario del ultimo commit el cual esta en la branch main
+2.2.15 cuando utilizo el comando git graph, puedo observar que las distintas branches tienen lineas entre si,  uniendolas
+2.2.16 las branches que estan "mergeadas" a la branch main, son la branch anana y la branch 2023
+2.2.18 con git graph es posible ver como las branches estan unidas, y ahora se agrega tambien la branch experimento.
+2.2.19 el git merge lo tuve que hacer manual, debido a que habia un error en el archivo pizza.txt. en el cual que se rescribieron los todas las palabras escritas en los archivos pizza.txt 
+2.2.20 las branches que estan mergeadas a main son: 2023, anana y experimento. 
+2.2.23 la unica branch mergeada a main es la branch 2023
+2.2.24 cuando corro el comando git graph, observo que aparecen los comentarios de las branches 2023 y Enzo_Bersano y Main.
+
+x

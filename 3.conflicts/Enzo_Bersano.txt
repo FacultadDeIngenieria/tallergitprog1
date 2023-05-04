@@ -1,0 +1,10 @@
+preguntas teoricas:
+1. un conflicto es un estado en el que 2 branches han sido mergeadas y esto genera que haya un problema porque hay palabras que han sido borradas o editadas en una branch y en otra no, o se ha editado la misma linea de comandos al mismo tiempo por 2 programadores distintos.
+2. un conflicto se puede evitar, intentando editar los archivos antes de mergear las branches. tambien, los programadores pueden trabajar en ramas aisladas e independientes de las otras. 
+
+3.2.10 con el comando git diff main suprema, puedo ver que aparecen palabras en rojo(las que no aparecen en un archivo y si en otro) y verdes(que aparecen en los 2 archivos comparados). ademas, cuando corro el comando git diff main bife, no observo nada.
+3.2.11 con el comando git status, puedo ver que aparece el archivo Enzo_Bersano.txt como untracked files y me recomienda realizar un git add.
+3.2.12 si, el git merge bife funciono automaticamente
+3.2.13 git merge suprema no funciono, me aparece que tengo que solucionar el problema manualmente.
+3.2.14 observo que mis archivos milanesa.txt y Enzo_Bersano.txt aparecen modificados, y el archivo pizza.txt esta listo para commitear.
+3.2.15 puedo observar que en el archivo aparece tanto el pollo como el bife y un par de signos igual y signos al lado de nombres de branches.
