@@ -1,6 +1,2 @@
-HEAD
 pan rallado
-bife
-
-pollo
-suprema
+lomo
