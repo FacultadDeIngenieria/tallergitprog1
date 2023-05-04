@@ -1,0 +1,64 @@
+2.1. Preguntas
+
+¿Qué es un branch?
+
+En Git, una rama o "branch" es una línea de desarrollo independiente que permite trabajar en diferentes versiones de un proyecto al mismo tiempo. Cada rama se representa como una secuencia de confirmaciones (commits) y puede tener su propio historial de confirmaciones.
+La rama principal en Git se llama "master", pero puedes crear tantas ramas como necesites para trabajar en diferentes funcionalidades o características de tu proyecto. Al crear una nueva rama, se crea una copia exacta de la rama actual en la que estás trabajando. Luego, puedes hacer cambios en la nueva rama sin afectar la rama original.
+Una vez que hayas terminado de trabajar en la nueva funcionalidad, puedes fusionar la rama con la rama principal. Esto combinará los cambios realizados en la rama secundaria con la rama principal y creará una nueva confirmación que incluye ambos cambios.
+
+¿Por qué pueden ser útiles los branches?
+
+En primer lugar, las branches permiten que varios desarrolladores trabajen en diferentes funcionalidades o características de un proyecto de forma simultánea. Esto reduce el tiempo de desarrollo y evita conflictos en el código. Es decir, permite desarrollo paralelo.
+Por otro lado, Las branches permiten experimentar con nuevas funcionalidades o cambios sin afectar la rama principal del proyecto. Esto permite probar diferentes ideas o soluciones antes de integrarlas al proyecto principal.
+Control de versiones: Las branches permiten mantener diferentes versiones de un proyecto en paralelo, lo que facilita el mantenimiento y la corrección de errores en versiones antiguas.
+Por ultimo, las branches permiten que diferentes equipos de trabajo trabajen en diferentes partes del proyecto al mismo tiempo, y luego se fusionen las ramas para crear una versión completa del proyecto.
+
+¿Cómo se crea una branch?
+
+Para crear una nueva rama en Git, puedes utilizar el comando "git branch" seguido del nombre de la nueva rama. Este comando creará una nueva rama en Git, pero seguirás trabajando en la rama actual. Para cambiar a la nueva rama, debes utilizar el comando "git checkout" seguido del nombre de la rama. También puedes utilizar el comando "git checkout -b" para crear y cambiar a una nueva rama en un solo paso. 
+
+¿Cómo se cambia a una branch?
+
+Como mencione anteriormente, para cambiar a una rama, debes utilizar "git checkout" seguido del nombre de la rama y si quieres simplificar este paso puedes utilizar el comando "git checkout -b" para crear y cambia r auna branch en un solo paso.
+Si deseas ver una lista de todas las ramas en el repositorio y ver en cuál estás actualmente, puedes utilizar el comando "git branch". El nombre de la rama actual se mostrará con un asterisco (*) al lado.
+
+¿Cómo se elimina una branch?
+
+Para eliminar una rama en Git, debes utilizar el comando "git branch -d" seguido del nombre de la rama que deseas eliminar. Este comando eliminará la rama "nueva-rama" si no hay ningún commit en ella que no haya sido fusionado en otra rama.
+Si deseas forzar la eliminación de una rama incluso si no se han fusionado todos los commits, puedes utilizar el comando "git branch -D" seguido del nombre de la rama. 
+
+¿Cómo se crea una branch y se cambia a ella en un solo paso?
+
+Como mencione en otra pregunta, para crear y cambiar a una nueva rama en un solo paso debes aplicar el comando "git checkout -b".
+
+¿Qué es un merge?
+
+En Git, un "merge" es el proceso de combinar cambios de una rama a otra. Cuando se realiza un merge, Git combina los cambios realizados en una rama (la "rama de origen") con los cambios realizados en otra rama (la "rama de destino").
+El merge es una operación importante en Git porque permite unir el trabajo de varias personas en un solo conjunto de cambios. Si los cambios son en diferentes partes del código, el proceso de merge puede ser automático y Git puede realizar la combinación de manera segura. Sin embargo, si hay cambios en la misma parte del código, puede haber conflictos que requieren una intervención manual para resolverlos.
+
+¿Cómo se realiza un merge?
+
+Primero debes asegurarte de estar en la rama de destino, es decir, a la que quieres fusionar los cambios. A continuación, debes ejecutar el comando "git merge <nombre-de-la-rama-de-origen>" para fusionar la rama de origen con la rama de destino. si hay cambios conflictivos en la misma parte del código en ambas ramas, Git no puede fusionar automáticamente los cambios y te pedirá que resuelvas los conflictos manualmente. Git te mostrará los archivos que tienen conflictos y te pedirá que edites manualmente estos archivos para elegir qué cambios deseas mantener y cuáles deseas descartar.
+Una vez que hayas resuelto cualquier conflicto, debes confirmar el merge usando el comando "git commit". Git abrirá un mensaje de confirmación predeterminado que puedes editar si lo deseas.
+
+¿Que es un tag?
+
+En el contexto de Git, un tag es una referencia a un commit específico en el historial de un repositorio. Se utiliza para marcar puntos específicos en la historia de un proyecto, como versiones estables o hitos importantes.
+Un tag en Git es similar a una rama (branch), ya que ambos son punteros a un commit en la historia de un repositorio, pero la diferencia es que las ramas se utilizan para desarrollar nuevas funcionalidades y mantener diferentes versiones del código en paralelo, mientras que los tags se utilizan para marcar puntos específicos en el historial de un proyecto.
+
+¿Cómo se crea un tag?
+Asegúrate de estar en la rama correcta del repositorio donde quieres crear el tag. Si quieres crear un tag para marcar un commit específico, utiliza el comando git log para encontrar el hash del commit que deseas etiquetar. Una vez que tengas el hash del commit, utiliza el comando git tag seguido del nombre del tag que deseas crear y el hash del commit que deseas etiquetar. Para compartir el tag con otros usuarios o repositorios, utiliza el comando git push --tags. 
+
+2.2. Ejercicio Práctico
+2.2.6 Cuando corro el comando "git graph" veo una representacion visual del historial de cambios que se muestran los diferentes commits, ramas y etiquetas. En mi caso, me muestra lo mismo que cuando corro el comando "git log--oneline", es decir, es un resumen del historial de commits realizados dentro de la branch "experimento".
+2.2.10 Observo nuevamente el historial de cambios realizados. Esta vez, como cambie de branch, de alguna manera el ultimo cambio "contiene" al resto ya que estan dentro de la branch "anana" y los demas commits estan acompanados por una barra de color rojo ya que no son commits realizados en esta branch. Es importante tener en cuenta que, al cambiar de rama, estás cambiando el punto de referencia para el git graph, por lo que la visualización del historial de cambios puede ser diferente entre una rama y otra, incluso si comparten algunos commits en común. Antes, el commit experimento era el principal y el cual estaba acompanado por la palabra "head" y ahora esto sucede con anana. Al ser ramas separadas, lo que haga en una no influye lo que haga en la otra. Esto lo puedo ver dentro del archivo pizza.txt, los guardos y commits que hago desaparecen cuando cambio de rama ya que estoy trabajando de forma independiente.
+2.2.13 Ahora sucede lo mismo, los commits realizados en las otras ramas aparecen en rojo ya que forman parte del historial de aquella branch. Cuando cambias de rama en Git, el historial de commits cambia para reflejar los commits que pertenecen a la nueva rama. Esto significa que los commits que aparecían en el historial de la rama anterior pueden no aparecer en el historial de la nueva rama, y viceversa.
+2.2.15 Luego de hacer el merge, que tuve que hacer manual debido a los conflictos en pizza.txt, al hacer git graph observo todos los commit realizados en ambas branches ya que el merge lo que hace es fusionarlas. Ahora no hay mas commits en rojo ya que ahora los commits que eran de cada uno pasan a ser parte de la nueva fusion. Cuando se realiza un merge en Git, se crea un nuevo commit que representa la combinación de dos o más ramas. Este nuevo commit se agrega al historial de commits y, por lo tanto, cambia el historial de commits. En el historial de commits, el nuevo commit de merge se muestra como un nodo con varias ramas que se fusionan en un solo punto. Los commits anteriores de cada rama que se fusionan se convierten en los padres del nuevo commit de fusión.
+2.2.16 Cuando corro git-branch --merged puedo ver tres nombres: anana, main y pilar. Main tiene al lado un asterisco ya que es la branch en la que estoy en este momento. 
+2.2.18 Veo todos los commits realizados en las branches que estan fusionadas.
+2.2.19 Tuve que hacer manual porque habia conflicto en el archivo pizza.txt ya que habian diferentes versiones de lo mismo en diferentes branches por eso tuve que hacerlo manual y hacer diferentes commits hastta resolver el conflicto.
+2.2.20 Las branches "mergeadas" segun la lista que aparece luego de correr el comando son anana, main, experimento, pilar, pilar_silveyra.
+2.2.23 Luego de eliminar anana y experimento, las branches "mergeadas" son main, pilar, pilar_silveyra.
+2.2.24 Sigo viendo algunos commits de las ramas eliminadas (definitivamente sin el nombre de la anterior rama como "padre") en rojo. 
+
+

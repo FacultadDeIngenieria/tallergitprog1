@@ -1,0 +1,29 @@
+3. Conflicts
+3.1. Preguntas
+
+¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+
+Un conflicto en Git se produce cuando dos o más ramas tienen cambios en el mismo archivo o en las mismas líneas de código y Git no puede determinar automáticamente cómo combinar esos cambios. Por lo tanto, te pedirá que resuelvas el conflicto manualmente.
+
+Un conflicto no es ni bueno ni malo en sí mismo, ya que es simplemente una situación en la que Git necesita ayuda para decidir cómo combinar los cambios. Sin embargo, los conflictos pueden ser un signo de que la gestión del flujo de trabajo y la comunicación en el equipo no es efectiva.
+
+Es importante resolver los conflictos de forma adecuada para evitar posibles problemas en el código y asegurar que la rama fusionada contenga los cambios y mejoras que se necesitan. Si se resuelven correctamente, los conflictos pueden ser una oportunidad para mejorar la calidad del código y la colaboración del equipo, ya que obligan a revisar cuidadosamente los cambios y a comunicarse de manera efectiva para llegar a una solución.
+
+¿Se puede evitar un conflicto? ¿Cómo?
+
+En Git, existen algunas prácticas que se pueden seguir para evitar conflictos y minimizar las posibilidades de que estos ocurran:
+Realiza cambios en diferentes archivos o líneas de código: Si trabajas en una rama que comparten varios miembros del equipo, es recomendable evitar trabajar en los mismos archivos y líneas de código. Siempre es mejor que cada miembro del equipo se centre en una tarea diferente y realice cambios en diferentes áreas del código.
+Mantén tus ramas actualizadas: Es importante mantener tu rama actualizada con los cambios de la rama principal o de la rama que se esté fusionando para evitar conflictos. Puedes hacerlo regularmente con el comando git fetch y git merge.
+Utiliza herramientas de control de versiones: Git tiene una serie de herramientas y comandos que pueden ayudarte a evitar conflictos, como por ejemplo el comando git diff, que te muestra las diferencias entre los cambios en diferentes ramas.
+Comunícate con el equipo: La comunicación es clave para evitar conflictos en el equipo. Es importante que te comuniques con el equipo para saber qué cambios se están haciendo en el código y para que los miembros del equipo estén al tanto de las tareas que están realizando los demás.
+
+3.2. Ejercicio Práctico
+3.2.10 Observo que cuando hago git diff main suprema puedo ver las diferencias entre estas dos branches que son pollo y lomo, ya que cuando estaba en la branch suprema y cambie donde decia lomo por pollo, commitee los cambios entonces se pueden ver las diferencias entre ambas branches. En cambio, cuando hago git diff main bife, no sale nada ya que en los pasos no pedia que comitee los cambios luego de cambiar lomo por bife es por esto que el commit no fue confirmado y no hay diferencias a observar.
+3.2.11 Lo que observo cuando hago el git status son los archivos dentro de main que fueron modificados pero no comitteados todavia. El archivo de milanesa.txt y este, en el cual estoy haciendo el trabajo.
+3.2.12 Si. Funciono automaticamente ya que el cambio realizado en el archivo milanesa.txt en la branch bife no fue comiteado.
+3.2.13 En este caso no funciono, es decir, debo resolver el conflicto sobre el archivo milanesa.txt
+3.2.14 Sigo observando lo mismo ya que el merge de main y bife no aporta nuevos commits porque los cambios hechos en bife no fueron confirmados y el merge con suprema no funciono por lo tanto sigo viendo lo mismo que veia antes (de hacer el merge).
+3.2.15 En milanesa.txt veo panrallado y el ultimo cambio realizado, lomo por bife, el cual no fue confirmado. Por lo tanto veo:
+pan rallado
+bife
+3.2.18 Conflicto realizado manualmente.
