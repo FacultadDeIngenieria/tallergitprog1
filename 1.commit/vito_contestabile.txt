@@ -1,0 +1,36 @@
+
+Parte 1
+
+1.1.1 Con el comando git init se inicializa un repositorio local. 
+
+1.1.2 Con el comando "git rm --r <nombre del directorio>" podemos hacer que un directorio deje de ser controlado por git.
+
+1.1.3 Sí, si se agrega un archivo a un directorio que ya está siendo controlado por git, este consecuentemente será controlado por git.
+
+1.1.4 Para agregar un archivo al repositorio local hay que ejecutar "git add <nombre_del_archivo".
+
+1.1.5 Para ver en que estado están nuestros archivos hay que ejecutar el comando "git status".
+
+1.1.6 Para hacer un commit, se debe ejecutar un commit, hay que ejecutar el comando "git commit". Ahí se te va a abrir tu editor de texto predeterminado y vas a tener que poner un mensaje de confirmación. Para hacer esto de forma automática pode ejecutar el comando "git commit -m "texto de confirmación". 
+
+1-1-7 Un commit sería una actualización de tu repositorio de git. Cada vez que haces un commit, estás creando un registro de los cambios que hiciste en tu repositorio desde el último commit.
+
+
+Parte 2
+
+1.2.3 En el punto 3, veo el archivo sandwich.txt estaba ya commiteado, y por los cambios que le realicé está en un estado de cambio. Además 
+ahora hay un archivo vito_contestabile.txt.
+
+1.2.5 Déspués de hacer git add sandwich.txt, este pasó a un estado de staged.
+
+1.2.7 Despúes de hacer el commit, no se ve más a sandwich.txt, ya que fue commiteado. Al hacer git status, solo vemos a nuestro archivo.txt.
+
+1.2.9 Git log me muestra el historial de commits y esta ordenado de mas reciente a mas viejo.
+
+1.2.11 Tras hacer git diff, te muestra los cambios (con rojo) de un commit al otro actualizado. 
+
+1.2.14 Al haber sido commiteado el archivo de sandwich2_feo.txt, al hacer git status solo vamos a ver a este mismo archivo dónde estoy escribiendo en modified (queriéndonos decir que se puede cambirar el nombre de un archivo en etapa staged sin que pase por modified). Al hacer git log --oneline, vamos a ver que vamos a tener una nueva versión de nuestro archivo original, ya que se hizo un commit.
+
+1.2.15 Al hacer un nuevo commit, tenemos una nueva versión de nuestro archivo, igual a la anterior pero sin el archivo sandwich2_feo.txt, ya que este ha sido eliminado. Al hacer git log --oneline, vemos lo que dije antes en este mismo renglón, y al hacer git status vemos solo al archivo con mi nombre y apellido en una etapa de modificación. 
+
+1.2.16 Git log --stat nos dice que se cambió un archivo y se hicieron incersiones y eliminaciones(delete).

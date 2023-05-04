@@ -1,0 +1,37 @@
+Parte 1
+
+3.1.1 Un conflicto en Git ocurre cuando dos o más ramas o versiones de un archivo tienen cambios en las mismas líneas o secciones del código, y Git no puede determinar automáticamente cuál de las versiones debe ser utilizada como la versión correcta. 
+	Los conflictos pueden ocurrir durante diversas operaciones en Git, como fusiones (merges) de ramas, cambios en repositorios remotos y cambios en archivos locales que no se han sincronizado con el repositorio remoto.
+	En general, los conflictos en Git no son ni buenos ni malos en sí mismos, sino que son simplemente un resultado natural del desarrollo en equipo y la gestión de versiones. Los conflictos pueden ser un poco incómodos y pueden requerir un poco de tiempo y esfuerzo para resolverlos, pero son una parte normal del proceso de colaboración.
+
+3.1.2 Sí, se puede evitar un conflicto en Git siguiendo algunas prácticas recomendadas:
+
+-Realizar cambios en diferentes ramas: Si se trabaja en equipo, es importante que cada miembro trabaje en su propia rama y realice cambios en diferentes partes del código para evitar conflictos.
+
+-Realizar pull antes de push: Antes de enviar cambios al repositorio, es importante asegurarse de que no hayan habido cambios por otros miembros del equipo, por lo que es recomendable realizar un "pull" antes de un "push" para actualizar el repositorio local.
+
+-Utilizar herramientas de colaboración: Git proporciona herramientas de colaboración, como "rebase" o "merge" para combinar cambios realizados por diferentes miembros del equipo. Es importante seguir las políticas y prácticas recomendadas por el equipo en cuanto a la utilización de estas herramientas.
+
+-Resolver conflictos de manera proactiva: Si se detecta un conflicto, es importante resolverlo de manera proactiva para evitar que el conflicto se extienda. Git proporciona herramientas para resolver conflictos, como "merge tool" y "git mergetool", que ayudan a comparar y fusionar los cambios realizados. 
+
+Parte 2 
+
+3.2.10 Al hacer git diff master suprema me muestra los cambios del archivo milanesa.txt de la main a la branch suprema. Per al hacer los mismo con la otra branch, la branch bife, te muestra que cambio de lomo a bife.
+
+3.2.11 Al correr un git status me muestra que solo el archivo vito_contestabile.txt está en estado modificado, ya que hice un commit en las otras dos branches.
+
+3.2.12 Al hacer git merge bife no me tira ningún error, solo que si me dice que se intercambiaron elementos por otros.
+
+3.2.13 Por otro lado, al hacer git merge suprema, me sale un conflicto.
+
+3.2.14 Me dice que además de que mi archivo vito_contestabile.txt está en etapa de mofificación, hay dos archivos milanesa.txt que están modificados.
+
+3.2.15 El contenido del archivo milanesa.txt es confuso, ya que muestra lo siguiente:
+$ cat milanesa.txt
+	pan rallado
+	<<<<<<< HEAD
+	bife
+	=======
+	pollo
+	>>>>>>> suprema
+	

@@ -1,0 +1,44 @@
+
+Parte 1
+
+2.1.1 Un branch es una versión alternativa de un proyecto de software que se deriva de la rama principal o de otra rama existente.
+
+2.1.2 Los desarrolladores utilizan ramas para trabajar en nuevas características o correcciones de errores sin afectar la versión principal del proyecto.
+
+2.1.3 Si estás en la rama principal, para crear una rama hay que correrel comando "git branch <nombre_de_tu_rama>".
+
+2.1.4 Para cambiar de branch se corre el comando "git checkout <nombre_de_tu_rama>".
+
+2.1.5 Para eliminar una rama existente, hay que correr el comando "git branch -d <nombre_de_la_rama>".
+
+2.1.6 Para crear una rama y moverte automáticamente a ella podemos correr el comando "git checkout -b <nombre-de-la-rama>".
+
+2.1.7 En el contexto de la informática, el término "merge" se refiere a la operación de combinar dos o más conjuntos de datos en uno solo. Por lo general, se utiliza para combinar diferentes ramas de un proyecto de desarrollo de software en un solo conjunto de archivos. En el contexto de sistemas de control de versiones como Git, un merge se utiliza para combinar dos o más ramas de código fuente. Esto permite a los desarrolladores trabajar en diferentes aspectos del proyecto simultáneamente sin afectar el trabajo de los demás. Cuando se completa el trabajo en una rama, se combina con la rama principal (o "master") utilizando una operación de merge para integrar los cambios.
+
+2.1.8 Una vez que se está en la rama correcta, se debe ejecutar el comando "git merge <rama_a_combinar>" para combinar la rama especificada con la rama actual. Este comando comparará los cambios realizados en ambas ramas y creará un nuevo commit que contenga la combinación de ambos conjuntos de cambios.
+
+2.1.9 Un tag en Git es una referencia a un punto específico en la historia de un repositorio de Git. Es una forma de etiquetar o marcar una versión específica del código para poder referirse a ella fácilmente en el futuro.
+
+2.1.10 Para hacer un tag en git hay que correr el comando "git tag <nombre-del-tag>"
+
+
+Parte 2
+
+2.2.6 Al correr git graph, se puede ver los ultimos commits que hice y en la branch en la que me encuentro.
+
+2.2.10 Al correr git graph, veo que hice un commit en la branch anana.
+
+2.2.13 Al correr git graph, veo mi último commit en la branch principal, además de los anteriores.
+
+2.2.15 Al correr git graph, me mustra que hice un merge a la branch principal mediante lineas de color rojo y verde.
+
+2.2.16 Mi branch anana esta mergeada a mi main (Vito_Contestabile).
+
+2.2.19 Al correr git graph, veo que se ah hecho otro merge a mi rama principal, ademas de los últimos commits que hice.
+
+2.2.20 Las branches "anana" y "experimento.chucu" estan mergeadas a mi rama principal.
+
+2.2.23 Ahora no hay ninguna branch mergeada a mi main.
+
+2.2.24 No noto diferencias con la ultima ejecución del comando graph.
+
