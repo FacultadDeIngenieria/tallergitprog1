@@ -1,0 +1,54 @@
+Preguntas:
+
+¿Qué es un branch?
+Un branch, también conocido como rama, es una versión alternativa del código fuente de un proyecto de software que se crea a partir de la rama principal del proyecto (normalmente denominada "master" o "main"). Cada branch puede tener sus propios cambios y características únicas que son independientes de las otras ramas.
+
+¿Por qué pueden ser útiles los branches?
+Los branches pueden ser útiles en un proyecto de software porque permiten a los desarrolladores trabajar en diferentes características o correcciones de errores sin afectar la rama principal del proyecto. También facilitan el trabajo en equipo, ya que varios desarrolladores pueden trabajar en diferentes branches y fusionar sus cambios en la rama principal una vez que estén listos.
+
+¿Cómo se crea una branch?
+Para crear una nueva branch, se utiliza el comando "git branch" seguido del nombre deseado para la nueva rama. Por ejemplo, si se desea crear una nueva rama llamada "nueva-feature", el comando sería "git branch nueva-feature".
+
+¿Cómo se cambia a una branch?
+Para cambiar a una rama diferente, se utiliza el comando "git checkout" seguido del nombre de la rama deseada. Por ejemplo, si se desea cambiar a la rama "nueva-feature", el comando sería "git checkout nueva-feature".
+
+¿Cómo se elimina una branch?
+Para eliminar una rama, se utiliza el comando "git branch -d" seguido del nombre de la rama que se desea eliminar. Por ejemplo, si se desea eliminar la rama "nueva-feature", el comando sería "git branch -d nueva-feature".
+
+¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Para crear una nueva rama y cambiar a ella en un solo paso, se utiliza el comando "git checkout -b" seguido del nombre deseado para la nueva rama. Por ejemplo, si se desea crear y cambiar a una nueva rama llamada "nueva-feature", el comando sería "git checkout -b nueva-feature".
+
+¿Qué es un merge?
+Un merge es la acción de combinar los cambios realizados en una rama con otra rama (normalmente la rama principal del proyecto) para incorporar esos cambios en el proyecto en general.
+
+¿Cómo se realiza un merge?
+Para realizar un merge, se utiliza el comando "git merge" seguido del nombre de la rama que se desea fusionar con la rama actual. Por ejemplo, si se desea fusionar la rama "nueva-feature" con la rama principal del proyecto, el comando sería "git merge nueva-feature".
+
+¿Qué es un tag?
+Un tag es una referencia específica a un punto en la historia de un repositorio de git. Los tags se utilizan generalmente para marcar versiones específicas de un proyecto de software.
+
+¿Cómo se crea un tag?
+Para crear un tag, se utiliza el comando "git tag" seguido del nombre deseado para el tag y el hash del commit que se desea etiquetar. Por ejemplo, si se desea crear un tag llamado "v1.0" en el commit con hash "a1b2c3d4", el comando sería "git tag v1.0 a1b2c3d4". También es posible crear tags firmados y anotados utilizando opciones adicionales en el comando "git tag".
+
+Ejercicio practico:
+
+1. Observo que se van agregando todos los commits que voy haciendo. 
+
+2. Ahora observo que aparece mi commit pero me especifica que esta en la branch anana, no en la main. 
+
+3. observo los commits diferenciando la rama en la que estoy, el ultimo commit lo tengo hecho en la rama main, pero el anterior lo tengo hecho en la rama anana. 
+
+4. Lo primero que veo son las lineas que me muestran como del lado izquierdo tengo la rama main, y luego se desprende de ella la rama anana, en el ultimo commit se ve como luego del merge se unen nuevamente la rama main y la rama anana, y ahora mi pizza.txt tiene todos los ingredientes que agregue. (idependientemente de si lo agregue en main o en anana). 
+
+5. la unica brach mergeada es anana. 
+
+6. veo lo mismo que en el punto 4 solamente que con una linea nueva representando a la rama experimento. 
+
+7. no estoy 100% segura lo que si me aparecio fue un archivo nano, en donde tuve que confirmar que queria mergear. 
+
+8. las branch mergeadas son experimento y anana. 
+
+9. luego de eliminar las ramas experimento y anana, ninguna branch esta mergeada, solo aparece la branch main. 
+
+10. Observo que sigue todo como el ultimo graph puede ser porque no commitee nada despues de borrar las ramas. 
+
