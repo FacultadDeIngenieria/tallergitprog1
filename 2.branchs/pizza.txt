@@ -1,11 +1,3 @@
-oregano
-albahaca
 queso
-<<<<<<< HEAD
-anana
-
-cebolla
-=======
 salsa de tomate
->>>>>>> experimento
 masa de pizza
