@@ -1,4 +1,4 @@
-# 1. Commits
+`# 1. Commits
 
 Para el primer ejercicio, se debe crear un archivo `nombre_apellido.txt`, dentro de la carpeta `1.commit`.
 

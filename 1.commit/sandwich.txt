@@ -1,6 +1,4 @@
 pan
-queso chedar
-cebolla caramelizada
-barbacoa 
+queso
 medallón
 pan
