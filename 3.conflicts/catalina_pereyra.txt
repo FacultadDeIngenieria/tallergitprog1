@@ -1,3 +1,16 @@
+Preguntas:
+Un conflicto en el contexto de Git ocurre cuando dos o más ramas del repositorio contienen cambios en el mismo archivo que entran en conflicto entre sí. Esto sucede cuando diferentes desarrolladores modifican el mismo archivo y luego intentan fusionar sus cambios. El conflicto es una situación que no se puede resolver automáticamente y requiere la intervención manual del usuario.
+
+Un conflicto ocurre cuando Git no puede determinar automáticamente cómo fusionar dos cambios diferentes en un archivo. Esto sucede cuando dos o más desarrolladores hacen cambios simultáneamente en una misma rama o cuando se intenta fusionar dos ramas que han modificado el mismo archivo.
+
+En general, un conflicto no es bueno ni malo. Es una parte normal del proceso de desarrollo de software en equipo y puede ocurrir en cualquier momento. El conflicto indica que se están realizando cambios simultáneos en el mismo archivo y es una señal de que los desarrolladores están trabajando en el mismo código, lo cual es una buena práctica. Sin embargo, si no se resuelve adecuadamente, puede retrasar el progreso del proyecto.
+
+Se puede evitar un conflicto utilizando algunas prácticas recomendadas, como trabajar en ramas separadas, realizar cambios pequeños y frecuentes y mantenerse en contacto con los otros desarrolladores del equipo para coordinar y compartir información sobre los cambios que se están realizando. Otra forma de evitar conflictos es utilizar herramientas de control de versiones avanzadas, como Git, que ofrecen funciones para fusionar cambios automáticamente y resolver conflictos de manera más eficiente.
+
+
+
+Ejercicio practico:
+
 1- Al utilizar git diff main suprema puedo comparar las diferencias entre las ramas pollo y lomo. En la rama suprema realicé un cambio de lomo a pollo y lo confirmé mediante un commit, lo que me permite observar las diferencias entre las ramas. Por otro lado, al utilizar git diff main bife, no se muestran diferencias porque no se confirmaron los cambios realizados en la rama bife.
 
 2- Al ejecutar git status puedo ver los archivos que han sido modificados en la rama principal, pero que aún no han sido confirmados. Estos archivos incluyen el archivo milanesa.txt y el archivo en el que estoy trabajando actualmente.
