@@ -1,0 +1,18 @@
+1.1.1- con el comando git init se inicializa un repositorio local
+1.1.2- con el comando "git rm --r (nombre del directorio)" podemos hacer que un directorio deje de ser controlado por git.
+1.1.3- si, si se agrega un archivo a un directorio que ua esta siendo controlado por git
+1.1.4- para agregar un archivo al repositorio local se usa "git add (nombre_del_archivo)"
+1.1.5- para ver que estado estan nuestros archivos hay q usar "git status"
+1.1.6- para hacer un commit, se debe usar el comando "git commit"
+1.1.7- un commit seria una actualizacion de mi repositorio de git. cada vez que usas commit estas creando un registro de tus cambios que hiciste en el repositorio.
+
+1.2.3- la razon de porque sandwich esta modificado es porque ya estaba commiteado de antes sin embargo juan_rudolph fue un nuevo 
+1.2.5- despues de haver git add el archivo paso a un estado de stage y juan_rudolph sigue estando en modified
+1.2.7- luego de hacer el commit no se ve mas el archivo sandwich.txt y solo se ve el juan_rudolph.txt
+1.2.9- git log me muestra el historial de commits y esta ordenado a mas actual a mas viejo
+1.2.10.1 - veo el historial de commits
+1.2.10.2 - muestra lo mismo que oneline pero muestra mas detalle
+1.2.11- git difftool muestra las diferencia entre los dos commits
+1.2.14- al haber sido commiteado el archivo sandwich2_feo.txt, al hacer git status solo vamos a ver a este mismo archivo donde estouy escribiendo en modified.
+1.2.15- se borro el archivo sandwich2_feo.txt y desaparecio del git log
+1.1.16- veo los archivos commiteados y los archivos que borre ya no aparecen

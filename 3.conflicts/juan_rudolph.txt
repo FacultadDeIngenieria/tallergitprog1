@@ -1,0 +1,9 @@
+3.1.1- Un conflicto en Git ocurre cuando hay una diferencia entre las versiones de un archivo en diferentes branches del repositorio y Git no puede determinar automáticamente cuál de las versiones debe quedarse en la combinación de las branches. En otras palabras, Git no sabe cómo mergear las dos versiones del archivo en una sola versión que incluya los cambios de ambas branches. En general, un conflicto en Git no es ni bueno ni malo. Es simplemente una situación en la que dos branches del repositorio han cambiado un archivo de diferentes maneras y Git no puede determinar automáticamente cómo combinar esos cambios. Cuando Git encuentra un conflicto, marca el archivo en cuestión como "conflicto" y muestra un mensaje que indica que se ha producido un conflicto. Los usuarios deben resolver manualmente los conflictos, es decir, determinar qué cambios mantener y cómo combinar las dos versiones en una sola.
+3.1.2- Los conflictos en Git son inevitables en proyectos colaborativos, aunque hay algunos puntos que ayudan a minimizarlos: Trabajar en branches separadas. Comunicacion entre las personas que trabajan. Realizar cambios pequeños. Actualizar frecuentemente el repositorio
+
+3.2.10- cuando ejecuto el git diff master suprema, me muestra que reemplace el lomo con pollo, y cuando ejecuto git diff master bife, me muestra lo mismo pero de en vez de pollo me muestra bife. 
+3.2.11- al hacer git status se puede ver que aparece modified: milanesas.txt en rojo y me sugiere que si quiero hacer commit primero haga git add
+3.2.12- si, funciono
+3.2.13- no, no funciono, me dice que se va a sobreponer con el merge de milanesa.txt y que commitee mis cambios antes de mergearlo
+3.2.14- despues de hacer git status me aparece que milanesa.txt no esta preparado para commitearlo, primero tendria que hacer un git add y despues un git commit 
+3.2.15- se puede ver que esta primero pan rallado y despues bife
