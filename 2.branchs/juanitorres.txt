@@ -1,0 +1,31 @@
+2.1.1- un branch es una versiona alternatica de un proyecto de software que se deriva de a rama principal
+2.1.2- para trabajar en nuevas caracteristicas o correciones de error sin afectar las antiguas versiones
+2.1.3- ustilizar "git branch (nombre de la rama)"
+2.1.4- utilizar "git checkout (nombre de la rama)"
+2.1.5- para eliminar una branch utlizar git branch -d (nombre de rama)
+2.1.6- para crear una branch y se cambia a ella en nu solo paso utilizas el comando git checkout -b (nombre de la rama)
+2.1.7- en el informatica el "marge" combinar dos o mas conjuntos de datos en uno
+2.1.8- usando el comando git marge en la rama correcta y luego git marge (rama a combinar). esta compara los cambios
+2.1.9- un tag es una referencia a un punto especifico en la historia de un repositorio. Es una forma de etiquetar o marcar una version especifica del codigo para referisirse a ella facilmente en el futuro
+2.1.10- git tag (nombre del tag)
+
+
+
+6)Correr el comando git graph y observar el resultado. ¿Qué observa?
+Los ultimos commits que hice de mi branch
+10)Correr el comando git graph y observar el resultado. ¿Qué observa?
+hice un commit en mi branch (anana)
+13)Correr el comando git graph y observar el resultado. ¿Qué observa?
+veo mi ultimo commit en la branch principal
+15)Correr el comando git graph y observar el resultado. ¿Qué observa?
+me muestra el merge que hice a la branch principal con los colores verde y rojo
+16)¿Qué branches están "mergeadas" a master? (Puede usar el comando git branch --merged).
+la branch anana
+18)Correr el comando git graph y observar el resultado. ¿Qué observa?
+veo mis commits y veo un merge que se hizo en la main branch
+20)¿Qué branches están "mergeadas" a master? (Puede usar el comando git branch --merged).
+anana y experimento
+23)¿Qué branches están "mergeadas" a master? (Puede usar el comando git branch --merged).
+no hay ninguna 
+
+
