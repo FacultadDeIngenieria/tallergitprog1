@@ -1,0 +1,60 @@
+2.1.1 Las branches son variaciones de un código dentro de git. Luego se 
+pueden volver a unir a la branch principal (main).
+
+2.1.2 Creo que son útiles porque no todos los usuarios tienen que trabajar 
+sobre el mismo documento, por así decirlo, sino que pueden tomar caminos 
+separados y (sean multiples o un solo usuario) probar distintas 
+posibilidades.
+
+2.1.3 para crear una branch hay que usar el comando "git branch 
+<nombre_de_branch>"
+
+2.1.4 Si quiero cambiar a otra branch uso el comando "git checkout 
+<nombre_branch>"
+
+2.1.5 el comando es "git branch -d <nombre_branch>"
+
+2.1.6 se usa el comando "git checkout -b <nombre_de_tu_branch>"
+
+2.1.7 una operación que combina los cambios de 2 o más branches en una 
+sola.
+
+2.1.8 1ro cambiar a la branch que recibirá los cambios con el comando del 
+2.1.4, dsp se usa el comando "git merge <branch_fuente>" (donde 
+branch_fuente es la que contiene los cambios que queremos incorporar a la 
+branch destino).
+
+2.1.9 una forma de asignar una versión a un commit específico en la 
+historia de un proyecto. así se pueden marcar momentos importantes en 
+dicho proyecto, como lanzamientos oficiales.
+
+2.1.10 tenés que estar en el commit al que le querés asignar la tag con el 
+comando "git checkout <hash_del_commit>" y dsp usas el comando "git tag 
+<nombre_tag>".
+
+2.2.6 Veo algo similar a cuando uso el comando git log --oneline pero 
+ahora en la prte superior tmb veo mis mensajes y commits cuando agregué 
+albahaca y orégano y aclara que fue en la branch experimento.
+
+2.2.10 Veo lo mismo que en el punto anterior (6) pero ahora tmb veo el 
+mensaje cuando commiteé la pizza con ananá en la branch ananá (entre 
+paréntesis en verde)
+
+2.2.13 Vi que había commiteado la ultima versión con la cebolla en la 
+pizza.
+
+2.2.15 Veo que anana es parte de mi main branch
+
+2.2.16 anana
+
+2.2.18 que experimento es parte de mi main
+
+2.2.19 git lo hizo automáticamente porque no había conflictos entre mis 
+branchs
+
+2.2.20 anana y experimento
+
+2.2.23 ahora no hay ramas mergeadas porque las eliminé
+
+2.2.24
+

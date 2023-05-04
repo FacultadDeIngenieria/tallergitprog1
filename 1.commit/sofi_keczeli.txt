@@ -1,0 +1,87 @@
+1. ¿Cómo se inicializa un repositorio local? (que comando se debe 
+ejecutar?)
+Escribo el comando git init en la terminal.
+
+2. ¿Cómo hago para que un directorio deje de ser controlado por git? (que 
+comando se debe ejecutar?)
+git rm --cached <nombre_del_directorio>
+
+3. Si agrego un archivo a un directorio que ya está siendo controlado por 
+git, ¿está siendo controlado por git?
+Sí.
+
+4. ¿Qué comando se utiliza para agregar un archivo al repositorio local?
+git add <nombre_del_archivo>
+
+5. ¿Cómo determino que archivos fueron modificados? (que comando se debe 
+ejecutar?)
+git status, ya que me permite ver qué fue modificado, sacándolo de la 
+etapa de commit y llevandola a un estado de modificación, qué fue 
+agregado, etc.
+
+6. ¿Qué comando se utiliza para hacer un commit?
+git commit -m "mensaje que aclare que cambié"
+
+7. En sus propias palabras, ¿qué es un commit?
+Entiendo el commit como subir un archivo al repositorio que está 
+compartido con otros usuarios. Así, puede estar actualizado según lo que 
+cada usuario va haciendo.
+
+                       --------------------------------
+
+1.2.3 Veo que sandwich fue modificado, sacándolo de la etapa de commit. No 
+está aún en la etapa de staged. Lo mismo para sofi_keczeli.txt, excepto 
+que este no estaba previamente en commit, ya que yo lo creé.
+
+1.2.5 Para sofi_keczeli.txt, veo lo mismo. Para sandwich.txt lo veo en 
+verde y que aclara que esta en la etapa de staged ahora.
+
+1.2.7 Ya no se ve sandwich.txt porque ahora está commiteado y es parte de 
+mi branch. Se sigue viendo sofi_keczeli.txt porque no lo cambié.
+
+1.2.9 "commit bef0ad7b1804dae323252f6dda292ed0b078b639 (HEAD -> 
+sofi_keczeli)
+Author: skeczeli <skeczeli@gmail.com>
+Date:   Thu Apr 20 15:26:46 2023 -0300
+
+    Agrego salsas
+
+commit 80ba9d82515c2c84269cc9daf65f57181e3020e3
+Author: skeczeli <skeczeli@gmail.com>
+Date:   Thu Apr 20 15:20:09 2023 -0300
+
+    Agrego mi sandwich.txt
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD, 
+origin/2023, main, 2023)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01
+Author: Sebastian Iglesias <sebastian@getcaribou.com>
+Date:   Mon Apr 17 21:58:56 2023 -0300"
+Aparecen de más reciente (primero) a menos reciente (es decir, último 
+aparece lo que fue commiteado primero).
+
+1.2.11 aparece +jamón +panceta en verde entre los demás elementos del sandwich
+ que había escrito en el primer commit, que aparecen en blanco sin el + (porque
+ en realidad ya había agregado mayonesa entonces agregué otras cosas que me 
+quedé con ganas de agregar jaj)
+
+1.2.14 antes de hacer commit para el sandwich feo (o agregarlo al 
+repositorio local), me aparece sandwich2.txt en changes to be commited y 
+sandwich2_feo.txt en untracked changes. los dos como new files en verde. 
+Una vez que hice commit, me dejó de aparecer porque ahora está commiteado.
+En git log --oneline me aparece además de los commits anteriores, el 
+sandwich2_feo.txt
+
+1.2.15 antes de borrarlo, con git status me aparecía el sandwich feo en 
+changes to be commited pero como deleted file. Una vez que lo borre dejo 
+de aparecer. con git log --oneline me apareció el mensaje de mi último 
+commit (junto con todos los anteriores) indicando que había borrado ese 
+archivo.
+
+1.2.16 me aparece cuando agregué el sandwich feo con 6 + porque tenía 6 
+cosas (6 lineas) y cuando lo eliminé, con 6 - por la misma razón.

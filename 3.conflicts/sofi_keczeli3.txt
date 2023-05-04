@@ -1,0 +1,25 @@
+3.1.1 Un conflicto en Git pasa cuando hay cambios conflictivos en 
+diferentes ramas que no se pueden fusionar automáticamente. No es bueno ni 
+malo en sí mismo.
+3.1.2 se puede minimizar con una buena comunicación y colaboración entre las 
+personas del equipo. se puede ver las diferencias entre archivos.
+
+3.2.10 veo que la main tiene lomo en ambos casos y en suprema tiene pollo 
+y en bife tiene bife.
+
+3.2.11 No veo nada raro. Estoy en la branch main y no hay nada nuevo que 
+commitear.
+
+3.2.12 Veo que lo agregó pero hay diferencias (un + y un - porque tiene el 
+bife en lugar de lomo ahora)
+
+3.2.13 No me dejó porque me dijo que había un conflicto.
+
+3.2.14 Tengo "unmerged paths" por milanesa.txt
+
+3.2.15 Me aparece que hay algo que los dos tienen en común (pan rallado) 
+pero que head tiene bife y la branch suprema pollo. Me muestra el 
+conflict.
+
+3.2.18 Se ingresa con Vi o nano y edita manualmente el conflicto, 
+eliminando lo que conflictua y dejando la versión que se desee.
