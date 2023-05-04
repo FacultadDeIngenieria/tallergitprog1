@@ -1,0 +1,11 @@
+--- 3.1 ---
+1. Es un desentendimiento que git encuentra en versiones diferentes de un archivo. Ocurre cuando al mismo archivo se lo modifica en 2 versiones distintas. No es ni bueno ni malo, sino que es cuestión de decidir cuál es la versión útil.
+2. Se pueden evitar resolivendo de una manera más eficiente la comunicación del equipo de trabajo, delegando bien las tareas a cada uno.
+
+--- 3.2 ---
+10. Se muestran los cambios que se hicieron en cada branch respecto a la main.
+11. Que la branch main está al día.
+12. Sí
+13. No
+14. Indica que hay caminos 'unmerged', en donde deben resolverse conflictos.
+15. Se muestran indicadores del conflicto presente, indicando dónde arranca y qué le pertenece a cada una de las versiones del archivo.

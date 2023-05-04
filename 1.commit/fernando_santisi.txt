@@ -1,0 +1,21 @@
+--- 1.1 ---
+1. git init
+2. rm -rf .git
+3. No, al crear un archivo y ejecutar un 'git status', aparece como 'untracked'.
+4. git add <archivo>
+5. git status
+6. git commit -m "<mensaje>"
+7. Un commit es un checkpoint del estado del archivo que se quiere registrar.
+
+--- 1.2 ---
+3. 'sandwich.txt' ya proviene de un commit anterior, mientras que 'fernando_santisi.txt' fue recién creado y nunca formó parte de un commit anterior.
+5. Ahora 'sandwich.txt' pasó a estar en estado de 'staged', mientras que 'fernando_santisi.txt' sigue en el mismo estado anterior.
+7. El mensaje para 'sandwich.txt' ya no está, porque ya pertenece a un nuevo commit, mientras que 'fernando_santisi.txt' sigue sin sufrir un cambio de estado.
+9. Se muestra el historial de commits, en orden cronológico de más reciente a más antiguo, detallando Hash, Autores y Fechas de commit.
+10.1 Se muestra el historial de commits de forma más reducida, llevándolos a una línea y omitiendo Autores y Fechas.
+10.2 Se muestra el historial de commits, pero ahora con estadísticas de las modificaciones que se realizaron en cada uno de los commits.
+11.2 Haciendo 'git diff' entre los dos SHA más recientes, devuelve las diferencias entre los archivos que fueron modificados entre commits.
+14. Al hacer 'git status' antes de commitear, se muestra que el archivo cambió de nombre a 'sandwich2_feo.txt', una vez que se commitea, desaparece de la lista de staged, y se puede visualizar el detalle de commit en 'git log'
+15. Al eliminar el archivo y hacer un 'git status', se añade el archivo a la lista de deleted, y al commitear y volver a hacer a ejecutar el status, desaparece de la lista de 'deleted', y se puede visualizar el detalle de commit en 'git log'.
+16. Al ejecutar 'git log --stat', se describen todos los cambios específicos de cada archivo commiteado, detallando las modificaciones realizadas en cada uno.
+

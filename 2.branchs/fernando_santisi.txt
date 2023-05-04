@@ -1,0 +1,22 @@
+--- 2.1 ---
+1. Es una derivación de la versión del repositorio.
+2. Para poder trabajar en paralelo sobre funcionalidades nuevas.
+3. git branch <branch> <origen>
+4. git checkout <branch>
+5. git branch -d <branch>
+6. git checkout -b <branch>
+7. Es la unión de la versión actual del origen de la branch con la versión de la branch.
+8. git merge <branch>
+9. Es una etiqueta que sirve para tener información específica de un commit.
+10. git tag -a <tag> -m "<Mensaje identificador>"
+
+--- 2.2 ---
+6.  Al hacer 'git graph' se muestra el historial de commits para cada una de las branches en las que se trabajó, y el gráfico del árbol que se va formando.
+10. Ahora tenemos el nuevo commit para la nueva branch 'anana', y una nueva derivación en el gráfico.
+13. Ahora tenemos el nuevo commit para la branch 'main', pero volvemos al tronco principal del repositorio.
+15. Vemos como la branch 'anana' se cierra sobre el tronco principal del repo, agregando esos cambios al main.
+16. '2023', 'anana', 'experimento'. Esta última está mergeada porque me salteé el paso 7, por ende, la branch 'anana' se derivó de 'experimento' y no de 'main', y al mergear 'anana' trajo 'experimento' consigo. Los ejercicios 17. y 18. no van a hacer efecto ya que 'experimento' ya fue mergeada.
+19. Al no haber creado la branch 'anana' desde 'main', ya había tenido conflictos, por lo que git requirió que modifique el archivo manualmente para decidir qué partes del texto permanecen.
+23. '2023'
+
+
