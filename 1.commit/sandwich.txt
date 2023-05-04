@@ -2,7 +2,3 @@ pan
 queso
 medallón
 pan
-Tomate
-Lechuga
-Queso
-Salsa de tomate
