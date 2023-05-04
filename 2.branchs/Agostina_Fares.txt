@@ -1,0 +1,21 @@
+2.1.1)Una branch se refiere a una bifurcacion de la rama principal de un codigo.
+2.1.2)Pueden resultar utiles, ya que,permiten desarrollar una parte del codigo independientemente de la rama de código principal
+2.1.3)se crea mediante el comando git branch
+2.1.4)se cambia con el comando git checkout
+2.1.5)mediante el comando git branch -d 
+2.1.6)Utilizando el comando git checkout -b
+2.1.7)Se refiere a cuando se combinan dos o más branchs en una sola
+2.1.8)se realiza con el comando git merge
+2.1.9)es una referencia con la cual se identifican versiones especificas de un repertorio
+2.1.10)Mediante el comando git tag
+
+2.2.6)Muestra un listado de los commits y los mensajes de cada uno
+2.2.10)además del listado de commits, se observa al costado una linea roja que indica que el commit realizado esta afuera de la branch experimento
+2.2.13)se observa lo mismo que en los 2 puntos anteriores solo que con el nuevo commit que indica que es de la branch main
+2.2.15)el cambio es que ahora el commit realizado en la branch anana, tambien figura como de la branch main
+2.2.16)las branchs mergeadas son la 2023, la main y anana
+2.2.18)se observa que el commit que antes figuraba unido de la branch main y la anana ahora esta separado y ahora todos los commits de las branch main, anana y experimento 
+2.2.19)tuve que realizar un merge manual, ya que tenia que resolver un conflicto con el archivo pizza.txt
+2.2.20)las branchs mergeadas son main, anana y experimento
+2.2.23)no hay branchs mergeadas 
+2.2.24)se observa que los commits que antes se veian dentro de la branch main pero como parte de las branchs anana o experimento, ahora solo aparecen como de la branch main
