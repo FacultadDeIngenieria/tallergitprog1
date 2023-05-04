@@ -1,0 +1,52 @@
+Preguntas:
+A.	¿Qué es un branch?1
+B.	¿Por qué pueden ser útiles los branches?2
+C.	¿Cómo se crea una branch?3
+D.	¿Cómo se cambia a una branch?4
+E.	¿Cómo se elimina una branch?5
+F.	¿Cómo se crea una branch y se cambia a ella en un solo paso? 6
+G.	¿Qué es un merge? 7
+H.	¿Cómo se realiza un merge? 8
+I.	¿Qué es un tag? 9
+J.	¿Cómo se crea un tag?10
+Respuesta:
+1.	Un Branch en git te permite crear, enumerar y eliminar ramas o cambiarle el nombre lo que si no te permite cambiar entre ramas o volver a unir al historial de bifurcado.
+
+2.	Son útiles para trabajar en diferentes versiones del proyecto al mismo tiempo, acelerar el proceso de desarrollo y mantener una versión estable del proyecto en el Branch principal. 
+
+3.	El comando para poder crear en Branch se debe usar “git branch” esto lo que puede permitir que se pueda crear una nueva rama.
+
+4.	Para cambiar a una branch en Git, puedes utilizar el comando “git checkout” seguido del nombre de la branch a la que deseas cambiar. Al ejecutar este comando, Git cambiará el estado del repositorio a la versión en la que te encuentras en la branch.
+
+5.	Para eliminar una branch en Git, puedes utilizar el comando “git branch -d” seguido del nombre de la branch que deseas eliminar. Si la branch que deseas eliminar contiene commits que no se han fusionado con otras branches, Git te mostrará un mensaje de error y no te permitirá eliminarla. En ese caso, puedes forzar la eliminación de la branch utilizando el comando “git branch -D” en lugar de -d.
+
+6.	Para crear una branch y cambiarse a ella en un solo paso en Git, puedes utilizar el comando “git checkout -b” seguido del nombre que deseas darle a la nueva branch. Una vez que se haya terminado el nuevo branch, se puede fusionar los cambios con el branch principal utilizando el comando “git merge”.
+
+7.	Merche: Es el proceso de combinar dos o más branches o historias de desarrollo de un repositorio en un único estado. Cuando fusionas dos o más branches en Git, Git intenta combinar las líneas de desarrollo divergentes y crear un nuevo commit que contenga todos los cambios realizados en ambas branches.
+
+8.	Para hacer un merge nos situamos en una rama, en este caso la "master", y decimos con qué otra rama se debe fusionar el código.
+
+9.	Es una referencia inmutable a un commit específico en la historia de un proyecto que se utiliza para marcar un punto importante en el desarrollo de este.
+
+10.	Para crear un tag se debe ejecutar “git tag <nombre-del-tag>”, Para crear un tag en un commit específico (en lugar del commit actual), debes especificar el identificador SHA del commit en el que deseas crear el tag. Para terminar, se usa “git checkout <nombre-del-tag>” y “git tag” (Este comando muestra una lista de todos los tags creados en tu repositorio, en orden alfabético.)
+
+PARTE PRACTICA
+2.2.6: Se muestran todas las confirmaciones realizadas en el proyecto, incluyendo las confirmaciones de la rama principal y la rama "enrique_fernandez", así como las confirmaciones de la rama actual "experimento".
+
+2.2.10: Observé que la nueva rama que creé y su compromiso "Anana agregó" se han agregado. Todas las ramas parecen derivar de la rama principal, como se indica con los símbolos "|/".
+
+2.2.13: Noté que cambié de rama nuevamente, lo que se muestra con el símbolo |/ indicando un cambio de rama, después de haber realizado un commit.
+
+2.2.15: En un principio no se permitió realizar la fusión, aunque pude agregar archivos al repositorio. Finalmente, se resolvió el conflicto y se pudo hacer la fusión. "Git chart" ahora muestra las barras rojas ("|" y "|/") en verde, y la rama ahora se ha integrado con la rama principal.
+
+2.2.16: Las ramas "2023" y "anana" se fusionaron en la rama principal.
+
+2.2.18: La rama "experimental" (y los cambios realizados en ella) están ahora vinculados tanto a la rama "principal" como a la rama "anana".
+
+2.2.19: Se presentó un conflicto al intentar fusionar automáticamente, por lo que se tuvo que hacer una fusión manual. GitBash emitió un mensaje indicando que no se pudo fusionar debido a archivos no fusionados, pero se solucionó manualmente siguiendo las sugerencias proporcionadas. Después de eso, ambas ramas pudieron fusionarse.
+
+2.2.20: Las ramas fusionadas con la rama "principal" son "2023", "anana" y "experimental".
+
+2.2.23: Actualmente, la única rama fusionada con la rama "principal" es "2023", ya que las otras dos ramas se eliminaron.
+
+2.2.24: Las confirmaciones siguen siendo las mismas que la última vez, pero esta vez no se indicó desde qué rama se hicieron (es decir, todas las confirmaciones parecían haberse hecho desde la rama "principal").
