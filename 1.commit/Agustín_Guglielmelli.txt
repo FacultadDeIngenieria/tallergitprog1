@@ -1,0 +1,25 @@
+1.1. Preguntas
+¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+git init
+¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+rm --r <nombre_del_archivo>
+Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+si
+¿Qué comando se utiliza para agregar un archivo al repositorio local?
+git add
+¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+git status
+¿Qué comando se utiliza para hacer un commit?
+git commit
+En sus propias palabras, ¿qué es un commit?
+sube una copia a git como un caoptura de pantalla para poder tener un control del proceso
+
+1.2.3 veo que sandwich.txt esta modificado, ya fue comiteado antes y hay un archivo Agustin.Guglielmelli.txt que es nuevo, y nunca fue agregado a git.
+1.2.5 despues de hacer git add sandwich.txt, el archivo pasó a estar en staging en lugar de modified. Y sigo viendo mi txt en rojo, porque está en modified.
+1.2.7 Después d ehacer elcommit,no se ve más el archivo sandwich y solo se ve el Agustín.Auglielmelli.txt.
+1.2.9 Me muestra el historial de commits de la branch,y está ordenado de más actual a más reciente. 
+1.2.10.1 Veo el historial de commits
+1.2.10.2 Muestra lo mismo que oneline pero muestra mas detalles
+1.2.11 git difftool muestra las diferencias entre los dos commits.
+1.2.15 se borró el archivo sandwich2_feo.txt y desapareció del gitlog
+1.2.16 veo los archivos commiteados y los archivos que borré ya no aparecen.

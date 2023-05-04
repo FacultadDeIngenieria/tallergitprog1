@@ -1,0 +1,23 @@
+Un conflicto en Git ocurre cuando hay una diferencia entre las versiones de un archivo en diferentes branches del repositorio y Git no puede determinar automáticamente cuál de las versiones debe quedarse en la combinación de las branches. En otras palabras, Git no sabe cómo mergear las dos versiones del archivo en una sola versión que incluya los cambios de ambas branches.
+
+
+En general, un conflicto en Git no es ni bueno ni malo. Es simplemente una situación en la que dos branches del repositorio han cambiado un archivo de diferentes maneras y Git no puede determinar automáticamente cómo combinar esos cambios.
+
+Cuando Git encuentra un conflicto, marca el archivo en cuestión como "conflicto" y muestra un mensaje que indica que se ha producido un conflicto. Los usuarios deben resolver manualmente los conflictos, es decir, determinar qué cambios mantener y cómo combinar las dos versiones en una sola.
+
+3.1.2 ¿Se puede evitar un conflicto? ¿Cómo?
+
+Los conflictos en Git son inevitables en proyectos colaborativos, aunque hay algunos puntos que ayudan a minimizarlos:
+
+Trabajar en branches separadas
+Comunicacion entre las personas que trabajan
+Realizar cambios pequeños
+Actualizar frecuentemente el repositorio
+
+3.2.10 me muestra las diferencias entre ambos, uno dice pollo y el otro bife
+3.2.11 me dice que estoy en main y que no hay nada para commitear
+3.2.12 si funcionó
+3.2.13 no, no funcionó
+3.2.14 me dice que estoy en la branch main y que mi branch está up to date con origin/main
+3.2.15 dice pan rallado y bife
+

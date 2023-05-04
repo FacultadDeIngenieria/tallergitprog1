@@ -1,0 +1,23 @@
+2.1.1- un branch es una versiona alternatica dw un proyecto de software que se deriva de a rama principal
+2.1.2- para trabajar e nuevas caracteristicas o correciones de error sin afectar las antiguas versiones
+2.1.3- ustilizar "git branch (nombre de la rama)"
+2.1.4- utilizar "git checkout (nombre de la rama)"
+2.1.5- para eliminar una branch utlizar git branch -d (nombre de rama)
+2.1.6- para crear una branch y se cambia a ella en nu solo paso utilizas el comando git checkout -b (nombre de la rama)
+2.1.7- en el informatica el "marge" combinar dos o mas conjuntos de datos en uno
+2.1.8- usando el comando git marge en la rama correcta y luego git marge (rama a combinar). esta compara los cambios
+2.1.9- un tag es una referencia a un punto especifico en la historia de un repositorio. Es una forma de etiquetar o marcar una version especifica del codigo para referisirse a ella facilmente en el futuro
+2.1.10- git tag (nombre del tag)
+
+lo que fui observando:
+2.6 me muestra los commits que hice con la descripción que le escribí en amarillo
+2.10 me muestralo mismo pero con el nuevo commit (agregué anana)
+2.13 me muestra lo mismo pero con el nuevo commit (agregue cebolla)
+2.15 me muestra nuevamente los comentarios de los commits y ahora aparece el merge.
+2.16 las branches mergeadas a main son 2023 y anana
+2.18 me muestra los comentarios delos commits y aparece el nuevo merge
+2.19 tuve que hacer el merge manual, es decir tuve que modificar el pizz.txt manualmente
+2.20 las branches mergeadas a main son 2023,anana y experimento
+2.23 ahora solo está mergeada con main la branch 2023
+2.24 ahora no me aparecen los comentarios del commit de anana y experimento. 
+ 
