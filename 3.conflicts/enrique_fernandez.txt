@@ -1,0 +1,24 @@
+Preguntas Teorica
+
+a)	¿Qué es un conflicto? ¿Cuándo ocurre? ¿Es bueno o malo?
+b)	2. ¿Se puede evitar un conflicto? ¿Cómo?
+
+Respuestas:
+1.	Un conflicto en Git ocurre cuando hay cambios en el mismo código en diferentes ramas, y Git no puede determinar automáticamente qué cambios deben mantenerse. No es bueno ni malo en sí mismo, sino que es una indicación de que se necesita atención para resolverlo cuidadosamente y garantizar la calidad del proyecto.
+
+2.	Los conflictos no se pueden evitar completamente los conflictos en Git, es posible minimizar su frecuencia y facilitar su resolución mediante la adopción de buenas prácticas, la comunicación constante y la utilización de herramientas de gestión de conflictos.
+
+
+Parte Practica:
+3.2.10
+El archivo "milanesa.txt" de la rama "suprema" se reemplazó la palabra "lomo" por la palabra "pollo". Además, en los archivos de la rama "bife", noté que se eliminó la palabra "lomo" y se agregó la palabra "bife".
+3.2.12
+Sí, la eliminación de la rama "suprema" se realizó correctamente.
+
+3.2.13
+No, la fusión falló debido a un conflicto de "contenido". Esto puede deberse a que el archivo en cuestión ya existe en la rama principal con cambios diferentes (debido a la fusión de la rama "filetes"), y Git no quiere sobrescribir automáticamente los datos. Se deberá resolver el conflicto manualmente.
+3.2.14
+La diferencia es que ahora se me informa que mis rutas existen sin completar la "fusión" y que el archivo "milanesa.txt" ha sido "modificado en ambos", lo que significa que ha sido modificado en dos ramas diferentes, lo que hace imposible completar la combinación automáticamente.
+
+3.2.15
+En el archivo, se pueden ver los cambios realizados en las ramas "suprema" y "steak", pero falta la palabra "lomo" (es el único cambio que se eliminó en ambas confirmaciones, por lo que es el único cambio que coincide).
