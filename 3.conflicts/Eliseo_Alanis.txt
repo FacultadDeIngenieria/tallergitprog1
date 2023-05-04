@@ -1,0 +1,12 @@
+Parte teorica
+1. Es una situacion que ocurre cuando dos o más ramas tienen cambios en un archivo o en una sección de un archivo que no se pueden fusionar automáticamente debido a que son diferentes o contradictorios. Un conflicto no es bueno ni malo solo nos esta diciendo que deberiamos revisar manualmente los cambios para poder ver cual seria la mejor manera de fusionar las ramas
+2. Para evitar los conflictos se debe trabajar en branchs separadas y si se trabaja con otra persona avisar sobre los cambios que se hacen para que no se produzcan cambios conflictivos en el archivo o seccion de este.
+Parte Practica
+10.1 Con "git diff main suprema" observo la diferencia entre las branchs donde en la de "main" la ultima linea es "lomo" mientras que en la de "suprema" es pollo.
+10.2 Con "git diff main bife" observo la diferencia entre las branchs donde en la de "main" la ultima linea es "lomo" mientras que en la de "bife" es bife
+11. No observo nada fuera de lo normal, me dice que estoye en la branch main y que no hay nada añadido para commitear
+12. Si funciono
+13. No, no funcionó.
+14. Que tengo "unmerged paths" y que tengo que arreglar los conflictos.
+15. Vi que hay "<<<<<<HEAD>" debajo del pan y ===== debajo del bide y >>>>>>suprema debajo del pollo.vi
+
