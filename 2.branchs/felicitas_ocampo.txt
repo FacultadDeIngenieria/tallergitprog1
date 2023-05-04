@@ -1,0 +1,69 @@
+2. branchs
+2.1 preguntas
+1.un branch es una division de la linea principal de desarrollo de un repositorio. permite trabajar en una version alternativa del codigo sin afectar el trabajo en la rama principal. 
+2.los branches son utiles ya que permiten trabajar en diferentes correcciones de errores de forma independiente, no afecta el trabajo en la rama principal. 
+3.para crear un branch se utiliza el comando "git branch y el nombre de la rama".
+4.para cambiar a una branch se puede realizar el comando "git checkout y el nombre de la rama".
+5.para eliminar un branch se realiza el comando "git branch -d y el nombre de la rama".
+6.para poder crear una rama y cambiar a esa rama al mismo tiempo se debe realizar el comando "git checkout -b y el nombre de la rama".
+7.un merge es un proceso en el cual se toman los cambios de una rama y se combinan con los cambos de otra rama, esto hace que se cree una nueva version del codigo el cual contiene los cambios de las dos ramas.
+8.para poder realizar un merge primero tenes que cambiar a la rama en la que queres fusionar los cambios y luego se realiza el comando "git merge y el nombre de la rama"
+9.un tag es una etiqueta que se utiliza para identificar una version esoecifica del codigo en un repositorio. 
+10.para poder crear un tag se utiliza el comando "git tag y el nombre del tag"
+
+2.2 
+5. lo que se puede observar al realizar el comando git graph es el historial de commits que se hicieron en un repositorio. cada linea representa una branch diferente y los puntos en linea representan los commits.  
+10.lo que observamos lugo de utilizar el comando git graph en este caso es que se agrego el ultimo commit que se realizo y cambio que antes decia (HEAD  main ) y ahora aparece (HEAD anana). se cambio el branch. 
+13.se puede observar que volvio al branch main y aparecen los comits hechos anteriormente incluido el cambio que se hizo al archivo 2pizza.txt" dentro del branch "anana". 
+15.lo que se observa es que se agreco el commit del merge de las branches main y anana. 
+16.las branches que estan mergeadas a main son: anana, experimento y  
+18.
+19.git hizo el merge automaticamente.
+20.las branches que estan mergeadas son anana, experimento y main.  
+23.no hay ninguna branch mergeada ya que solo existe la branch main. 
+24.
+git graph
+*   0ce9387 (HEAD -> main) Merge branch 'anana'
+|\
+| * f2f851c pizza.txt
+* | 1648e31 pizza.txt
+|/
+* f0afea3 pizza.txt
+| * 820d3b9 (origin/2023) Fernando Santisi (#8)
+| * f1a8834 Sergio Morero (#6)
+| * 432cda1 Milagros Grimoldi (#4)
+|/
+* 579a34f (origin/main, origin/HEAD) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+no observe ningun cambio al realizar el comando git graph. 
+
+27.
+git show pizza
+tag pizza
+Tagger: Felicitas Ocampo <focampo@mail.austral.edu.ar>
+Date:   Thu May 4 17:20:43 2023 -0300
+
+receta de la pizza.
+
+commit 0ce9387f449aa4936da9382b95b5514e4590fbf0 (HEAD -> main, tag: pizza)
+Merge: 1648e31 f2f851c
+Author: Felicitas Ocampo <focampo@mail.austral.edu.ar>
+Date:   Thu May 4 15:44:14 2023 -0300
+
+    Merge branch 'anana'
+
+diff --cc 2.branchs/pizza.txt
+index 0dc45a3,487100d..5b1450f
+--- a/2.branchs/pizza.txt
++++ b/2.branchs/pizza.txt
+@@@ -1,6 -1,6 +1,7 @@@
+  oregano
+  albahaca
+  queso
++ anana
+  salsa de tomate
+ +cebolla
+  masa de pizza
+
