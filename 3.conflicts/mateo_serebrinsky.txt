@@ -1,0 +1,13 @@
+1.
+Un conflicto ocurre cuando dos ramas distintas han editado la misma línea de un archivo o cuando un archivo ha sido eliminado
+ en una rama pero editado en otra. No se puede decir que sea algo bueno o malo.
+2.
+Por lo general, los conflictos surgen cuando dos personas modifican las mismas líneas de un archivo o cuando un desarrollador 
+elimina un archivo mientras otro lo está modificando.
+
+3.10. Al usar git diff master suprema, se pueden ver líneas de texto, mientras que con git diff master bife, no se ve nada.
+3.11. Se puede observar que se encuentra en la rama master y que el archivo milanesa.txt ha sido modificado.
+3.12. Funciona correctamente.
+3.13. No está funcionando.
+3.14. Al utilizar git status, se puede observar el archivo .txt con el nombre correspondiente y que milanesa.txt ha sido modificada.
+3.15. Se pueden visualizar tanto pan rallado como bife.
