@@ -1,0 +1,24 @@
+
+1. Lo que me esta mostrando el git status es que luego de clonar el repositorio, agregue un nuevo archivo y modifique el archivo sandwich pero me esta advirtiendo que no lo guarde y lo puedo llegar a perder si no lo hago. 
+
+2. Antes me lo mostraba en rojo porque no estaba guardado, pero ahora que lo guarde con git add me lo muestra en verde.
+
+3. Despues de hacer el commit, no se ve mas el archivo sandwich y solo se ve el catalina_pereyra.txt
+
+4. Me aparece que no tengo el commit de las salsas ya que no puse git add, directamente commitie. Git log me muestra el historial de commits de la branch, y esta ordenado de mas actual a mas viejo.
+
+5. Cuando hago el comando git log, lo que me aparece son los commit que se realizaron en el repositorio. Mostrando desde el mas actual al mas viejo. 
+
+6. El comando git log --oneline, veremos el nuevo commit que acabamos de hacer.El comando git log --stat muestra información detallada sobre los cambios realizados en cada commit. Para cada commit, muestra el autor, la fecha y la hora, el mensaje de confirmación y las estadísticas de los cambios hechos.
+
+7.  El comando git diff se utiliza para mostrar las diferencias entre los cambios realizados en dos commits distintos. Primero debemos identificar los hashes de los dos commits que queremos comparar, en este caso el sándwich inicial y despues con las salsas agregadas. Git diff nos mostrará las diferencias entre los cambios realizados en el commit (cuando agregamos el archivo sandwich.txt) y el otro commit (cuando agregamos las salsas al sandwich).
+
+8. Luego de hacer un commit con los cambios esta todo commiteado.
+
+9. El Log --oneline me muestra los commits que hice inclusive el ultimo donde modifique el nombre del archivo.
+
+10. Luego de eliminar el archivo y hacer un git status sin comitear, me avisa que debo guardar los cambios ya que tengo un archivo borrado. Luego del commit el git status me avisa que tengo todo limpio (nada por comitear) y el git log __oneline me muestra nuevamente todos los commits con mis cambios. 
+
+11. En la bitacora veo los commits con todos los datos del autor la hora y las estadisticas. 
+
+

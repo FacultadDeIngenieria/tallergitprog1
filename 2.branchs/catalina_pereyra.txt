@@ -1,0 +1,20 @@
+1. Observo que se van agregando todos los commits que voy haciendo. 
+
+2. Ahora observo que aparece mi commit pero me especifica que esta en la branch anana, no en la main. 
+
+3. observo los commits diferenciando la rama en la que estoy, el ultimo commit lo tengo hecho en la rama main, pero el anterior lo tengo hecho en la rama anana. 
+
+4. Lo primero que veo son las lineas que me muestran como del lado izquierdo tengo la rama main, y luego se desprende de ella la rama anana, en el ultimo commit se ve como luego del merge se unen nuevamente la rama main y la rama anana, y ahora mi pizza.txt tiene todos los ingredientes que agregue. (idependientemente de si lo agregue en main o en anana). 
+
+5. la unica brach mergeada es anana. 
+
+6. veo lo mismo que en el punto 4 solamente que con una linea nueva representando a la rama experimento. 
+
+7. no estoy 100% segura lo que si me aparecio fue un archivo nano, en donde tuve que confirmar que queria mergear. 
+
+8. las branch mergeadas son experimento y anana. 
+
+9. luego de eliminar las ramas experimento y anana, ninguna branch esta mergeada, solo aparece la branch main. 
+
+10. Observo que sigue todo como el ultimo graph puede ser porque no commitee nada despues de borrar las ramas. 
+
