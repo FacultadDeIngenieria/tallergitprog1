@@ -1,0 +1,28 @@
+EJERCICIO 2 
+2.1 PREGUNTAS
+
+2.1.1 Un branch es una rama que tiene git. Pueden haber varias y luego se pueden unir. 
+2.1.2 Pueden ser muy utiles porque, en casos como estos, se pueden dividir en diferentes ramas y tener diferentes progresos en cada una de ellas.
+2.1.3 Una branch se crea con el comando git branch "nombre_de_la_nueva_rama_".
+2.1.4 Para cambiar a otra rama se utiliza el comando "git checkout" ""nombre""
+2.1.5 Para eliminar una branch se utiliza el comando "git branch -d "nobre_de_la_rama""
+2.1.6 Se puede utilizar el comando "git checkout -b "nombre_de_la_nueva_rama""
+2.1.7 Un merge es la union de 2 o mas ramas en una sola. 
+2.1.8 Para hacer un merge, se utiliza el comando "git merge". 
+2.1.9 Un tag es ...!!!!
+2.1.10 Para crear un tag se utiliza el comando "git tag"
+
+2.2 EJERCICIO PRÁCTICO 
+
+2.2.6 Lo que observo son todos los cambios, todos los mensajes de los commits, desde que empezo el proyecto. Tambien muestra que cambie a una nueva rama (con mi nombre), y luego a otra ("experimento")
+2.2.10 Lo que observo son todos los cambios, todos los mensajes de los commits, pero ahora me muestra cuando es que cambie a diferentes ramas. Me muestra que en cierta rama hice ciertos commits, mientras que en otra rama (la que estoy ahora) hice otros commits. 
+2.2.13 Lo que puedo ver son todos los mensajes de los commits desde que comenzo el archivo. Tambien veo que hubo cambio de ramas y los "niveles" de los cambios de esas ramas, junto con los mensajes de los commits que se hicieron en ellos. 
+2.2.15 Lo que puedo ver son todos los mensajes de los commits desde que comenzo el archivo, viendo tambien las diferentes ramas con sus respectivos commits, y ahora lo diferente es que "volvi" a una rama anterior e hice un commit. 
+2.2.16 Las ramas que estan mergeadas a master son anana. 
+2.2.18 Puedo ver los commits y sus mensajes, y tambien veo como es que hubieron diferentes ramas y como despues se unieron todas en la misma.
+2.2.19 Yo le di el comando a git y git lo hizo automáticamente. Unicamente se hace algo "manual", cuando queres confirmar el merge (commitear el merge), y cuando tenes un conflicto entre los archivos, los cuales tenes que resolver. 
+2.2.20 Ahora que las ramas están mergeadas a master son anana y experimento.
+2.2.23 Ahora no hay ninguna rama mergeada a master, ya que fueron eliminadas. 
+2.2.24 Sigo viendo lo mismo que antes, solo que ahora se marca con otro color las demas ramas. Yo supongo que es porque fueron eliminadas. 
+
+

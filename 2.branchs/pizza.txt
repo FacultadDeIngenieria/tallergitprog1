@@ -1,7 +1,6 @@
 oregano
 albahaca 
 queso
-anana
 salsa de tomate
 <<<<<<< HEAD
 cebolla
