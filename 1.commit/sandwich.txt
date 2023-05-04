@@ -1,6 +1,4 @@
 pan
 queso
-tomate
-lechuga
-salsa
+medallón
 pan
