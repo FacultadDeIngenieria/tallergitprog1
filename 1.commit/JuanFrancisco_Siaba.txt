@@ -1,0 +1,33 @@
+¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+Con git init
+¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+rm --r <nombre_del_archivo>
+Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+si
+¿Qué comando se utiliza para agregar un archivo al repositorio local?
+git add
+¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+git status
+¿Qué comando se utiliza para hacer un commit?
+Se utiliza git commit
+En sus propias palabras, ¿qué es un commit?
+Es una forma de guardar de forma instantanea el estado del proyecto. registra los cambios en un repositorio.
+
+
+
+1.2.3 Veo que sandwich.txt esta modificado, porque fue commiteado antes y hay un archivo juanfrancisco_siaba.txt que es nuevo, y nunca fue agregado a git
+
+1.2.5 Despues de hacer git add sandwich.txt, el archivo paso a estar en staging en lugar de modified. Y sigo viendo el txt en rojo, porque esta en modified.
+
+1.2.7 Luego de hacer el commit, no aparece mas el archivo sandwich y solo se ve el Juanfrancisco_Siaba.txt
+
+1.2.9 Git log muestra el historial de cambios y esta ordenado de el mas reciente al mas antiguo
+
+1.2.10 La diferencia entre git log--oneline y git log --stat es que git log --oneline El comando git log --oneline muestra el historial de confirmaciones (commits) en una sola línea por cada commit sin mostrar la información de quien lo hizo, fecha y una abreviatura del has (o sea simple) y en cambio git log --stat muestra una lista de todos los commits (confirmaciones) realizados en el repositorio, junto con la información de resumen y la lista de archivos modificados en cada commit, o sea da en mas detalle todos los commits en que estado están.
+
+1.2.11 Este comando muestra la diferencia entre los archivos y aparece en diferentes colores segun quien lo edito
+
+1.2.14 Git status muestra que se creo un nuevo archivo sandwich2_feo.txt pero que no esta commiteado. Esta en staged. Git log --oneline no muestra nada porque el archivo no esta commiteado.
+
+1.2.15 El oneline confirma que el archivo fue borrado de forma correcta
+1.2.16 muestra que el archivo ha sido borrado

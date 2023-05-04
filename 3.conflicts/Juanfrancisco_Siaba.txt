@@ -1,0 +1,43 @@
+preguntas:
+Un conflicto en Git ocurre cuando hay dos o más cambios que afectan a las mismas líneas en un archivo o archivos diferentes. Esto puede suceder cuando dos o más personas trabajan en la misma rama y realizan cambios incompatibles, o cuando se trabaja en diferentes ramas y se intenta fusionarlas. El conflicto en sí mismo no es ni bueno ni malo, simplemente indica que hay un problema que debe ser resuelto.
+
+
+Si bien no es posible evitar completamente los conflictos, se pueden tomar medidas para minimizar su frecuencia. Algunas prácticas recomendadas incluyen:
+
+Trabajar en ramas separadas: esto minimiza la cantidad de personas trabajando en el mismo código al mismo tiempo y reduce la probabilidad de que se produzcan conflictos.
+
+Mantener actualizado el repositorio: antes de realizar cualquier cambio, asegúrese de tener la última versión del código en su rama para evitar conflictos causados por cambios realizados por otros desarrolladores.
+
+Comunicación entre desarrolladores: si se trabaja en equipo, es importante comunicar los cambios que se van a realizar y asegurarse de que no se dupliquen los esfuerzos.
+
+Resolver conflictos con prontitud: en caso de que se produzcan conflictos, es importante resolverlos rápidamente para evitar que se propaguen y se conviertan en un problema mayor.
+
+En general, los conflictos son parte del proceso de desarrollo de software y se deben abordar con paciencia y colaboración para garantizar que el código se mantenga limpio y funcione correctamente.
+
+Parte practica: 
+
+
+Al hacer git diff entre la branch master y la branch suprema se ve la diferencia entre el milanesa.txt de las dos branches. A una branch se la nombra como a (master) y a la otra como b (suprema). La branch master tiene el contenido de milanesa.txt mostrado en rojo y con lineas - mientras que el contenido de la branch suprema de milanesas.txt esta en verde y con +. Se puede observar que pan rallado se repite en los dos text y esta marcado con un rectángulo rojo a la derecha del contenido de la branch suprema. A diferencia el segundo elemento difiere ya que en la branch master en el milanesa.txt tiene lomo y la branch suprema tiene pollo.
+
+También al hacer git diff entre la branch master y branch bife se muestra todo de la misma forma con la branch bife y la master teniendo los dos pan rallado en la primer posición pero después la master tiene lomo y la branch bife tiene bife.
+
+3.2.11 Al movermeme a la branch master y poner git status, aparece en rojo que milanesa.txt esta modificado. Y me dice que los cambios no están staged para ser commitedados dándome la opción git add de milanesa.txt para después poder hacer un commit o git restore para dejarlo como estaba antes y sacarle los cambios
+
+3.2.12 Al ejecutar el comando git merge bife funciono y me tiro que estaba todo al dia. 
+
+3.2.13 Al ejecutar el comando git merge suprema no funciona y en la terminal aparece que hay un error. Dice que Your local changes to the following files would be overwritten by merge. Y pide que commitee mis cambios antes de hacer un merge. Luego de hacer git dad y commit, salta un conflict y que fallo el merge
+
+3.2.14 Aparece que milanesa.txt esta modificado pero que no esta staged para poder ser commiteado, para eso debería hacer un git dad de milanesa.txt y después hacer el commit o git restore para borrar los cambios hechos. Una vez que haces git dad y commit salta que hay que arreglar un conflicto o usar git merge --abort para cancelarlo.
+
+3.2.15 El contenido del archivo  en este momento 3.conflicts/milanesa.txt muestra:
+
+Pan rallado
+bife
+
+Esto es por el merge que se pudo realizar automáticamente y de forma correcta entre la branch master y la branch bife.
+
+3.2.18
+
+Resolver manualmente el conflicto para poder hacer el merge entre la branch master y suprema:
+
+Para arreglarlo manualmente se entra al milanesa.txt y se ve marcado en el editor de texto los dos textos que se quieren hacer merge. Como se ve que pan rallado esta dos veces se borra de la branch suprema para que no se superponga y se pueda hacer el merge. Una vez hecho eso se tiran unos comandos por la terminal y se realiza manualmente. Luego pararse con git checkout en la branch master. Después hay que tirar git merge suprema para ver si se resolvió o no el conflicto. Después de haber resuelto los conflictos se pone git add milanesa.txt y después se commitea y se confirma el merge. De esta forma se resuelve el conflicto.

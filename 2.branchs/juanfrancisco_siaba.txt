@@ -1,0 +1,109 @@
+ 2.1.1 ¿Qué es un branch?
+
+Un branch en Git es como una copia separada de un proyecto en el que se esta trabajando, que permite hacer cambios y experimentar sin afectar la versión principal del proyecto. Es una versión de un trabajo guardada que aunque después lo cambies al proyecto, podes volver a ese punto en el que estaba.
+2.1.2 ¿Por qué pueden ser útiles los branches?
+
+Los branches pueden ser útiles porque permiten que múltiples desarrolladores trabajen en diferentes aspectos de un proyecto simultáneamente, sin interferir en el trabajo de los demás (no afectan la rama principal del proyecto). 
+
+Facilitan el experimentar sin afectar la versión principal del proyecto (probar nuevas ideas o funcionamientos). 
+
+Permiten revertir cambios de manera más fácil: si un cambio importante causa problemas, puedes revertirlo fácilmente si lo hiciste en un branch separado. 
+
+Permiten realizar pruebas y revisiones de código: cuando trabajas en un branch, puedes realizar pruebas y revisiones de código en un ambiente separado antes de integrar tus cambios a la rama principal. 
+
+2.1.3 ¿Cómo se crea una branch?
+
+Se abre la terminal ,y estando en la carpeta principal se crea una branch poniendo este comando en la terminal: git branch (nombre-de-la-branch) y el nombre quereres poner a esa branch para acordarte o identificarla. 
+
+
+2.1.4 ¿Cómo se cambia a una branch?
+
+Para cambiar a una branch se pone el comando git checkout (nombre-de-la-branch) y el mismo nombre. Siempre antes de meterse en una branch conviene poner git branch para ver todas y la que aparece con un asterisco es la principal. De ahí al ver todos los nombres claros se tira el comando mencionado anteriormente y su nombre. 
+
+
+2.1.5 ¿Cómo se elimina una branch?
+
+Primero hay que estar parado en el directorio del proyecto donde se quiere eliminar la branch. Después, hay que asegurarse de no estar de no estar parado en la misma branch que se quiere eliminar y si es así salimos de ella poniendo el comando git checkout. Luego, se ejecuta el comando git branch -d nombre-de-la-branch para eliminarla (remplazando "nombre-de-la-branch" con el nombre de la branch que se quiere eliminar).
+
+Si la branch no esta fusionado con la rama principal, se puede forzar la eliminación de la branch con el comando git branch -D nombre-de-la-branch (remplazando "nombre-de-la-branch" con el nombre de la branch que se quiere eliminar).
+
+
+2.1.6 ¿Cómo se crea una branch y se cambia a ella en un solo paso?
+
+Para crear una branch con su nombre y cambiar a ella en un solo paso se utiliza este comando:
+
+git checkout -b nombre-de-la-branch (remplazando "nombre-de-la-branch" con el nombre de la branch que se quiere eliminar)
+
+2.1.7 ¿Qué es un merge?
+
+En Git, un merge es el proceso de combinar cambios de dos o más branches en una sola branch. El objetivo del merge es tomar los cambios realizados en dos o más branches independientes y combinarlos en una nueva rama que contenga todos los cambios.
+
+Cuando se realiza un merge, Git intenta combinar automáticamente los cambios de las dos branches de una manera que conserve todos los cambios y resuelva cualquier conflicto que pueda surgir entre ellos. Si no hay conflictos, Git realiza el merge de manera automática. Si hay conflictos, Git los señala y pide al usuario que resuelva los conflictos manualmente.
+
+2.1.8 ¿Cómo se realiza un merge?
+
+Pararse en la branch que se desea fusionar en la terminal.
+ Ejecutar el siguiente comando: git merge nombre-de-la-branch (remplazando "nombre-de-la-branch" con el nombre de la branch que se quiere fusionar).
+
+Si Git puede fusionar automáticamente los cambios de las dos ramas, se completará el proceso y se creará un nuevo commit de merge que contenga los cambios fusionados.
+
+Si hay conflictos, Git los señalará y te pedirá que los resuelvas manualmente antes de completar el merge. Para resolver conflictos, se debe editar manualmente los archivos en conflicto, elegir qué cambios se desean mantener y luego marcar los conflictos como resueltos utilizando el comando git add.
+
+Una vez resueltos los conflictos, hay que crear un nuevo commit para confirmar los cambios de merge usando el comando git commit.
+
+
+2.1.9 ¿Que es un tag?
+
+un tag es una referencia a un commit específico en la historia del repositorio. Los tags se utilizan para marcar puntos específicos en el historial del repositorio, como versiones de software, entregas o hitos importantes en el desarrollo del proyecto.
+
+A diferencia de las branches, que son utilizadas para desarrollar nuevas características o corregir errores, los tags son utilizados para identificar versiones estables del software y para proporcionar una forma fácil de acceder a versiones específicas del código en el futuro.
+
+2.1.10 ¿Cómo se crea un tag?
+
+Para crear un tag en Git, puedes utilizar el siguiente comando:
+
+git tag nombre-del-tag
+
+Este comando crea un tag no anotado en el commit actual de la branch en la que estes. Si se desea crear un tag anotado, se agrega la opción -a al comando:
+
+
+git tag -a nombre-del-tag -m "mensaje del tag"
+
+Este comando creará un tag anotado con el nombre especificado y el mensaje especificado. 
+
+
+2.2 Ejercicio Practico
+
+2.2.6 Luego de hacer dos cambios en pizza.txt y commitear al poner el comando git graph se observa en la terminal: (tira arriba de todo en la terminal one file changed, 1 insertions
+ Que en la branch  experimento (que aparece con head) que a la izquierda tiene un código con *(en este caso es "528b25c"), a la derecha tiene el mensaje del commit que yo le puse (en este caso "Se agrego orégano arriba de albahaca") y después el commit anterior en la fila de abajo con el mensaje "Se agrego albahaca arriba de queso" que fue el primer commit realizado de pizza.txt.
+
+2.2.10 Al poner git graph en este caso aparece lo mismo que antes con el cambio agregado ahora en la branch anana, donde se agrego anana debajo de queso, al archivo pizza.txt. El commit de anana ahora tiene a su izquierda otro código que aparece después de un #(esta en este caso ("d11d2db") aparece asi. La branch anana ahora es señalada como head. Arriba de toda aparece 1 file changed - 1 insertion
+
+
+2.2.13 Luego de hacer git graph se observa la linea nueva en la branch main que ahora aparece como head con el commit (con un mensaje de descripción que aparece a la derecha sobre de que se hizo el commit). En este caso que se agrego cebolla debajo de salsa de tomate en el archivo pizza.txt. Ahora aparece 1 insertion arriba de todo.
+
+2.2.15 Luego de hacer git merge de la branch anana en la terminal al poner git graph aparece lo mismo que antes sin las insertions.
+
+2.2.16 Las branches mergeadas a master son 2023, anana y main que aparecen en fila y la master aparece en verde
+
+2.2.18 Luego de hacer el merge de la branch experimento a la master y poner el comando git graph aparece lo mismo que antes ya que cuando quise hacer el merge de la branch experimento a la master salto un conflicto por lo que tengo que hacer un merge manual.
+
+2.2.19 Tuve que hacer un merge manual ya que había un conflicto entre la branch experimento y la master y no se podía realizar el merge automáticamente. Esto se debía a que los dos pizza.txt en los dos branches tenían la misma "salsa de tomate" y no permitía que pase de la branch experimento a la master porque ya existía en el editor de texto.
+
+2.2.20 Ahora las branches mergeadas a master son:
+  2023
+  anana
+  experimento
+  main
+
+Y la master (aparece en verde)
+
+2.2.23 Luego de eliminar las branches alana y experimento, las branches que aparecen mergeadas a la master son solo : 
+2023
+main
+
+2.2.24 Ahora en al poner el comando git graph, aparece como ultimo el merge de la branch experimento a la master y después los mensajes de los commits anteriores donde se hicieron cambios a pizza.txt así:
+
+* 528b25c Se agrego oregano arriba de albahaca
+* 529ee6f Agrege albahaca arriba de queso
+* d11d2db Se agrego anana debajo de queso
