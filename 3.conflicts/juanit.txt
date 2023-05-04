@@ -1,0 +1,20 @@
+¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+¿Se puede evitar un conflicto? ¿Cómo?
+Un conflicto es una situación en la que hay un desacuerdo o problema entre dos o más personas. Puede ocurrir en cualquier momento y en cualquier lugar.
+No es necesariamente bueno o malo, depende de cómo se maneje. 
+Sí, se puede evitar un conflicto. Para evitarlo, es importante comunicarse y escuchar los distintos puntos de vista y tratar de entenderlos
+
+
+10)Haga un git diff master suprema y un git diff master bife. ¿Qué observa?
+me muestra el bife en commit y el pollo en modified
+11)Moverse a la branch master. Corra un git status, ¿qué observa?
+me muestra los files en los que puedo usar git add y luego comitear
+12)Ejecute git merge bife. Funcionó?
+si, me pone los files
+13)Ejecute git merge suprema. Funcionó?
+me pone already up to date
+14)Ejecute git status. Que observa?
+me muestra los untracked files y que tengo dos comitts
+15)Vea el contenido del archivo 3.conflicts/milanesa.txt. ¿Qué observa?
+pan rallado y bife
+
