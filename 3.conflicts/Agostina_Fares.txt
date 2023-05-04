@@ -1,0 +1,9 @@
+3.1.1)se refiere a cuando dos branchs realizan un cambio en un mismo sector de un archivo. no es en si>
+3.1.2)se puede evitar realizando commits frecuentemente
+
+3.2.10)se ven las diferencias entre las ramas
+3.2.11)se observa que el archivo milanesa.txt esta staged
+3.2.12)si funcionó
+3.2.13)no funcionó debido a un conflicto con el archivo milanesa.txt
+3.2.14)se observa una parte que pone unmerged paths
+3.2.15)se ven los cambios que se realizaron en el archivo en ambas branchs
