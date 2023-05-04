@@ -1,0 +1,18 @@
+1.2.3 tp git
+veo que sandwich.txt esta modificado, ya fue commiteado antes y hay un archivo Enzo_Bersano.txt que es nuevo, y nunca fue agregado a git. 
+1.2.5 despues de hacer git add sandwich.txt, el archivo paso a estar en staging en lugar de modified. sigo viendo mi txt en rojo, porque esta en modified.
+1.2.7 despues de hacer el commit, no se ve mas el archivo sandwich.txt y solo se ve el Enzo_Bersano.txt 
+1.2.9  git log me muestra el historial de commits de lo mas actual al mas viejo. 
+1.2.11 con el git diff comparo los archivos sandwich.txt, y me muestra las diferencias de palabras entre uno y otro.
+1.2.14 usando el git status y el git --oneline no se ven cambios porque solo se ven cambios cuando hay un commit, y aqui solo se cambio el nombre del archivo.
+1.2.15 en el git status vemos que el archivo sandwich2_feo.txt esta borrado y no se lo ve, y en el git log --oneline observamos que aparece el comentario con el que hicimos commit para guardar el cambio de borrar el archivo sandwich2_feo.txt.
+1.2.16 en la bitacora vemos los distintos cambios que fuimos haciendo hasta el ultimo paso, y los cambios que le hicimos(mostrados con signos + o -) 
+
+preguntas teoricas:
+1. para iniciar un repositorio local hay que correr el comando git init
+2. para que un directorio deje de ser controlado por git uso el comando git rm
+3. si agrego un archivo a un directorio que esta siendo controlado por git, este archivo va a estar controlado por git tambien
+4. para agregar un archivo al repositorio local se usa el comando git add
+5. para saber que archivos fueron modificados uso el comando git status
+6. para hacer un commit se debe utilizar el comando git commit -m "aca va un mensaje", entre comillas siempre se pone un comentario cualquiera
+7. un commit es un paso en el proceso de guardar un archivo en git.x
