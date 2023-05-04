@@ -1,0 +1,55 @@
+1.1 ¿Qué es un branch?
+Un branch es una copia independiente de un repositorio de Git que permite trabajar en diferentes versiones del código al mismo tiempo y sin afectar la versión principal.
+
+1.2 ¿Por qué pueden ser útiles los branches?
+Los branches pueden ser útiles porque permiten a los desarrolladores trabajar en diferentes funcionalidades o soluciones de manera independiente sin afectar la rama principal del proyecto, lo que permite una mayor organización y colaboración en equipos de desarrollo. También son útiles para realizar pruebas y experimentos sin afectar la versión principal del proyecto.
+
+1.3 ¿Cómo se crea una branch?
+Se utiliza el comando "git branch" seguido del nombre de la nueva branch
+
+1.4 ¿Cómo se cambia a una branch?
+Se utiliza el comando "git checkout" seguido del nombre de la branch
+
+1.5 ¿Cómo se elimina una branch?
+Para eliminar una branch en Git, se utiliza el comando "git branch -d" seguido del nombre de la branch que se desea eliminar.
+
+1.6 ¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Para crear una branch y cambiar a ella en un solo paso en Git, se utiliza el comando "git checkout -b" seguido del nombre deseado para la nueva branch. 
+
+1.7 ¿Qué es un merge?
+Un merge es el proceso de fusionar los cambios de una branch en otra. Se utiliza para incorporar los cambios realizados en una branch en otra. 
+
+1.8 ¿Cómo se realiza un merge?
+Para hacer un merge, se usa el comando git merge en la rama donde quiero integrar los cambios de otra rama. Esto combina los cambios y crea un nuevo commit con los cambios integrados.
+
+1.9 ¿Que es un tag?
+Un tag es una marca que se utiliza para identificar versiones específicas de un repositorio. Los tags son útiles para marcar puntos de referencia importantes en la historia de un proyecto. 
+
+1.10 ¿Cómo se crea un tag?
+Se utiliza el comando "git tag" seguido del nombre para el nuevo tag y el commit al que se desea asociar. 
+
+PRACTICA
+2.6 Muestra que el commit más reciente en la rama master agregó la palabra "albahaca" en el archivo pizza. HEAD indica que es la rama en la que estoy trabajando.
+
+2.10 
+Muestra que hay dos ramas en el repositorio, anana y master. Tambien muestra que en la rama anana se agrego anana a la pizza, y que en la rama master se agrego albahaca a la pizza. 
+
+
+2.13 
+Muestra que hay dos ramas, master y anana y que me encuentro en la rama master. 
+Muestra que se agrego en master: cebolla a la pizza, albahaca a la pizza, y que en anana se agrego anana a la pizza. 
+
+
+2.15
+El nuevo registro de commits muestra que se realizó un merge: la rama anana a la rama master. 
+
+2.18 
+El mensaje de error indica que no es posible hacer un merge con la rama experimento porque no hay cambios que fusionar.
+
+2.19 
+Si, git indica que hay cosas sin resolver y que se resuelvan manualmente y despues hacer commit con el resultado. Esto paso porque los cambios que se hicieron en las dos ramas modifican al mismo archivo y no puede decidir con que cambios quedarse. 
+
+2.20 anana y master 
+
+2.23 solo master, ya que experimento y anana fueron eliminadas
+

@@ -1,0 +1,50 @@
+1.1.1 Para iniciar un repositorio local en git se debe ejecutar el comando git init 
+1.1.2 Para que un directorio deje de ser ejecutado por git se debe ejecutar el comando git rm 
+1.1.3 Si, al agregar un archivo a un directorio que ya está siendo controlado por git, automaticamente esta siendo controlado por git 
+1.1.4 Para agregar un archivo al repositorio local se debe ejectutar el comando git add, y para agregar un archivo especifico git add "nombre_archivo"
+1.1.5 Para determinar que archivos fueron modificados se puede utilizar el comando git status y mostrara todos los archivos que se modificaron
+1.1.6 Para hacer un commit se utiliza el comando; git commit -m "mensaje descriptivo"
+1.1.7 Un commit es similar a un registro que muestra todas las modificaciones de un archivo desde su creacion, ayuda a entender que que cambios se hicieron y el porque de los mismos para que sea mas facil leerlo despues
+
+1.2.3 Veo que sandwich.txt esta modificado, ya fue comiteado antes y hay un archivo rocio_bringas.txt que es nuevo, y nunca fue agregado a git. 
+
+1.2.5 Despues de hacer un git add sandwich.txt, el archivo paso a estar en staging en lugar de modified. Y sigo viendo mi txt en rojo, porque esta modified. 
+
+1.2.7 Despues del comando, notifica que se cambiaron dos filas, se agregaron tres cosas y se borro una. 
+
+1.2.9 Mustra los ultimos commits realizados en el repositorio. El primer commit muestra que se agrego un archivo 'sandwich.txt' en main con la fecha y el autor del mismo. Los demas commits muestran versiones pasadas del commit yendo desde el mas reciente al mas antiguo que fue creado por ' sebastian iglesias'. 
+
+1.2.10.1 El primer commit es el mas reciente, se realizo en main y agrego un archivo 'sandwich.txt' 
+El segundo commit, se realizo en main y agrego instrucciones para instalar git bash
+
+El tercer commit,fue el commit inicial del repositorio y se realizó para configurar la estructura inicial del repositorio.
+
+El cuarto commit, también fue un commit inicial realizado para configurar la estructura inicial del repositorio.
+
+1.2.10.2 Son registros de los cambios realizados en los commits. 
+En el primer registro de commit, se muestra que se agregó un archivo llamado sandwich.txt y se hizo un cambio en el archivo rocio_bringas.txt. Se indica que se agregaron 3 líneas y se eliminó una línea en el proceso.
+
+En el segundo registro de commit, se muestra que se realizaron cambios en el archivo README.md. En particular, se agregaron 5 líneas y se eliminaron 4 líneas. El cambio agregó instrucciones para instalar claves ssh en Windows con Git Bash.
+
+En el tercer registro de commit, se muestra que se realizaron cambios en varios archivos. Se agregaron varios archivos nuevos, incluidos README.md, sandwich.txt, pizza.txt y milanesa.txt. Además, se agregaron varios archivos nuevos en diferentes carpetas. En total, se agregaron 245 líneas y se eliminaron 2 líneas.
+
+En el último registro de commit, se indica que se realizó el commit inicial del repositorio. En particular, se agregaron 2 líneas al archivo README.md.
+
+1.2.11 
+En "1.commit/README.md", se agregaron instrucciones para un ejercicio relacionado con las confirmaciones de git. 
+
+1.2.14 Hay algunos cambios que están en el área de trabajo pero aún no se han agregado al área de stage.
+Agregó un archivo llamado "mi sandwich.txt". 
+
+1.2.15 La rama local main tiene un commit que no está en la rama remota origin/main. Se sugiere usar git push para enviar el commit local a la rama remota.
+Hay un archivo nuevo llamado sandwich2_feo.txt que está listo para ser confirmado en el siguiente commit. 
+El archivo sandwich.txt ha sido modificado desde el último commit, pero no se agrego al área de stage todavía. 
+
+1.2.16 
+Este es un registro de confirmaciones en un repositorio de GitHub. Muestra la fecha, el autor, el mensaje de confirmación y los archivos que se cambiaron para cada confirmación.
+
+La autora Rocio Bringas agregó un archivo sandwich.txt.
+El autor Sebastian Iglesias agregó instrucciones para instalar claves SSH en Windows con Git Bash.
+el autor Sebastian Iglesias creó el commit inicial para el repositorio y agregó varios archivos, incluidos README.md, sandwich.txt, pizza.txt y milanesa.txt. También agregaron un archivo .gitignore.
+El autor Sebastian Iglesias hizo el commit inicial al repositorio y agregó un archivo README.md.
+

@@ -1,0 +1,24 @@
+TEORIA 
+3.1.1
+Un conflicto en Git es cuando dos o más ramas tienen cambios en el mismo archivo y en las mismas líneas, lo que impide que Git pueda fusionar las ramas de forma automática y requieren una intervención manual para resolverse. Es malo porque requiere mas tiempo, pero por otro lado es bueno porque ayuda a simplificar y evitar problemas a futuro. 
+
+3.1.2
+Sí, se puede evitar un conflicto: 
+- manteniendo buena organizacion en el escritorio, con nombres de archivos y carpetas claros 
+- realizar de a pequeños cambios y verificar que esten bien en vez de cambios grandes 
+- trabajar en ramas separadas para que, si ocurre algun problema, no se arruine todo el proyecto y que sea mas facil de detectar y de arreglar
+
+PRACTICA 
+3.2.10 
+En el archivo "milanesa.txt" se reemplazó "lomo" por "pollo". 
+
+
+ La rama "principal" tenía "lomo" en esa línea, mientras que la rama "bife" tenía "bife". ahora la línea tiene "lomo" y "bife" en líneas separadas en distintas ramas. 
+
+ 3.2.12 
+ Si, se pudo hacer el merge automaticamente sin conflictos.
+
+
+
+
+
