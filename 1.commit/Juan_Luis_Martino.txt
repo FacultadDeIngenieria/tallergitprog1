@@ -1,0 +1,26 @@
+1.1.1 Se utiliza el comando "git init"
+1.1.2 Se utiliza el comando "git rm"
+1.1.3 Todavia no esta siendo controlado por git, primero lo tengo que añadir (add), y por ultimo lo tengo que commitear.
+1.1.4 Se utiliza el comando "git add (nombre del archivo)"
+1.1.5 Se utiliza el comando "git status", el cual muestra el estado de todos los archivos en esa carpeta controlada con git.
+1.1.6 Se utiliza el comando "git commit"
+1.1.7 Yo creo que un commit es un comando que se utiliza para ya hacer oficial un cambio el cual, antes que todo, supuestamente tuve que "confirmar" para añadirlo (add), para luego pasarlo a "estado final" (commit)
+
+1.2.3 Veo que sandwich ya estaba commiteado, solo que fue modificado. Tambien veo que un nuevo archivo fue añadido y no fue commiteado ni agregado.
+
+1.2.5 Despues de agregar (add) sandwich.txt, el archivo paso a estado "staged". El otro archivo (Juan_Luis_Martino.txt) sigue igual porque no fue añadido ni nada
+
+1.2.7 Ya no aparece el sandwich.txt, ya que fue commiteado. El otro archivo sigue igual.
+
+1.2.9 Aparecen los commits que hizo en total desde que se inicio el archivo. En total son 5 cambios que noto desde que comenzo el archivo. Lo que si pude entender claramente es que me muestra los 2 commits que yo hice arriba de todo (los mas recientes aparecen arriba de todo, los mas viejos abajo).
+
+1.2.10 Git log --oneline muestra claramente los mensajes unicamente que se escribieron junto con los commits. Git log --stats muestra mas informacion de lo normal. Tambien pone + (simbolo mas) en lo que fue añadido, por lo que es mas facil entender que es lo que se añadio.
+
+1.2.11 Git diff "hash" "hash" muestra las diferencias entre 2 hash diferentes. Esto significa que lo que sucedio en esos commits, git diff muestra la diferencia
+
+1.2.14 Despues de añadir (add) sandwich2.txt y cambiarle el nombre, al hacer git status en ambos casos no cambia nada. Unicamente cambia el nombre sin cambiar el estado de sandwich2.txt
+
+1.2.15 El git status nos muestra que en estado "añadido" se encuentra la eliminacion del archivo.
+
+1.2.16 git log --stat nos muestra en profundidad todos los commits que se hicieron desde que comenzo el archivo. Podemos ver que los nuevos se encuentran arriba y los mas viejos abajo. Nos muestra que se creo el archivo, luego se añadio el sandwich1.txt, luego se modifico (se añadieron las salsas), luego se añadio el sandwich2_feo.txt y por ultimo se elimino.
+
