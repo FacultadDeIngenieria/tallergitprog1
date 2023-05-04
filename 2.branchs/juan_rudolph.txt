@@ -1,0 +1,21 @@
+2.1.1- un branch es una versiona alternatica dw un proyecto de software que se deriva de a rama principal
+2.1.2- para trabajar e nuevas caracteristicas o correciones de error sin afectar las antiguas versiones
+2.1.3- utilizar "git branch (nombre de la rama)"
+2.1.4- utilizar "git checkout (nombre de la rama)"
+2.1.5- para eliminar una branch utlizar git branch -d (nombre de rama)
+2.1.6- para crear una branch y se cambia a ella en nu solo paso utilizas el comando git checkout -b (nombre de la rama)
+2.1.7- en el informatica el "marge" combinar dos o mas conjuntos de datos en uno
+2.1.8- usando el comando git marge en la rama correcta y luego git marge (rama a combinar). esta compara los cambios
+2.1.9- un tag es una referencia a un punto especifico en la historia de un repositorio. Es una forma de etiquetar o marcar una version especifica del codigo para referisirse a ella facilmente en el futuro
+2.1.10- git tag (nombre del tag)
+
+2.2.6- veo que pizza.txt esta commiteado dos veces, uno cuando agregue el albahaca y cuando le agregue el oregano
+2.2.10- veo que modifique la branch principal con anana
+2.2.13 veo que se creo una nueva version de pizza.txt con cebolla
+2.2.15- se puede observar que se combino la cebolla, la anana y la version acomodada
+2.2.16- las branches mergeadas son "main", "anana" y "master"
+2.2.18- aparece lo mismo que antes porque cunado quise hacer el merge me dio un conflicto y lo tuve que hacer manual 
+2.2.19- manual por que habia un conflicto al hacer un merge. tanian la misma salsa de tomate y no dejaba mergear normal
+2.2.20- estan mergeadas: "2023" "anana" "experimento_master" y "main"
+2.2.23- despues de eliminar las branches solo quedan "2023" y "main"
+2.2.24- en el git graph aparece el ultimo merge con los mensajes de cada commit despues de modificar cada pizza
