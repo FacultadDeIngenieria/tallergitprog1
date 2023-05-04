@@ -1,0 +1,10 @@
+EJERCICIO 3
+3.1 PREGUNTAS 
+3.1.1 Un conflicto es cuando 2 ramas independientes editaron la misma linea de un archivo y cuando se intentan unir, surge un problema (no pueden ser las 2 modificaciones unidas en una porque son diferentes). Es malo ya que no pude realizar el merge.
+3.1.2 Si se puede evitar un conflicto. La manera de evitarlo es no modificando ls misma linea de un archivo en 2 ramas diferentes. 
+
+3.2.10 Lo que se puede observar es que en rojo se muestra -lomo (que significa que sacamos el pollo), y luego, debajo en verde aparece +pollo (en la rama de pollo) o +bife (en la rama de bife).
+3.2.12 Funcionó
+3.2.13 No funcionó, hay un conflicto y es que el archivo milanesa.txt fue cambiado y no fueron commiteados esos cambios. 
+3.2.14 Observo que hay un problema en el archivo de txt, ya que es diferente para las 2 ramas. 
+3.2.15 Observo que hay 2 versiones. En "mi principal" aparece bife, mientras que en la rama "suprema" aparece "pollo". 
