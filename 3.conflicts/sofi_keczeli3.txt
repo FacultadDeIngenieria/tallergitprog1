@@ -18,8 +18,8 @@ bife en lugar de lomo ahora)
 3.2.14 Tengo "unmerged paths" por milanesa.txt
 
 3.2.15 Me aparece que hay algo que los dos tienen en común (pan rallado) 
-pero que uno tiene bife y el otro pollo. Me muestra el conflict.
+pero que head tiene bife y la branch suprema pollo. Me muestra el 
+conflict.
 
 3.2.18 Se ingresa con Vi o nano y edita manualmente el conflicto, 
-eliminando lo que conflictua y dejando la versión que se desee (en mi 
-caso, con mac, se hizo de forma automática)
+eliminando lo que conflictua y dejando la versión que se desee.
