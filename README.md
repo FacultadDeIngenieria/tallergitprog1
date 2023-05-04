@@ -3,10 +3,11 @@
 ## Instalación
 
 1. Generar una clave ssh: [Guía para generar clave SSH](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-2. Agregar la clave ssh a su cuenta de GitHub: [Guía para agregar clave SSH a GitHub](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-3. Hacer un Fork de este repositorio: [Guía para hacer un Fork](https://docs.github.com/es/get-started/quickstart/fork-a-repo)
-4. Clonar el repositorio bifurcado: [Guía para clonar un repositorio](https://docs.github.com/es/get-started/quickstart/fork-a-repo#step-2-create-a-local-clone-of-your-fork)
-5. Configurar usuario y mail de git:
+    a. Para quien utilice Windows con git bash: https://gist.github.com/bsara/5c4d90db3016814a3d2fe38d314f9c23
+3. Agregar la clave ssh a su cuenta de GitHub: [Guía para agregar clave SSH a GitHub](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+4. Hacer un Fork de este repositorio: [Guía para hacer un Fork](https://docs.github.com/es/get-started/quickstart/fork-a-repo)
+5. Clonar el repositorio bifurcado: [Guía para clonar un repositorio](https://docs.github.com/es/get-started/quickstart/fork-a-repo#step-2-create-a-local-clone-of-your-fork)
+6. Configurar usuario y mail de git:
     ```bash
     git config --global user.name "Nombre Apellido"
     git config --global user.email "su mail austral"
