@@ -1,0 +1,38 @@
+1.1 Preguntas:
+
+¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+	respuesta: usando el comando git init
+¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+	respuesta: usando el comando rm -rf .git
+Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+	respuesta: si
+¿Qué comando se utiliza para agregar un archivo al repositorio local?
+	respuesta: usando el comando git add
+¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+	respuesta: usando el comando git status
+¿Qué comando se utiliza para hacer un commit?
+	respuesta: git commit
+
+1.2 Parte Practica:
+3) En sus propias palabras, ¿qué es un commit?
+Que significa git status?
+On branch ignacio_gaspar
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   sandwich.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ignacio_gaspar.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Que significa: Muestra el estado de commit del archivo sandwich.txt
+5) Luego de ejecutar el comando git add sandwich.txt, el archivo de texto esta en cola para ser subido a la base de datos local.
+7) Como ya se subio el archivo, no hay nada en la lista de espera por lo tanto despues del comando git status, no hay estado del sandwich.
+9) git log muestra todas las commits en el historial del repositorio.
+10) Cuando utilizo git log --oneline veo que solo me muestra los titulos/mensajes de cada commit ordenados en una sola linea cada uno. Sin embargo, luego de ejecutar git log --stat observe que a su vez ordena los archivos, con la diferencia de que muestra las modificaciones que se hicieron en cada archivo mas el nombre del archivo que se subio y el autor.  
+11) El git diff compara los commits y luego presenta los cambios que hubo entre ellas.
+14) En la salida del comando git status cambio el nombre del archivo, apareciendo como nuevo archivo. Tras ejecutar git log --oneline, aparece el nuevo archivo pero, a diferencia del resto, muestra lo siguiente: (HEAD -> Ignacio_Gaspar) Sanguche feo
+15) En la salida de git status, una linea muestra que el archivo sanguche2_feo.txt se elimino.
+16) Luego de ejecutar git log --stat, veo una lista de todos los commits que se realizaron (ordenanos por fecha del mas reciente al mas viejo), incluyendo el ultimo commit del archivo que se elimino. Ademas, los commits estan enumerados por una linea de codigo y se muestran las modificaciones que se hicieron en cada uno de ellos con +++ verdes (si se agregaron cosas) o +++ rojas (si se eliminaron cosas).

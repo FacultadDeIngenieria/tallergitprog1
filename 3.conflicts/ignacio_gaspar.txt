@@ -1,0 +1,19 @@
+3.1 Preguntas
+1. Los conflictos se crean cuando dos desarrolladores han cambiado las mismas líneas en un archivo, o si un desarrollador eliminó un archivo mientras otro lo estaba modificando. En estos casos, Git no puede determinar automáticamente qué es correcto, y surge un "conflicto"
+Es bueno que existan conflictos de Git: Git no sobrescribirá silenciosamente una de dos modificaciones diferentes.
+2.Para evitar que se produzcan conflictos, los desarrolladores trabajan en ramas aisladas independientes. La función principal del comando git merge es combinar ramas independientes y resolver los cambios en conflicto.
+
+3.2 Practica
+10. observo los cambios que hice en cada archivo, las lineas que elimine (en forma de texto) y que agregue.
+11. Cuando cambie de rama y ejecuto git status lo que observo es:
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   milanesa.txt
+12. Funciono el merge de bife
+13. No funciono el merge de suprema, ya que me dice que hay cambios a los cuales no hice commit.
+14. Luego de volver a ejecutar git status, observo los mismo que en el paso 11, que la rama esta adelantada a la main por dos commits y que milanesa.txt se modifico.
+15. Veo el pan rallado y bife

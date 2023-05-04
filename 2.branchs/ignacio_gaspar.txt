@@ -1,0 +1,34 @@
+
+2.1 preguntas
+1. ¿Qué es un branch?
+Es un grupo de commits que crea una sola narrativa
+2. ¿Por qué pueden ser útiles los branches?
+Son utiles proque permiten crear listas o eliminar ramas del sistema segun sea necesario
+3.¿Cómo se crea una branch?
+Para crear una branch hay que usar el comando git branch
+4.¿Cómo se cambia a una branch?
+Usando el comando git checkout
+5.¿Cómo se elimina una branch?
+Usando el comando git branch -d
+6.¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Usando el comando git checkout -b
+7.¿Qué es un merge?
+Un merge es es la forma que tiene Git de volver a unir un historial bifurcado. El comando git merge permite tomar las líneas independientes de desarrollo creadas por git branch e integrarlas en una sola rama.
+8.¿Cómo se realiza un merge?
+Se realiza un merge usando el coamndo git merge
+9.¿Que es un tag?
+Los tag son etiquetas de referencia que apuntan a puntos concretos del historial de git
+10.¿Cómo se crea un tag?
+Ejecutando el comando git tag
+
+2.2 Practica
+6. Se observan todos los commits realizados ordenanos desde el mas reciente al mas antiguo
+10. Observo el ultimo commit que realice, "pizza con anana"
+13. Se puede ver que hice un commit desde la branch master, con el mensaje de "pizza con cebolla"
+15. observo que ahora se unieron las branch master y anana, ya que los commits estan juntos
+16. 2023, anana estan mergeadas a master
+18. Observo que se hizo un merge entre master y experimento
+19. tuve que hacer un merge manual porque ha necesitado que haga algunos cambios y era necesario hacer un commit adicional, con los cambios realizados
+20. experimento, anana, 2023
+24. Obrsevo que se eliminaron las branch anana y experimento
+
