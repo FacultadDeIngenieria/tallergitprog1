@@ -1,0 +1,117 @@
+2.1.1 Son las ramas o “versiones” que generamos de un archivo. 
+2.1.2 Para crear varias versiones de un archivo. Por ejemplo, si estamos trabajando en equipo, cada uno puede hacer una parte distinta del trabajo en documentos diferentes y luego se unen.
+2.1.3 git branch
+2.1.4 git checkout
+2.1.5 git branch -d
+2.1.6 git checkout -b
+2.1.7 git merge nos permite unir un historial bifurcado, es decir, unificar todas las branches en un sólo archivo. 
+2.1.8 git merge (más el nombre de la rama que se unifica a main)
+2.1.9 Las tags son etiquetas que señalan un punto determinado en el historial de bash. Este método se usa con el objetivo de capturar un punto en el historial. 
+2.1.10  git tag
+
+
+2.2.6. $ git graph
+* 11e55ae (HEAD -> experimento) agrego orégano
+* 04cecbf Agrego albahaca
+| * 95b103c (origin/larisa_beni, larisa_beni) Resolvi el ejercicio 1 commit
+|/
+* 579a34f (origin/main, origin/HEAD, origin/2023, main) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+2.2.10. $ git graph
+* f2716da (HEAD -> anana) Agrego ananá
+| * 11e55ae (experimento) agrego orégano
+| * 04cecbf Agrego albahaca
+|/
+| * 95b103c (origin/larisa_beni, larisa_beni) Resolvi el ejercicio 1 commit
+|/
+* 579a34f (origin/main, origin/HEAD, origin/2023, main) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+La función git graph muestra el historial de commits aclarando que que branch realicé cada uno. Además, las lineas laterales grafican el árbol de 
+branches.
+
+
+2.2.13. 
+$ git graph
+* 8477bb5 (HEAD -> main) Agrego cebolla
+| * f2716da (anana) Agrego ananá
+|/
+| * 11e55ae (experimento) agrego orégano
+| * 04cecbf Agrego albahaca
+|/
+| * 95b103c (origin/larisa_beni, larisa_beni) Resolvi el ejercicio 1 commit
+|/
+* 579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+Se agrega el último commit del historial realizado en la branch main. 
+
+2.2.15.
+$ git graph
+*   283033d (HEAD -> main) Merge branch 'anana'
+|\
+| * f2716da (anana) Agrego ananá
+* | 8477bb5 Agrego cebolla
+|/
+| * 11e55ae (experimento) agrego orégano
+| * 04cecbf Agrego albahaca
+|/
+| * 95b103c (origin/larisa_beni, larisa_beni) Resolvi el ejercicio 1 commit
+|/
+* 579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+Se suma la última función utilizada, merge. 
+
+2.2.16. 
+main y anana están mergeadas
+
+2.2.18
+$ git graph
+*   49f84cf (HEAD -> main) Merge branch 'experimento'
+|\
+| * 11e55ae (experimento) agrego orégano
+| * 04cecbf Agrego albahaca
+* |   283033d Merge branch 'anana'
+|\ \
+| * | f2716da (anana) Agrego ananá
+| |/
+* / 8477bb5 Agrego cebolla
+|/
+| * 95b103c (origin/larisa_beni, larisa_beni) Resolvi el ejercicio 1 commit
+|/
+* 579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+Se agrega el último comando, merge experimento
+
+2.2.19 Tuve que corregirlo manualmente dado que había elementos repetidos en dos branches. Git bash permite al usuario seleccionar la versión que
+ se guardará.
+
+2.2.20 anana y experiemtno
+2.2.23 Ahora no figuran branches "mergeadas"
+2.2.24 
+
+$ git graph
+*   49f84cf (HEAD -> main) Merge branch 'experimento'
+|\
+| * 11e55ae agrego orégano
+| * 04cecbf Agrego albahaca
+* |   283033d Merge branch 'anana'
+|\ \
+| * | f2716da Agrego ananá
+| |/
+* / 8477bb5 Agrego cebolla
+|/
+| * 95b103c (origin/larisa_beni, larisa_beni) Resolvi el ejercicio 1 commit
+|/
+* 579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+Significa que todas las ramas se unificaron

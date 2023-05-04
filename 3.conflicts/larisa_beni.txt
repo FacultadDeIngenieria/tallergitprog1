@@ -1,0 +1,61 @@
+3.3.1 Un conflicto es un "error" que ocurre algunas veces que queremos hacer merge. Surge cuando en dos ramas del archivo se edita, agrega o elimina la misma 
+línea y luego se solicita una fusión (merge). Es bueno dado que no es el sistema el que decide que versión conservar, sino el usuario. 
+3.3.2 Para evitar estos conflictos podemos revisar las versiones de los archivos antes de aplicar git merge. Se puede usar la función pull request para notificar
+a otras personas de los cambios realizados en una branch.  También se pueden integrar cambios con git rebase. 
+  
+
+3.10. 
+$ git diff main suprema
+diff --git a/3.conflicts/milanesa.txt b/3.conflicts/milanesa.txt
+index 5255304..1d61938 100644
+--- a/3.conflicts/milanesa.txt
++++ b/3.conflicts/milanesa.txt
+@@ -1,2 +1,2 @@
+ pan rallado
+-lomo
+\ No newline at end of file
++pollo
+
+Se indican los cambios realizados en el archivo (se quitó lomo y se agregó pollo). 
+
+No obtengo resultados al correr git diff main bife.
+
+3.11. $ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   milanesa.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        larisa_beni.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Se muestra que el archivo milanesa.txt fue modificado pero que sus datos todavía no fueron guardados con git add o git commit. También se indica que los 
+cambios en larisa_beni.txt no fueron commiteados. 
+
+3.12. Sí, git merge bife funcionó. 
+3.13. Pero git merge suprema no funcionó. 
+$ git merge suprema
+error: Your local changes to the following files would be overwritten by merge:
+        3.conflicts/milanesa.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 24c073c..d4c3824
+
+El error indica que los cambios deben ser "comitteados" antes de aplicar merge.
+Luego de correr git commit surge un conflicto entre las branches por lo que nuevamente no es posible que merge funcione automáticamente. 
+
+3.14. Git status indica que ambos archivos (ramas) fueron modificados.
+$       both modified:   milanesa.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        larisa_beni.txt
+
+3.15. Dos versiones del mismo archivo tenían cambios diferentes, que se encuentran señalados, para que el usuario pueda elegir que versión prefeiere y resolver 
+los conflictos manualmente.

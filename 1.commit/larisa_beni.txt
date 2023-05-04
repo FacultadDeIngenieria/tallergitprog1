@@ -1,0 +1,58 @@
+Preguntas.
+1) Con el comando git init podemos crear un nuevo repositorio local.
+2) Clonando ese repositorio en nuestra computadora.
+3) Sí, una vez que creamos un repositorio con git init el mismo pasa a ser controlado por git.
+4) Se puede utilizar el comnado git add.
+5) Con el comando git diff podemos ver los cambios realizados entre commits.
+6) Utilizando git commit -m "nombre del commit"
+7) Un commit es una versión definitiva del archivo, en la cual confirmamos al sistema que todos lo cambios realizados hasta ese momento deben ser almacenados.
+Es una captura de todas las modificaciones realizadas.
+
+
+1.2.3 El archivo sandwich.txt se encuentra modificado porque ya fue comiteado antes, mientras que el archivo larisa_beni.txt es nuevo y por tanto nunca fue
+agregado a git.
+5. Después de hacer git add sandwich.txt, el archivo paso a estar en staging en lugar de modified. Y sigo viendo
+mitxt en rojo, poruqe esta en modified.
+7. Desapareció el nombre en git status porque ya llegó a commit.  Después de hacer el commit no se ve más el archivo sandwich y sólo se ve larisa_beni.txt
+9. commit 937f87780d8c19deeb1605daa6adc4af220dcde4 (HEAD -> larisa_beni)
+Author: Larisa Beni <lecbeni@mail.austral.edu.ar>
+Date:   Thu Apr 20 15:25:40 2023 -0300
+
+    Agrego salsas
+
+commit 8dbe0d937902627e33b7225ca388ff197b2462cd
+Author: Larisa Beni <lecbeni@mail.austral.edu.ar>
+Date:   Thu Apr 20 15:20:41 2023 -0300
+
+    Agrego mi sandwich.txt
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD, origin/2023, main, 2023)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01
+Author: Sebastian Iglesias <sebastian@getcaribou.com>
+Date:   Mon Apr 17 21:58:56 2023 -0300
+
+    Initial commit - repo setup
+
+commit 140733d1b371966335eace561a02d3464af47664
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Mon Apr 17 20:02:55 2023 -0300
+
+    Initial commit
+ESTE ES EL HISTORIAL DE COMMITS (MÁS NUEVO ARRIBA, MÁS VIEJO ABAJO)
+PONEMOS QUÉ CAMBIÓ, QUIÉN Y POR QUÉ LO HIZO EN NOMBRECITO
+Git log me muestra el historial de commits y está ordenado de más actual a más viejo.
+10.1 git log --oneline muestra cada commit resumido en una línea, junto con su mensaje. (Así como los primeros caracteres del SHA)
+10.2 git log --stat detalla los cambios realizados en el archivo larisa_beni.txt Permite ver el número de líneas que se agregaron o borraron y también devulve
+un resumen con el número total de líneas y archivos modificados.
+
+11. Esta función compara la versión vieja del archivo y su última modificación, denominadas a y b respectivamente. Con --- (menos) se hace referencia a la
+versión anterior o aquello que fue eliminado y con +++ (más) a los caracteres y líneas agregados en la última actualización del archivo.
+14. sandwich2_feo.txt figura como un nuevo archivo RENOMBRADO
+15. Se aclara que el archivo sandwich2_feo.txt fue removido. Git log –oneline no muestra cambios, sólo el historial de commits. 
+16. La bitácora muestra un historial extendido del historial de commits.
+
