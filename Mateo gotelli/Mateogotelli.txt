@@ -1,0 +1,60 @@
+1.1. Preguntas
+
+¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+Para inicializar un repositorio local en Git, debes ejecutar el comando git init en la carpeta que deseas convertir en un repositorio. Este comando creará un nuevo subdirectorio .git en la carpeta seleccionada y configurará todos los archivos necesarios para comenzar a rastrear cambios.
+
+¿Cómo hago para que un directorio deje de ser controlado por Git? (que comando se debe ejecutar?)
+Para dejar de controlar un directorio con Git, debes ejecutar el comando rm -rf .git en la raíz del directorio. Este comando eliminará la carpeta .git del directorio, lo que eliminará toda la información de seguimiento de Git y dejará de controlar el directorio.
+
+Si agrego un archivo a un directorio que ya está siendo controlado por Git, ¿está siendo controlado por Git?
+Sí, si agregas un archivo a un directorio que ya está siendo controlado por Git, el archivo también estará siendo controlado por Git y se incluirá en los cambios que Git rastrea.
+
+¿Qué comando se utiliza para agregar un archivo al repositorio local?
+Para agregar un archivo al repositorio local en Git, debes ejecutar el comando git add. Este comando agregará los cambios realizados en el archivo seleccionado al área de preparación (staging area) para que puedan ser confirmados en el próximo commit.
+
+¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+Para determinar qué archivos han sido modificados en tu directorio de trabajo y están listos para ser agregados al área de preparación, debes ejecutar el comando git status. Este comando te mostrará una lista de los archivos modificados, eliminados o agregados en el directorio de trabajo.
+
+¿Qué comando se utiliza para hacer un commit?
+Para hacer un commit en Git, debes ejecutar el comando git commit. Este comando guardará los cambios realizados en el área de preparación en un nuevo commit en el repositorio local.
+
+En sus propias palabras, ¿qué es un commit?
+Un commit en Git es un registro de los cambios realizados en el repositorio. Cada commit contiene una descripción de los cambios realizados y se utiliza para registrar un punto específico en la historia del proyecto. Los commits son importantes porque te permiten realizar un seguimiento de los cambios y deshacer o revertir los cambios anteriores si es necesario.
+2.1. Preguntas
+
+¿Qué es un branch?
+Un branch (rama en español) en Git es una línea de desarrollo independiente que se crea a partir de una rama principal (como la rama master) del repositorio. Los branches permiten trabajar en diferentes versiones del código sin afectar la rama principal.
+
+¿Por qué pueden ser útiles los branches?
+Los branches son útiles porque te permiten experimentar con diferentes ideas y características sin afectar el trabajo en la rama principal del repositorio. También son útiles para colaborar con otros desarrolladores y mantener diferentes versiones del código.
+
+¿Cómo se crea una branch?
+Para crear una nueva branch en Git, debes ejecutar el comando git branch <nombre-de-la-rama>. Este comando creará una nueva rama en el repositorio con el nombre especificado.
+
+¿Cómo se cambia a una branch?
+Para cambiar a una branch en Git, debes ejecutar el comando git checkout <nombre-de-la-rama>. Este comando te llevará a la rama especificada para que puedas comenzar a trabajar en ella.
+
+¿Cómo se elimina una branch?
+Para eliminar una branch en Git, debes ejecutar el comando git branch -d <nombre-de-la-rama>. Este comando eliminará la rama especificada si todos los cambios en ella ya han sido fusionados en la rama principal.
+
+¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Para crear una nueva branch y cambiar a ella en un solo paso, debes ejecutar el comando git checkout -b <nombre-de-la-rama>. Este comando creará una nueva rama con el nombre especificado y te llevará automáticamente a ella.
+
+¿Qué es un merge?
+Un merge en Git es el proceso de combinar los cambios realizados en una rama con otra rama del repositorio. El merge toma los cambios realizados en una rama y los fusiona con la otra rama, creando una nueva versión del código que contiene los cambios de ambas ramas.
+
+¿Cómo se realiza un merge?
+Para realizar un merge en Git, debes ejecutar el comando git merge <nombre-de-la-rama> en la rama a la que deseas fusionar los cambios. Este comando combinará los cambios realizados en la rama especificada con la rama actual.
+
+¿Qué es un tag?
+Un tag en Git es una forma de etiquetar un commit específico en el repositorio con un nombre significativo. Los tags se utilizan para marcar versiones importantes del código, como lanzamientos o versiones estables.
+
+¿Cómo se crea un tag?
+Para crear un tag en Git, debes ejecutar el comando git tag <nombre-del-tag> <id-del-commit> en el commit que deseas etiquetar. El <id-del-commit> se puede encontrar usando el comando git log. Alternativamente, puedes utilizar el comando git tag -a <nombre-del-tag> -m "<mensaje-descriptivo>" <id-del-commit> para crear un tag con un mensaje descriptivo.
+3.1. Preguntas
+
+¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+Un conflicto en Git ocurre cuando dos o más ramas del repositorio contienen cambios en el mismo archivo o línea de código. Cuando se realiza una operación como un merge o un rebase y Git no puede determinar automáticamente cómo fusionar los cambios, se produce un conflicto. En términos generales, los conflictos no son buenos ni malos, simplemente son una parte normal del trabajo en equipo con Git. Lo importante es resolverlos adecuadamente para evitar problemas más graves.
+
+¿Se puede evitar un conflicto? ¿Cómo?
+Es difícil evitar completamente los conflictos en Git, ya que son una parte natural del proceso de desarrollo y colaboración en equipo. Sin embargo, hay algunas prácticas que pueden ayudar a minimizar la frecuencia y la gravedad de los conflictos, como trabajar en branches separadas, hacer cambios pequeños y frecuentes en lugar de grandes y ocasionales, y comunicarse con el equipo de desarrollo para evitar que dos o más personas modifiquen el mismo archivo al mismo tiempo. Además, es importante resolver los conflictos de manera rápida y efectiva una vez que ocurren, para evitar que se propaguen y se conviertan en un problema más grande.
