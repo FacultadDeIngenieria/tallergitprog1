@@ -1,0 +1,21 @@
+Teorica:
+
+3.1.1) Un conflicto es una aviso de parte de git indicando que al momento de realizar un merge ocurrio una sobreescritura de dos versiones del mismo archivo entre las 2 branch que se planean juntar.
+
+3.1.2) La mejor forma de evitar un conflicto en git a la hora de realizar un merge es trabajar lo mas organizado posible, ya sea en grupo o con un proyecto en solitario, es recomendable ir actualizandolo o trabajar de forma independiente en ramas diferentes para evitar conflictos.
+
+Practica:
+
+Al hacer "git diff" se muestra en rojo lo que se cambio y en verde lo que se agrego
+
+Al hacer git status no veo nada fuera de lo común, solo el archivo Ezequiel_Curti.txt esta sin commitear
+
+Al hacer "git merge" en bife parece haber funcionado
+
+Al hacer "git merge" en suprema, me dice que hay un conflicto
+
+Al hacer "git status" parece haber un problema con el archivo milanesa.txt
+
+Al observar el contenido de "milanesa.txt" puedo ver lo que se estaria "mergeando" de la branch "suprema"
+
+

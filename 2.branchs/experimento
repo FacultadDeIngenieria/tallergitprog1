@@ -1,0 +1,13 @@
+
+Luego de hacer "git graph" estoy viendo una especie de historial (creeria que lo mismo que al usar el comando git log)
+
+Luego de hacer "git graph" (despues de agregar anana a la pizza) el ultimo commit aparece arriba de todo
+
+Luego de hacer "git graph" (despues de agregar cebolla a la pizza) el ultimo commit aparece arriba de todo, en este caso, seria el commit a pizza.txt despues
+de agregar cebolla
+
+Luego de hacer "git graph" (despues de volver a la branch "master") sigo viendo el mismo historial de commits. (tuve que commitear la branch master para hacer "git merge")
+
+Luego de hacer "git branch --merged"" puedo ver que todos los cambios realizado en la branch "anana" ahora aparecen en "experimento"}
+
+
