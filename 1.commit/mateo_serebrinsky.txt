@@ -1,0 +1,39 @@
+x1.1)
+1. Para crear un comando se usa el comando: init
+2. Para que un directorio deje de ser controlado por git tengo que usar el comando: git rm -r --cached <directory-name>
+3. Si agregas un archivo a un directorio que ya está siendo controlado por Git, entonces ese archivo estará siendo controlado por Git automáticamente.
+4. Para agregar un archivo al repositorio local, hay que usar el siguiente: git add <file-name>
+5. Para determinar qué archivos han sido modificados en el repositorio local hay que usar: git status
+6. Para hacer un commit: git commit -m "mensaje del commit"
+7. Un commit es un registro en el historial de cambios que se le hicieron a un archivo	 
+
+1.2)
+3.git status
+On branch mateo_serebrinsky
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   mateo_serebrinsky.txt
+        modified:   sandwich.txt 
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   sandwich.txt
+
+Se creo el archivo mateo_serebrinsky y se modifico sandwich.txt 
+
+5. Depues de hacer git status sandwich paso de estar de en modified a staging
+
+7. Hice el commit del archivo sanwich.txt y ahora solo esta mateo_serebrinsky
+
+9.Aparecen los commit de los mas recientes primero y los mas viejos despues
+
+10.1. con git log --oneline te aperece solo los "titulos" de los
+commits que hice en el mismo orden que antes
+
+10.2. git log --stat me muestra la informacion mas especifica sobre lo
+que hizo el commit, como por ejemplo los caracteres agregados
+
+.14 Git status muestra que se creo un nuevo archivo sandwich2_feo.txt pero que no esta commiteado. Esta en staged. Git log --oneline no muestra nada porque el archivo no esta commiteado.
+
+.15 En la salida del comando git status, se borro el archivo y ya no aparece para ser commiteado. Git log --oneline no muestra nada ya que el archivo no llego a ser commiteado y en este caso se borro cuando estaba en el directorio local

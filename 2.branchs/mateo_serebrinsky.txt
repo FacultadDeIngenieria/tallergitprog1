@@ -1,0 +1,23 @@
+2.1)
+
+Una branch es una línea de desarrollo separada en Git que tiene sus propios commits y cuenta una historia diferente.
+Las branches sirven para experimentar sin afectar el trabajo principal y para eliminar las que ya no se necesitan.
+Git branch crea una nueva branch.
+Git checkout cambia de branch.
+Git branch -d borra una branch.
+Git checkout -b crea y cambia a una nueva branch.
+Git merge combina branches separadas en una sola línea de desarrollo.
+Git merge junta las branches.
+Git tag es una etiqueta que señala un punto específico en el historial del proyecto.
+Git tag crea una etiqueta.
+2.2)
+6. Lista de archivos commiteados en orden cronológico inverso.
+
+Lista de ramas con sus commits y rama actual (anana) con archivo comiteado "Pizza con anana".
+Lista de ramas con sus commits y rama actual (master) con archivo comiteado "Pizza con cebolla".
+Branches "main" y "anana" se unieron en una sola línea de desarrollo.
+Branches "2023" y "anana" se fusionaron en la rama "main".
+Branches "main" y "experimento" se unieron manualmente para hacer cambios adicionales antes de la fusión.
+Fusión de las ramas "main" y "experimento" hecha manualmente.
+Ramas actuales son "experimento", "anana" y "2023".
+Ramas "anana" y "experimento" fueron eliminadas, quedan solo las ramas "main" y "2023".
