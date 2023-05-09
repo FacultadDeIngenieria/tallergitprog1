@@ -1,0 +1,41 @@
+																										111.1.preguntas
+																										111."git init"
+2."git rm --cached [nombre_del_directorio]
+3.Si el archivo que se agrega a un directorio que ya esta siendo controlado por git tambien sera controlado por git
+4."git add [nombre_del_archivo] "
+5."git status"
+6."git commit -m [mensaje_del_commit]"
+7.Los "commits" son comentarios que describen los comentarios que se han hecho
+ 
+ 
+1.2.3.On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   sandwich.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Ignacio_Siaba.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+veo que sandwich.txt esta modificado, ya que fue commiteado antes y hay un archivo Ignacio_Siaba.txt que es nuevo y nunca fue agregado a git.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+3.1
+
+1.Un conflicto en Git ocurre cuando dos o más personas hacen cambios diferentes en el mismo archivo o línea de código y Git no puede saber automáticamente cuál versión es la correcta para usar.
+ Esto sucede cuando los cambios que hicieron son incompatibles y deben ser resueltos manualmente antes de continuar.
+
+2. Si se puede evitar de las siguientes formas: mantener ramas separadas, actualizar frecuentemente la rama de desarrollo, comunicacion y utilizar herramientas de revision del codigo
+
+3.2.10 puedo ver los cambios que realice
+
+3.2.11 observo que milanesa a sido modificado
+
+3.2.12 no, no funciono
+
+3.2.13 no funciona
+
+3.2.15 puedo ver pan rallado y bife
+

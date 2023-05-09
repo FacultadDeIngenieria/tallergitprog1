@@ -1,0 +1,42 @@
+2.1
+
+1.Un branch es una rama separada de la linea pricipal de desarrollo, que permite a los desarrolladores trabajar en una copia independiente de un proyecto sin afectar la version principal
+
+2.Los branches son útiles porque permiten a los desarrolladores trabajar en diferentes funciones o características en paralelo sin interferir en el trabajo de otros miembros del equipo
+
+3.se puede utilizar el comando "git branch" seguido del nombre de la nueva rama
+
+4.con "git checkout" seguido del nombre de la rama
+
+5.se puede usar "git branch -d" seguido del nombre de la rama
+
+6.para crear y cambiar una rama en un solo paso, se puede utilizar el comando "git checkout -b" seguido del nombre de la nueva rama
+
+7.es la combinacion de dos o mas ramas de un repositorio en una sola rama
+
+8.con "git merge" seguido del nombre de la rama que desea fusionar
+
+9.un tag es una etiqueta asociada a un punto especifico en el historial de un repositorio de codigo fuente
+
+10.se puede utilizar el comando "git tag" seguido del nombre del tag y del commit al que se desea asociar
+
+2.2
+
+2.2.6 luego de hacer dos cambios en pizza.txt y commitear al poner el comando git graph, se observa en la termianal que en la branch experimento estan los mensajes del commit los cuales yo puse
+(agregue albahaca) y (agregue oregano)
+
+2.2.10 al poner git graph aparece lo mismo que antes con el cambio agregado ahora en la branch anana, en donde agregue anana debajo del queso
+
+2.2.13 luego de hacer git graph se observa la linea nueva en el branch main, en este caso de observa que se agrego cebolla debajo de la salsa 
+ 
+2.2.15 al correr git graph, me muestra que hice un merge a la branch principal
+
+2.2.16 la branch anana esta mergeada a mi main
+
+2.2.19 tuve que hacer un merge manual ya que habia un conflicto entre la branch experimento y la master
+
+2.2.20 las branches anana y experimento estan mergeadas a mi rama principal
+
+2.2.23 ahora no hay ninguna branch mergeada a mi main
+
+2.2.24 ahora se ven los branch que borre
