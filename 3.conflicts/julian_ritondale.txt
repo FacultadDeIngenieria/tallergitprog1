@@ -1,0 +1,58 @@
+ 
+# 3. Conflicts
+
+### 3.1. Preguntas
+
+¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+
+
+Un conflicto es una instancia o situacion en donde diferentes commits contienen cambios distintos de un mismo
+archivo. Esto es un problema porque git debe combinar los branches y escoger una unica version. No es algo bueno
+ni malo, sino natural. Sin embargo, es mas deseable recibir un conflicto antes de que git escoga una version por
+su cuenta.
+
+
+¿Se puede evitar un conflicto? ¿Cómo?
+
+
+Los conflictos se evitan tomando iniciativas de organizacion de equipo.
+
+
+### 3.2. Ejercicio Práctico
+
+
+10. Haga un git diff master suprema y un git diff master bife. ¿Qué observa?
+
+
+git diff master suprema muestra la diferencia entre el branch de suprema y bife, el git diff master bife muestra la diferencia entre le branch de suprema y bife, ambos con sus respectivos cambios.
+
+
+11. Moverse a la branch master. Corra un git status, ¿qué observa?
+
+
+Hay diferentes versiones de milanesa.txt
+
+
+12. Ejecute git merge bife. Funcionó?
+
+
+Si
+
+
+13. Ejecute git merge suprema. Funcionó?
+
+
+No
+
+
+14. Ejecute git status. Que observa?
+
+
+Ningun cambio
+
+
+15. 
+
+
+pollo y bife ya que se encontraban en distintos branches y fueron mergeados.
+
