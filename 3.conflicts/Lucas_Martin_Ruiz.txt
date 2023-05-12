@@ -1,0 +1,15 @@
+				Teorica
+1)cuando hay cambios en el mismo lugar y git no sabe cual es el definitivo.
+No es bueno ni malo, resorver los conflicos es parte natural de un proyecto
+2)si se trabaja en diferentes branches se puede evitar, pero al hacer el 
+merge pueden pasar.
+				Practica
+10) Muestra la diferencia entre los archivos en la palabra lomo
+11)todo esta al dia
+12)si
+13)hay un conflico y fallo el merge automatico
+14)hay paths no mergeados
+15)agrego un head y un suprema alrededor de bife y pollo
+17)sigue el mismo conflicto en el archivo milanesa.txt y no funciono el 
+automerge
+

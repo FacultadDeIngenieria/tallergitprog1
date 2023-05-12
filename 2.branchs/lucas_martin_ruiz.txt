@@ -1,0 +1,30 @@
+				Teorica					
+
+1)es una version del codigo en la que estoy trabajando
+2)porque se puede trabajar en dos cosas diferentes sin la necesidad de estar 
+en el mismo codigo
+3)git branch <nombre_branch_nuevo>
+4)git checkout <nombre_de_branch>
+5)git branch -d <nombre_de_branch>
+6)git checkout <nombre_branch_nueva>
+7)es unir dos branches 
+8)git merge <branch_para_mergear>
+9)es un punto de referencia en un punto especifico de la historia del 
+repositoio
+10)git tag <nombre_tag>
+
+				Practica
+
+6)se ven los committs de lo mas nuevo a lo mas viejos
+10) puedo ber los branches que salen del main y se separan
+13)puedo ver un un commmit en el main
+15)veo como la branch anana volvio a la main
+git
+16)las branches mergeadas a la main son anana y 2023
+18)que la branch experimento se unio con la main
+19)lo hice manual porque habia conflictos entre las brnaces
+20)anana, Lucas_Martin_Ruiz, 2023, experimento_master
+23)Lucas_Martin_ruiz y 2023
+24)observo que las branches anana y experimeto_master no estan mas
+
+
