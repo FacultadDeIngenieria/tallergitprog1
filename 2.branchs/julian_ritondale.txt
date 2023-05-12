@@ -1,0 +1,115 @@
+
+# 2. Branchs
+
+## Ejercicio 2
+
+### 2.1. Preguntas
+
+1. ¿Qué es un branch?
+
+
+Un branch es un conjunto de versiones (o commits) que se desprenden de un archivo/carpeta.
+
+
+2. ¿Por qué pueden ser útiles los branches?
+
+
+Los barnches son utiles ya que permiten manejar distintas versiones actualizadas o no actualizadas de un archivo de una manera segura y ordenada.
+
+
+3. ¿Cómo se crea una branch?
+
+
+git branch ""
+
+
+4. ¿Cómo se cambia a una branch?
+
+
+git checkout ""
+
+
+5. ¿Cómo se elimina una branch?
+
+
+git branch -d ""
+
+
+6. ¿Cómo se crea una branch y se cambia a ella en un solo paso?
+
+
+git checkout -b ""
+
+
+7. ¿Qué es un merge?
+
+
+Un merge es la conjuncion de 2 branches
+
+
+8. ¿Cómo se realiza un merge?
+
+
+git merge ""
+
+
+9. ¿Que es un tag?
+
+
+Un tag es una etiqueta que se coloca sobre distintos commits para brindar informacion adicional acerca de ese commit.
+
+
+10. ¿Cómo se crea un tag?
+
+
+git tag -a ""
+
+
+### 2.2. Ejercicio Práctico
+
+
+6. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
+
+
+Aparecen los commits de todos los branches junto con un conjunto de lineas de colores que supongo que se relacionan con los distintos branches.
+
+
+10. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
+
+
+Los respectivos commits hechos anteriormente.
+
+
+13. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
+
+
+Se suman cada vez las lineas de branches.
+
+
+15. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
+
+
+Las lineas se cambiaron a color verde
+
+
+16. ¿Qué branches están "mergeadas" a master? (Puede usar el comando `git branch --merged`).
+
+
+2023 y anana
+
+
+19. ¿Tuvo que hacer un merge manual, o git lo hizo automáticamente? ¿Por qué?
+
+
+El merge fue manual porque aparecio un conflicto pero no proporciona informacion de como arreglar el conflicto:
+CONFLICT (content): Merge conflict in 2.branchs/pizza.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+23. ¿Qué branches están "mergeadas" a master? (Puede usar el comando `git branch --merged`).
+
+2023
+
+24. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
+
+
+Nigun cambio
