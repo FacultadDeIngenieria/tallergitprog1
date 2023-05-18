@@ -1,0 +1,20 @@
+3.1 teorico--
+¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+-cuando dos ramas tienen modificaciones contradictorias en la misma parte 
+del archivo. No se consideran buenos ni malos en sí mismos, pero se debe 
+prestar atención y resolver para evitar problemas en el código. 
+
+¿Se puede evitar un conflicto? ¿Cómo?
+-se pueden tomar medidas para reducir la probabilidad de que ocurran. Ser 
+organizado y comunicarse con colaboradores ayuda.
+
+3.2. Ejercicio Práctico--
+10) se muestran los cambios de los commits del archivo milanesa.txt en la 
+main branch a la branch suprema. y el cambio de lomo a bife
+11) Se observa que estoy en la rama master y no hay cambios a confirmar. 
+Tambien se ve modificada milanesa.txt
+12) funciona perfectamente
+13) No funciona adecuadamente, me sale "conflicto"
+14) "unmerged paths" por milanesa.txt debe ser por el conflicto
+15)Me aparecen 2 versiones y a las dos les falta lomo como si se eleimino 
+por el conflicto
