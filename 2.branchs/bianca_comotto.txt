@@ -1,0 +1,62 @@
+2.1 PREGUNTAS --"teorico"
+¿Qué es un branch?
+Las branch es una forma de mantener organizado las ediciones y el processo
+
+¿Por qué pueden ser útiles los branches?
+ permiten trabajar en paralelo en diferentes versiones de un proyecto sin 
+afectar la rama principal
+
+¿Cómo se crea una branch?
+Para crear una branch, se utiliza el comando git branch (nombre de la 
+nueva branch)
+
+¿Cómo se cambia a una branch?
+se utiliza el comando git checkout seguido del nombre de la branch
+
+¿Cómo se elimina una branch?
+el comando git branch -d  (nombre de la branch)
+
+¿Cómo se crea una branch y se cambia a ella en un solo paso?
+comando git checkout -b (nombre nueva branch)
+
+¿Qué es un merge?
+combinar los cambios realizados en una branch con otra en otras palabras 
+unir las branch
+
+¿Cómo se realiza un merge?
+comando git merge (nombre de la branch que desea fusionar)
+
+¿Que es un tag?
+Un tag es una etiqueta que se aplica a un punto específico en el historial 
+de un repositorio 
+
+¿Cómo se crea un tag?
+git tag seguido del nombre del tag y al commit que desea asignar
+
+2.2 PREGUNTAS --"practico"
+
+¿Qué observa al correr el comando git graph después de agregar el segundo condimento al archivo 
+pizza.txt en la branch experimento?
+
+-la branch experimento se separa de la branch master en un commit anterior al primer commit donde se 
+agregó el condimento albahaca al archivo pizza.txt. 
+
+Correr el comando git graph y observar el resultado. ¿Qué observa?
+
+-branch anana se bifurca de la branch master y al archivo pizza.txt se agrega anana
+
+¿Qué observa al correr el comando git graph después de agregar el condimento cebolla a la branch 
+master?
+- Se commitearon nuevas cosas y tiene mensaje pizza agregado cebolla
+
+¿Tuvo que hacer un merge manual, o git lo hizo automáticamente? ¿Por qué?
+lo hice manualmente
+
+¿Qué branches están "mergeadas" a master?
+EXPERIMENTO ANANA
+
+¿Qué branches están "mergeadas" a master?
+Solo main 
+porque las elimine.
+
+
