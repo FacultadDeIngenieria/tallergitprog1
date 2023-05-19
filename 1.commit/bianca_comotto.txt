@@ -1,0 +1,56 @@
+
+1.1-Bianca Comotto
+1)¿Cómo se inicializa un repositorio local? (que comando se debe 
+ejecutar?)
+- GIT INIT
+
+2)¿Cómo hago para que un directorio deje de ser controlado por git? (que 
+comando se debe ejecutar?)
+-RM --R <NOMBRE ARCHIVO>
+
+3)Si agrego un archivo a un directorio que ya está siendo controlado por 
+git, ¿está siendo controlado por git?
+-SI
+
+4)¿Qué comando se utiliza para agregar un archivo al repositorio local?
+-GIT ADD
+
+5)¿Cómo determino que archivos fueron modificados? (que comando se debe 
+ejecutar?))
+-GIT STATUS
+
+6)¿Qué comando se utiliza para hacer un commit?
+-GIT COMMIT
+
+7)En sus propias palabras, ¿qué es un commit?
+-Un commit es una forma de guardar los cambios que se hacen en un proyecto 
+y mantener un registro de esos cambios.
+
+1.2- Bianca Comotto
+
+3)Sandwich.txt esta modificado y ya esta comiteado antes y hay un archivo 
+bianca_comotto.txt
+
+5) despues de git add sandwich.txt paso a estar en stage
+
+7) Ya no se ve el archivo sandwich.txt paso a estar dentro de 
+bianca_comotto
+
+9) el orderden del mas nuevo al mas viejo de los commits 
+
+10) git log --oneline: esta variación muestra cada commit en una sola 
+línea y git log --stat: esta variación muestra estadísticas breves sobre 
+los archivos que se modificaron en cada commit.
+
+11) GIT DIFF se ve las diferencias del estado del repositorio y su ultimo 
+commit 
+
+
+14) muestra que esta creado el nuevo archivo sandwich2_feo.txt pero no 
+commiteado y en git online no se muentra nada porque como mencione antes 
+no esta commiteado.
+
+
+15) no aparece nada en git log --online
+
+16) Se los detalles y que borre el archivo
