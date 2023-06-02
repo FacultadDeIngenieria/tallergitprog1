@@ -1,0 +1,10 @@
+3.1.1 Un conflicto es cuando uno quiere modificar o eliminar una branch mientras al mismo tiempo alguien esta haciendo uso de la misma.Esta bueno para tener cuidad que eliminamos.
+3.1.2 Se pueden evitar si se trabaja en ramas separadas. y despues resolver manualmente esos conflictos cuando unimos las banch.
+
+
+3.2.10 Observo que entre Ramiro_Quevedo_Mendoza y suprema me muestra que hay una diferencia en lomo y pollo porque ya hice un commit de las branch, en cambio con bife no me marca nada porque aun no hago el commit, una vez que lo haga me mostrara la misma diferencia con lomo y bife
+3.2.12 Si, pude juntar las branch una vez que hice commit en todos los archivos.
+3.2.13 Si y ya con todos los archivos subidos anteriormente para juntar las branches Ramiro_Quevedo_Mendoza y bife, esta se hace rapidamente haciendo commit de la merge
+3.2.14 Nos muestra que todos los archivos estan con su respectivo commit y que no hay nada paara subir en el trabajo.
+3.2.15 Observamos que hya una diferencia en el archivo y nos muestra esa diferencia.
+3.2.18 Como no hubo conflicto en el merge, no tuve que abortar.
