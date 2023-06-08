@@ -1,0 +1,48 @@
+Preguntas:
+3.1:
+
+1- Un conflicto es una instancia o situacion en donde diferentes commits contienen cambios distintos de un mismo archivo. 
+   Esto es un problema porque git debe combinar los branches y escoger una unica version. No es algo bueno ni algo malo.
+   Sin embargo, es mas deseable recibir un conflicto antes de que git elija una version por su cuenta.
+
+2- Si, los conflictos pueden evitarse tomando iniciativas de organizacion de equipo.
+
+Practico:
+3.2:
+
+10- Al hacer el comando git diff master suprema aparece:
+
+    diff --git a/3.conflicts/milanesa.txt b/3.conflicts/milanesa.txt
+    index 5255304..1d61938 100644
+    --- a/3.conflicts/milanesa.txt
+    +++ b/3.conflicts/milanesa.txt
+    @@ -1,2 +1,2 @@
+    pan rallado
+    -lomo
+    \ No newline at end of file
+    +pollo 
+    Esto me muestra loc cambios realizados dentro del archivo milanesa.txt en la branch suprema.
+
+   y al hacer el comando git diff master bife aparece:
+   
+   diff --git a/3.conflicts/milanesa.txt b/3.conflicts/milanesa.txt
+   index 5255304..7ed435b 100644
+   --- a/3.conflicts/milanesa.txt
+   +++ b/3.conflicts/milanesa.txt
+   @@ -1,2 +1,2 @@
+   pan rallado
+   -lomo
+   \ No newline at end of file
+   +bife
+   
+   Ahora lo que mustra son los cambios realizados dentro del archivo milanesa.txt en la branch bife.
+
+11- Al hacer git status lo unico que veo es el archivo felipe_rawson.txt. No se ve ninguno de los cambios que le realice al archivo milanesa.txt ya que los hice en otras branches y no en la main.
+
+12- Si, funciono.
+
+13- No funciono.
+
+14- Lo que puedo observar ahora es que tengo caminos sin mergear, y ademas ahora aparece que el archivo milanesa.txt fue modificado dos veces.
+
+15- Lo que aparece ahora en el archivo minalesa.txt es que tanto las modificaciones de la branch suprema como la de la branch bife aparecen en el archivo, pero la palabra lomo no aparece (la palabra lomo fue borrada al modificar el archivo milanesa.txt en ambas branches). 
