@@ -1,0 +1,51 @@
+
+PARTE TEÓRICA:
+
+2.1:
+
+1- Una branch es una rama, un conjunto de commits que se desprenden de otro ya creado. La Branch principal se suele llamar master/main, y las otras que derivan de esta se llaman "feature branches"
+
+2- Pueden ser útitles porque permiten trabajan el mismo archivo desde diferentes computadoras a la vez, permite agregar diferentes características a la MAIN BRANCH y sirve para no superponer datos pre-existentes.
+
+3- Una branch se crea mediante el comando "git branch" seguido del nombre que se le quiera dar a esa branch y, por ultimo, con el nombre de la branch desde la que surje.
+
+4- Para poder cambiar de branch en branch se utiliza el comando "git checkout" + nombre del branch.
+
+5- Una branch se elimina mediante el comando "git branch -d " seguido del nombre del branch que se quiere eliminar.
+
+6- Con el comando "git checkout -b " + el nombre de la branch que se quiera crear (pienso que lo que hace este comando es buscar y dirigirte a la branch con ese nombre, siempre y cuando exista, en el caso contrario, crea una nueva con ese mismo nombre).
+
+7- Un merge es una "fusión" entre 2 branches y sus respectivos commits, por lo general se da entre una "feature branch" (creada a partir de la branch principal) y la "main branch".
+
+8- Un merge se realiza mediante el comando "git merge" seguido del nombre de la branch con la que se quiere "mergear" (la otra es en la que estamos parados).
+
+9- Un tag es una nota que se le puede poner a un commit, ya sea para diferenciarlo de otros como para poder explicar que cambios/datos contiene ese commit.
+
+10- Un tag se crea mediante el comando "git tag -a ´nombre del tag´ -m ´mensaje que se le quiere agregar al tag´ ".
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PARTE PRACTICA:
+
+2.2:
+
+6- Al Correr el comando git graph aparecen todos los commits con sus respectivos comentarios hechos en todo el proyecto.
+
+10- Al Correr el comando git graph nuevamente, ahora me aparece la nueva branch que cree con el commit y su comentario.
+
+13- Al correr el comando nuevamente puedo observar que me movi de branch y aparece el nuevo commit con su comentario.
+
+15- Los cambios que observo son que ahora la branch anana parece estar conectada con la branch main ya que cambio su color.
+
+16- Las branches que parecen estar mergeadas a la branch main son "2023" y "anana".
+
+18- Observo que ahora la branch experimento esta conectada mediante el simbolo "\" a laa branch main.
+
+19- Esta vez lo tuve que hacer manualmente.
+
+20- Ahora las branches mergeadas a main son "2023", "anana" y "experimento"
+
+23- Ahora la unica branch mergeada a main es 2023
+
+24- Ahora se pueden observar los mismos commits que antes pero sin especificar de que branch salieron.
+
