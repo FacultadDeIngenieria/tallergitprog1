@@ -1,0 +1,47 @@
+1.2.3: El archivo sandwich.txt ya estaba commiteado, y hay un nuevo archivo bang_santiago.txt (éste)
+
+1.2.5: El archivo sandwich.txt pasó a estar en staging en vez de modified gracias al git add sanwich.txt. bang_santiago.txt sigue en modified.
+
+1.2.7: El archivo sandwich.txt ya no aparece en la terminal.
+
+1.2.9:
+
+$ git log
+commit 9e39710d240bea27e56f69bd9270e682aad4ce1c (HEAD -> bang_santiago)
+Author: Santiago Bang <sbang@mail.austral.edu.ar>
+Date:   Thu Apr 20 15:27:18 2023 -0300
+
+    Agrego salsas
+
+commit e54ab1be733f15ca2fb7745b4a7d24b025f51a73
+Author: Santiago Bang <sbang@mail.austral.edu.ar>
+Date:   Thu Apr 20 15:20:48 2023 -0300
+
+    Agrego mi sandwich.txt
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD, santi, main, 2023)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01
+Author: Sebastian Iglesias <sebastian@getcaribou.com>
+Date:   Mon Apr 17 21:58:56 2023 -0300
+
+    Initial commit - repo setup
+
+commit 140733d1b371966335eace561a02d3464af47664
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Mon Apr 17 20:02:55 2023 -0300
+
+    Initial commit
+
+Los commit aparecen desde los más recientes hasta los más antiguos.
+
+1.2.10.1: git log --oneline muestra cada commit en una línea independiente
+1.2.10.2: git log --stat muestra cada commit y les agrega unos + verdes
+
+1.2.14: el archivo sandwich2_feo.txt fue agregado automáticamente al branch para se commiteado
+
+1.2.15: El archivo no aparece para se commiteado. En git log --oneline figura el commit en el que se envió la eliminación del archivos

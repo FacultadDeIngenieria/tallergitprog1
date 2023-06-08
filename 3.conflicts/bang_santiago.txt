@@ -1,0 +1,9 @@
+3.1.1: Un conflicto es un problema que se produce cuando no se pueden mergear dos branches de manera automática.
+3.1.2: Para veitar la aparición de un conflicto es importante que las personas trabajen en branches separadas y luego las unan.
+
+3.2.10: Al usar git diff main suprema o git diff main bife se observa un historial de commits
+3.2.11: Al usar git status se ven los archivos no comiteados
+3.2.12: Si
+3.2.13: si
+3.2.14: Al usar git status se observa lo mismo
+3.2.15: En vez de lomo dice bife
