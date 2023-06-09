@@ -1,8 +1,4 @@
 pan
-lechuga
-ketchup
-salsa chimichurri
-mayonesa
-queso chedda
-milanesa de carne
+queso
+medallón
 pan
