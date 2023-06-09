@@ -1,0 +1,132 @@
+Preguntas
+3.1.1. ¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+
+Un conflicto ocurre cuando dos o más personas realizan cambios en las 
+mismas líneas de un archivo y estos cambios no se pueden fusionar 
+automáticamente. No es ni bueno ni malo en sí mismo, pero es una realidad 
+inevitable al trabajar en colaboración. Resolver los conflictos de manera 
+efectiva puede fortalecer el trabajo en equipo y mejorar el resultado 
+final del proyecto.
+
+3.1.2. ¿Se puede evitar un conflicto? ¿Cómo?
+
+es difícil evitar por completo los conflictos, ya que ocurren cuando dos o 
+más personas realizan cambios en las mismas partes de un archivo. Sin 
+embargo, se pueden tomar medidas para reducir su frecuencia. Esto incluye 
+una comunicación efectiva entre el equipo, el uso de ramas separadas, 
+mantenerse actualizado con los cambios y utilizar herramientas como pull 
+requests. Cuando los conflictos surgen, es importante abordarlos de manera 
+rápida y constructiva utilizando las herramientas de resolución 
+proporcionadas por GitHub.
+
+#############
+
+3.2.10. Haga un git diff master suprema y un git diff master bife. ¿Qué 
+observa?
+Cuando hago un git diff master suprema puedo observar el cambio se hizo, 
+al borrar el lomo y poner en su lugar el pollo. 
+
+git diff main suprema
+diff --git a/3.conflicts/milanesa.txt b/3.conflicts/milanesa.txt
+index 5255304..1d61938 100644
+--- a/3.conflicts/milanesa.txt
++++ b/3.conflicts/milanesa.txt
+@@ -1,2 +1,2 @@
+ pan rallado
+-lomo
+\ No newline at end of file
++pollo
+
+En cambio cuando use git diff master bife pude ver el cambio que se hizo, 
+al eliminar el lomo nuevamente y poner en su lugar el bife. 
+
+git diff main bife
+diff --git a/3.conflicts/milanesa.txt b/3.conflicts/milanesa.txt
+index 5255304..7ed435b 100644
+--- a/3.conflicts/milanesa.txt
++++ b/3.conflicts/milanesa.txt
+@@ -1,2 +1,2 @@
+ pan rallado
+-lomo
+\ No newline at end of file
++bife
+
+3.2.11. Moverse a la branch master. Corra un git status, ¿qué observa?
+
+No veo mucho, ya que yo utilice el git dad y commit para guardar los 
+diferentes cambios que hice. 
+
+git status
+On branch main
+Your branch is ahead of 'origin/main' by 9 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../2.branchs/lara_fedunkiw.txt/
+
+nothing added to commit but untracked files present (use "git add" to 
+track)
+
+3.2..12. Ejecute git merge bife. Funcionó?
+
+Si funciono me aparece bife mergeado a main (master). 
+
+git branch --merged
+  bife
+* main
+
+
+3.2.13. Ejecute git merge suprema. Funcionó?
+
+Si, me aparecen ambos (bife y suprema) mergeados a main (master).
+
+git branch --merged
+  bife
+* main
+  suprema
+
+3.2.14. Ejecute git status. Que observa?
+
+On branch main
+Your branch is ahead of 'origin/main' by 12 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../2.branchs/lara_fedunkiw.txt/
+
+
+3.2.15. Vea el contenido del archivo 3.conflicts/milanesa.txt. ¿Qué 
+observa?
+
+Me muestra el merge entre las tres branches, la master, la suprema y 
+branch bife. 
+
+git show milanesa
+fatal: ambiguous argument 'milanesa': unknown revision or path not in the 
+working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+bash-3.2$ git show milanesa.txt
+commit d1b252bd611840685a472dea261eaf6f3424d06b (HEAD -> main)
+Merge: 2724bff 009bb59
+Author: Lara Fedunkiw <larafedunkiw@MacBook-Air-de-Lara.local>
+Date:   Fri Jun 9 01:45:31 2023 -0300
+
+    hice el merge de suprema y el merge de bife
+
+diff --cc 3.conflicts/milanesa.txt
+index 7ed435b,1d61938..1067c3c
+--- a/3.conflicts/milanesa.txt
++++ b/3.conflicts/milanesa.txt
+@@@ -1,2 -1,2 +1,4 @@@
+  pan rallado
+ +bife
++ pollo
+++suprema
+
+3.2.16. No me permite eliminar el merge ya que se hizo automático, por lo 
+que tampoco en el punto 17, cuando tengo que volver a mergear con suprema, 
+lo hace automático, porque ya estaba hecho, por lo que en el punto 18, no 
+necesito hacerlo manualmente. 

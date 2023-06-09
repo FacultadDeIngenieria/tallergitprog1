@@ -1,0 +1,202 @@
+Preguntas
+
+
+2.1.1. ¿Qué es un branch?
+En Git, un branch es una línea independiente de desarrollo que parte del commit actual y permite trabajar en cambios aislados del resto del repositorio. 
+
+2.1.2. ¿Por qué pueden ser útiles los branches?
+Los "branches" son una herramienta muy útil en el proceso de desarrollo de software. Permiten a los desarrolladores trabajar en diferentes aspectos de un proyecto de forma independiente, sin afectar 
+el trabajo de otros. Esto permite una mayor flexibilidad en el proceso de desarrollo y facilita la colaboración entre desarrolladores. Además, los "branches" permiten el control de versiones de un 
+proyecto, lo que permite a los desarrolladores rastrear los cambios y las versiones del proyecto a lo largo del tiempo. En resumen, los "branches" son una herramienta importante para el desarrollo 
+de software eficiente y de alta calidad.
+
+2.1.3. ¿Cómo se crea una branch?
+Para crear una nueva rama o "branch" en Git, se puede utilizar el comando git branch seguido del nombre de la nueva rama. Después, para moverse a la nueva rama recién creada, se utiliza el comando 
+git checkout seguido del nombre de la nueva rama. También es posible crear y moverse a una nueva rama en un solo comando utilizando el comando git checkout con la opción -b. Es importante verificar 
+que se encuentra en la rama correcta antes de hacer cambios significativos en una nueva rama.
+
+2.1.4. ¿Cómo se cambia a una branch?
+Para cambiar a una rama específica en Git, se utiliza el comando git checkout seguido del nombre de la rama a la que se desea cambiar. Primero, se verifican las ramas disponibles con git branch, 
+luego se selecciona la rama deseada y se ejecuta git checkout seguido del nombre de la rama. También es posible crear y cambiar a una nueva rama en un solo comando utilizando git checkout con la 
+opción -b.
+
+2.1.5. ¿Cómo se elimina una branch?
+Para eliminar una rama en Git, se utiliza el comando git branch con la opción -d seguido del nombre de la rama que se desea eliminar. Primero, se verifica que no se está trabajando en la rama que se 
+desea eliminar. Luego, se ejecuta el comando git branch -d seguido del nombre de la rama. También es posible eliminar una rama remota en Git utilizando el comando git push con la opción --delete.
+
+2.1.6. ¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Para crear y cambiar a una nueva rama en Git en un solo paso, se utiliza el comando git checkout -b seguido del nombre de la nueva rama que se desea crear. Esto crea una nueva rama a partir de la 
+rama actual y se cambia automáticamente a la nueva rama.
+
+2.1.7. ¿Qué es un merge?
+Un "merge" en Git es el proceso de combinar los cambios de dos o más ramas en una sola rama. El objetivo del "merge" es conservar todos los cambios realizados en ambas ramas mientras se resuelven 
+posibles conflictos. Esto es importante para la colaboración en equipo en proyectos de software, ya que permite a los desarrolladores trabajar en diferentes ramas de manera independiente y luego 
+fusionar sus cambios para formar una versión completa del proyecto.
+
+2.1.8. ¿Cómo se realiza un merge?
+Para realizar un "merge" en Git, primero se debe estar en la rama en la que se desean combinar los cambios y luego utilizar el comando git merge seguido del nombre de la rama que se desea fusionar. 
+Git buscará los cambios en ambas ramas y los combinará de manera que se puedan conservar todos los cambios mientras se resuelven posibles conflictos.
+
+2.1.9. ¿Que es un tag?
+Un "tag" en Git es una etiqueta que se puede colocar en un commit específico para marcar un punto importante en la historia del proyecto. Los "tags" se utilizan comúnmente para marcar versiones 
+estables del software y son útiles para los usuarios que desean descargar una versión específica del proyecto.
+
+2.1.10. ¿Cómo se crea un tag?
+ara crear un "tag" en Git, se puede usar el comando git tag seguido del nombre del "tag" y del SHA del commit que se desea etiquetar.
+2.2.6. Estos comandos te mostrarán un gráfico de la historia de las ramas y los commits.
+
+#####################
+
+2.2.6. usando git grapo nuevamente me muestra los nuevos cambios que realice en pizza.txt en la branch de experimento
+git graph
+* fe0afcd (HEAD -> experimento) Agrego el oregano arriba de la albahaca
+* 947a395 Agrego la albahaca arriba del queso
+* 59b11ea (main) Guardar cambios en lara_fedunkiw.txt
+* a16d1af Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+ 
+2.2.10.  usando git grapo nuevamente me muestra los nuevos cambios que realice en pizza.txt en las distintas branches.
+
+git graph
+* 748bbc6 (HEAD -> anana) Agrego anana abajo del queso
+| * fe0afcd (experimento) Agrego el oregano arriba de la albahaca
+| * 947a395 Agrego la albahaca arriba del queso
+|/  
+* 59b11ea (main) Guardar cambios en lara_fedunkiw.txt
+* a16d1af Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+2.2.13. puedo observar los cambios que realice en las diferentes branches, tuve un error por equivocación y commitie lo mismo “agregue Anana debajo del queso”, sin darme cuanta
+
+git graph
+* 6666d8b (HEAD -> main) Agregue la cebolla abajo de la salsa
+| * 930baa2 (anana) agregue anana debajo del queso
+| * 748bbc6 Agrego anana abajo del queso
+|/  
+| * fe0afcd (experimento) Agrego el oregano arriba de la albahaca
+| * 947a395 Agrego la albahaca arriba del queso
+|/  
+* 59b11ea Guardar cambios en lara_fedunkiw.txt
+* a16d1af Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+
+2.2.15.  se puede observar el merge que se hizo entre la branch anana y la main (el cual en vez de escribir alana puse Anna por equivocación).
+
+*   acfa76c (HEAD -> main) Hice el merge entre anna y main
+|\  
+| * 930baa2 (anana) agregue anana debajo del queso
+| * 748bbc6 Agrego anana abajo del queso
+* | 6666d8b Agregue la cebolla abajo de la salsa
+|/  
+| * fe0afcd (experimento) Agrego el oregano arriba de la albahaca
+| * 947a395 Agrego la albahaca arriba del queso
+|/  
+* 59b11ea Guardar cambios en lara_fedunkiw.txt
+* a16d1af Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+
+2.2.16. ¿Qué branches están "mergeadas" a master? anana y main
+
+git branch --merged
+  anana
+* main
+
+2.2.18. se puede observar el merge que se hizo entre la branch experimento y la main
+
+git graph
+*   8f7ecd4 (HEAD -> main) Hice un merge entre experimento y main
+|\  
+| * fe0afcd (experimento) Agrego el oregano arriba de la albahaca
+| * 947a395 Agrego la albahaca arriba del queso
+* |   acfa76c Hice el merge entre anna y main
+|\ \  
+| * | 930baa2 (anana) agregue anana debajo del queso
+| * | 748bbc6 Agrego anana abajo del queso
+| |/  
+* / 6666d8b Agregue la cebolla abajo de la salsa
+|/  
+* 59b11ea Guardar cambios en lara_fedunkiw.txt
+* a16d1af Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+2.2.19. ¿Tuvo que hacer un merge manual, o git lo hizo automáticamente? ¿Por qué?
+
+Tuve que hacer un merge manual ya que me tiraba un error cuando probaba que se “”mergeen” automáticamente.
+
+2.2.20. ¿Qué branches están "mergeadas" a master? 
+
+Las branches que están mergeadas a master son alana y experimento
+
+git branch --merged
+  anana
+  experimento
+* main
+
+2.2.23. ¿Qué branches están "mergeadas" a master? 
+
+Después de eliminar la branch anana y experimento, no me aparece que tenga ninguna branch mergeada. 
+
+git branch --merged
+* main
+
+2.2.24. Puedo ver que ya no me aparecen las branches de alana y experimento.
+
+git graph
+*   8f7ecd4 (HEAD -> main) Hice un merge entre experimento y main
+|\  
+| * fe0afcd Agrego el oregano arriba de la albahaca
+| * 947a395 Agrego la albahaca arriba del queso
+* |   acfa76c Hice el merge entre anna y main
+|\ \  
+| * | 930baa2 agregue anana debajo del queso
+| * | 748bbc6 Agrego anana abajo del queso
+| |/  
+* / 6666d8b Agregue la cebolla abajo de la salsa
+|/  
+* 59b11ea Guardar cambios en lara_fedunkiw.txt
+* a16d1af Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+2.2.27. con el comando “git show pizza” podes ver el resultado de todos los mergees y como termino quedando la pizza
+
+
+git show pizza
+tag pizza
+Tagger: Lara Fedunkiw <larafedunkiw@MacBook-Air-de-Lara.local>
+Date:   Fri Jun 9 01:18:23 2023 -0300
+
+Receta de la pizza.
+
+commit 8f7ecd48ecada17ac508acf6c106056fe5ce2c20 (HEAD -> main, tag: pizza)
+Merge: acfa76c fe0afcd
+Author: Lara Fedunkiw <larafedunkiw@MacBook-Air-de-Lara.local>
+Date:   Fri Jun 9 01:09:25 2023 -0300
+
+    Hice un merge entre experimento y main
+
+diff --cc 2.branchs/pizza.txt
+index 8a01068,b3c440f..5b1450f
+--- a/2.branchs/pizza.txt
++++ b/2.branchs/pizza.txt
+@@@ -1,5 -1,5 +1,7 @@@
++ oregano
++ albahaca
+  queso
+ +anana
+  salsa de tomate
+ +cebolla
+  masa de pizza
