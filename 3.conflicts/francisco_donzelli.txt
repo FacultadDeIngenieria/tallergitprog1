@@ -1,0 +1,17 @@
+3 CONFLICTO 
+ 3.1 Preguntas:
+ 1. Un conflicto surge cunado varias personas editan un mismo contenido. Ocurren cando dos branches tienen un mismo texto/código editado diferente. Esto es bueno
+  ya que Git no va editar un código sin avisarte
+ 2. No, no se pueden evitar pero es raro que pasen.
+
+ 3.2 Ejercicio Práctico:
+ 10. Podemos observar que te muestra todos los cambios realizados.
+ 11. Nos muestra los archivos modificados que le faltan ser guardados  
+ 12. Lo único que pasó fue que me salió el mensaje de "Already up to date", por lo que intuyo que si
+ 13. No, me salió este error: error: Your local changes to the following files would be overwritten by merge:
+        3.conflicts/milanesa.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 8c4fadc..0d765cf
+ 14. Me muestra que el milanesa.txt fue editado
+ 15. Aparece que en milanesa.txt está bife en vez de pollo

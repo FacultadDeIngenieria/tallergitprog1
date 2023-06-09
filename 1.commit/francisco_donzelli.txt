@@ -1,0 +1,45 @@
+1 Ejercicio Práctico
+3. Te dice que uses el "git add <file>..." para guardar los cambios hechos a dicho file o que uses "git restore <file>..." para borrar los combios hechos al file.
+5. Te pone que o no hay un file sin guardar o que el francisco_donzelli.txt queda sin guardar
+7. ya no se ve el sandwich.txt, solo aparece francisco_donzelli.txt
+9.commit c06cde82fec62d5229e40933c98bb50394f410f9 (HEAD -> francisco_donzelli)
+Author: Francisco Donzelli <fdonzelli@losmolinos.edu.ar>
+Date:   Thu Apr 20 15:22:06 2023 -0300
+
+    Agrego salsas
+
+commit c08e1c19abbc5a265700bce5ccd1facdf87fa2ce
+Author: Francisco Donzelli <fdonzelli@losmolinos.edu.ar>
+Date:   Thu Apr 20 15:18:06 2023 -0300
+
+    Agrego mi sandwich.txt
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD, origin/2023, main, 2023)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01
+Author: Sebastian Iglesias <sebastian@getcaribou.com>
+Date:   Mon Apr 17 21:58:56 2023 -0300
+
+    Initial commit - repo setup
+
+commit 140733d1b371966335eace561a02d3464af47664
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Mon Apr 17 20:02:55 2023 -0300
+
+    Initial commit
+	<Pone el código del commit, luego el autor(mi nombre, apellido y mi mail) y abajo la fecha en el que cree el Agrego salsas. Abajo pone lo mismo
+	 pero para el sandwich.txt y lo mismo las 3 siguientes veces, cambiando el commit, el autor(Sebastian Iglesias, con su mail), con la fecha en la que
+	crearon el commit y el commit que creó> 
+
+10.1 El git log --oneline aparecen todos los commits creados por todos del más
+ reciente al más antiguo.
+10.2 El git log --stat es el git log pero con más detalles
+11 el git diff muestra los diferentes "origenes" de los datos
+11.1 el git difftool --tool=meld <hash> te deja comparar y editar files
+14 El nombre cambió de sandwich2.txt a sandwich2_feo.txt 
+15 ya no aparece el sandwich2_feo
+16 Nos muestra los cambios hechos

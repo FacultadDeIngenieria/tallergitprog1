@@ -1,0 +1,12 @@
+2 BRANCHS
+ 2.1 Preguntas:
+ 1. Es como una rama, del main sale una copia de este
+ 2. para trabajar al mismo tiempo varias personas
+ 3. COn git branch
+ 4. con git checkout
+ 5. git branch -d
+ 6. git checkout -b 
+ 7. Es unir dos branchs
+ 8. git merge
+ 9. Es una etiqueta, para definir bien que hace.
+ 10. git tag -a <file> -m "el tag"
