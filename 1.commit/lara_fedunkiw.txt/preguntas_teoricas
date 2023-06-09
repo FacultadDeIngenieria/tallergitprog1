@@ -1,0 +1,213 @@
+Preguntas
+
+1.1.1. ¿Cómo se inicializa un repositorio local? (que comando se debe 
+ejecutar?)
+Para crear un nuevo repositorio, usa el comando git init. Git init es un 
+comando que se utiliza una sola vez durante la configuracion inicial de un 
+repositorio nuevo.
+
+1.1.2. ¿Cómo hago para que un directorio deje de ser controlado por git? 
+(que 
+comando se debe ejecutar?)
+Para quitar un directorio del control de versiones de Git, se debe usar el 
+siguiente comando desde la terminal, situado en el directorio principal 
+del proyecto:
+rm -rf nombre_del_directorio/.git
+Este comando eliminará el directorio .git y todos los archivos y 
+subdirectorios asociados con él, lo que hará que el directorio deje de ser 
+controlado por Git.
+
+1.1.3. Si agrego un archivo a un directorio que ya está siendo controlado 
+por 
+git, ¿está siendo controlado por git?
+Sí, si agrega un archivo a un directorio que ya está siendo controlado por 
+Git, el archivo también estará siendo controlado por Git.
+
+1.1.4. ¿Qué comando se utiliza para agregar un archivo al repositorio 
+local?
+Para agregar un archivo al repositorio local de Git, se utiliza el 
+siguiente comando:
+git add nombre_del_archivo
+
+1.1.5. ¿Cómo determino que archivos fueron modificados? (que comando se 
+debe 
+ejecutar?)
+Para determinar qué archivos han sido modificados en el directorio de 
+trabajo, puede utilizar el siguiente comando de Git:
+git status
+Para obtener más detalles sobre los cambios realizados en un archivo en 
+particular, puede utilizar el siguiente comando:
+git diff nombre_del_archivo
+
+1.1.6. ¿Qué comando se utiliza para hacer un commit?
+El comando git commit es una de las funciones esenciales principales de 
+git. Se requiere utilizar primero el comando git add para seleccionar los 
+cambios que se prepararan 
+para la siguiente confirmacion.
+el comando que se utiliza es:
+git commit -m "mensaje de confirmación"
+
+1.1.7. En sus propias palabras, ¿qué es un commit?
+Es un conjunto de cambios que se generan, como una captura de pantalla del 
+trabajo y con las modificaciones que se van haciendo en le momento.
+
+###################
+
+1.2.3. La salida del comando git status proporciona información sobre el 
+estado actual del repositorio de Git. El cual muestra que el archivo sandwich.txt
+fue modificado pero como ya estaba commited aparecia en el modified sin guardar. 
+En cambio con lara_fedunkiw.txt no estaba agregada entonces tendriamos que ejecutar
+git add para agregaarlo.
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   sandwich.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	lara_fedunkiw.txt/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+1.2.5. Después de ejecutar el comando git add sandwich.txt, la salida del 
+comando git status cambiará para reflejar el estado actualizado del repositorio. 
+Entonces después de hacer git add el archivo paso de estar modificado a commited.
+
+1.2.7.Se hizo el commit entonces ahora solo vemos lara_fedunkiw.txt
+sin subir
+
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	lara_fedunkiw.txt/
+
+nothing added to commit but untracked files present (use "git add" to track)
+bash-3.2$ 
+
+1.2.9. Aparecen los commit de los mas recientes en la parte superior y los mas viejos en la parte inferior
+
+commit a16d1afbc2885b030711b8fd94232bc9f62dd358 (HEAD -> main)
+Author: Lara Fedunkiw <larafedunkiw@MacBook-Air-de-Lara.local>
+Date:   Thu Jun 8 21:15:35 2023 -0300
+
+    Agrego mi sandwich.txt
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01
+Author: Sebastian Iglesias <sebastian@getcaribou.com>
+Date:   Mon Apr 17 21:58:56 2023 -0300
+
+    Initial commit - repo setup
+
+commit 140733d1b371966335eace561a02d3464af47664
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Mon Apr 17 20:02:55 2023 -0300
+
+    Initial commit
+
+1.2.10.1. con git log --oneline te aparece solo los "títulos" de los 
+commits que hiciste en el mismo orden que mencione antes
+
+a16d1af (HEAD -> main) Agrego mi sandwich.txt
+579a34f (origin/main, origin/HEAD) Agrego instrucciones para instalar claves ssh en windows con git bash.
+786904f Initial commit - repo setup
+140733d Initial commit
+
+1.2.10.2. git log --stat me muestra la informacion mas especifica sobre lo 
+que hizo el commit, como por ejemplo los caracteres agregados
+
+commit a16d1afbc2885b030711b8fd94232bc9f62dd358 (HEAD -> main)
+Author: Lara Fedunkiw <larafedunkiw@MacBook-Air-de-Lara.local>
+Date:   Thu Jun 8 21:15:35 2023 -0300
+
+    Agrego mi sandwich.txt
+
+ 1.commit/sandwich.txt | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+ README.md | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01
+Author: Sebastian Iglesias <sebastian@getcaribou.com>
+Date:   Mon Apr 17 21:58:56 2023 -0300
+
+    Initial commit - repo setup
+
+ .gitignore               |  2 ++
+ 1.commit/README.md       | 55 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1.commit/sandwich.txt    |  4 ++++
+ 2.branchs/README.md      | 78 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2.branchs/pizza.txt      |  3 +++
+ 3.conflicts/README.md    | 48 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 3.conflicts/milanesa.txt |  2 ++
+ README.md                | 55 +++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 8 files changed, 245 insertions(+), 2 deletions(-)
+
+commit 140733d1b371966335eace561a02d3464af47664
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Mon Apr 17 20:02:55 2023 -0300
+
+    Initial commit
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+1.2.11. con este comando git diff se puede ver el cambio que hubo en sandwich.txt al agregar una salsa al sandwich. 
+
+diff --git a/1.commit/sandwich.txt b/1.commit/sandwich.txt
+index 3ef15bc..222ca73 100644
+--- a/1.commit/sandwich.txt
++++ b/1.commit/sandwich.txt
+@@ -1,6 +1,7 @@
+ pan
+ lechuga
+ ketchup
++salsa chimichurri
+ mayonesa
+ queso chedda
+ milanesa de carne
+
+1.2.14. git status mostrará que se ha renombrado el archivo sandwich2.txt a sandwich2_feo.txt.
+
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   sandwich2_feo.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   sandwich.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	lara_fedunkiw.txt/
+
+1.2.15. después de hacer commit, el comando git status mostrará que no hay cambios pendientes en el directorio de trabajo y la rama actual está
+actualizada con la última confirmación. El comando git log --oneline mostrará una lista simplificada de los commits realizados en la rama actual, en orden cronológico inverso, con una abreviatura 
+del hash del commit y su mensaje de confirmación.
+
+1.2.16. El comando git log --stat muestra la bitácora de confirmaciones (commits) en Git junto con estadísticas resumidas de los cambios realizados en cada confirmación. Al ejecutar este comando, 
+verás una lista de confirmaciones 
