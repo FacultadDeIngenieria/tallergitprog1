@@ -1,0 +1,25 @@
+2.1
+
+1. Un branch es una copia independiente de un repositorio que permite trabajar en cambios aislados.
+2. Los branches son útiles para trabajar en diferentes características o correcciones sin afectar el código principal.
+3. Para crear un branch se utiliza el comando "git branch nombre_del_branch".
+4. Para cambiar a un branch se utiliza el comando "git checkout nombre_del_branch".
+5. Para eliminar un branch se utiliza el comando "git branch -d nombre_del_branch".
+6. Para crear y cambiar a una nueva branch en un solo paso se utiliza el comando "git checkout -b nombre_del_branch".
+7. Un merge es una operación que combina los cambios de un branch en otro.
+8. Para realizar un merge se utiliza el comando "git merge nombre_del_branch".
+9. Un tag es una referencia estática a un punto específico en el historial de versiones de un repositorio.
+10. Para crear un tag se utiliza el comando "git tag nombre_del_tag".
+
+
+2.2.6 Se observan todos los archivos commiteados desde el más nuevo al más viejo.
+2.2.10 Se observan las distintas ramas que hay con sus respectivos commits y se ve que estoy en la rama "anana". En esta rama se ha realizado un commit de un archivo con el mensaje "Pizza con piña".
+2.2.13 Se observan las distintas ramas que hay con sus respectivos commits y se ve que estoy en la rama "master". En esta rama se ha realizado un commit de un archivo con el mensaje "Pizza con cebolla".
+2.2.15 Se observa cómo se unieron las ramas "main" y "anana", ya que los commits están 
+juntos.
+2.2.16 Las ramas "2023" y "anana" están mergeadas a la rama "main".
+2.2.18 Se observa cómo se unieron las ramas "main" y "experimento" porque necesitaba hacer 
+unos cambios y se realizó un commit con ellos.
+2.2.19 Esto se hizo manualmente.
+2.2.20 Las ramas "experimento", "anana" y "2023" están presentes.
+2.2.24 Se observa que las ramas "anana" y "experimento" ya no están.
