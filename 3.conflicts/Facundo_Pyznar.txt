@@ -1,0 +1,19 @@
+3.1
+
+1. En git, un conflicto ocurre cuando dos o más personas realizan cambios en el
+2. Un conflicto en git, se puede "evitar" manualmente haciendo un git add del a
+
+3.2
+
+10. git diff main suprema se puede ver la diferencia entre la branch main y la 
+git diff main bife se puede ver la diferencia entre la branch main y la branch 
+11. se puede ver el archivo con mi nombre que ya esta agregado
+12. si funciono
+13. No funciono
+14. se puede ver los archivos que nos se pudieron mergear. En este caso milanesa
+15. pan rallado
+<<<<<<< HEAD
+bife
+=======
+pollo
+>>>>>>> suprema
