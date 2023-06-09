@@ -1,4 +1,7 @@
 pan
-queso
-medallón
+lechuga
+ketchup
+mayonesa
+queso chedda
+milanesa de carne
 pan
