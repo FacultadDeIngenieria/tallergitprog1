@@ -1,0 +1,63 @@
+Ejercicio Teorico
+
+1.
+Un branch es una rama o divison de git.
+
+2.
+Es de gran utilidad ya que varios programadores pueden trabajar sobre un mismo proyecto al mismo tiempo.
+
+3.
+Para crear un branch debemos usar el comando git branch nombre de la branch.
+
+4.
+Para hacerlo debemos usar el comando: git branch -a y luego git checkout (nombre de la otra branch).
+
+5.
+git branch -d (nombre de branch a eliminar).
+
+6.
+git switch -c 
+
+7.
+Un merge es una combinación de branches.
+
+8.
+git merge.
+
+9.
+los tags son etiquetas que se usan para poder señalar algun dato en concreto que queramos aclarar.
+
+10.
+Se usa el comando git tag -a el nombre del tag -m "y un comentario".
+
+Ejercicio Practico
+
+6.
+Se puede observar todos los comentarios de los commits anteriores, separados por branches.
+
+10.
+Se ven los anteriores y ademas el nuevo commit hecho en la branch anana.
+
+13.
+Se ve el nuevo commit hecho en la branch main, y las hechas en las branches creadas anteriormente.
+
+15.
+Me muestra que tiene lineas entre ellas, uniendose.
+
+16.
+Las branches anana y la branch 2023
+
+18.
+con git graph vamos las branches que estan unidas, y ahora se agrega la branch experimento.
+
+19.
+Lo tuve que hacer manual, debido a que habia un error en el archivo pizza.txt. en el cual que se rescribieron los todas las palabras escritas en los archivos pizza.txt de las distintas branches. 
+
+20.
+las braches mergeadas son: 2023, anana y experimento.
+
+23.
+Solo quedó mergeado a 2023
+
+24.
+Cuando corro el comando git graph, observo que aparecen los comentarios de las branches 2023, juamartin_lagomarsino y Main.

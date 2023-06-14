@@ -1,0 +1,27 @@
+Ejercicio teorico
+
+1.
+un conflicto es un estado en el que 2 branches han sido mergeadas y esto genera que haya un problema porque hay palabras que han sido borradas o editadas en una branch y en otra no, o se ha editado la misma linea de comandos al mismo tiempo por 2 programadores distintos.
+
+2.
+un conflicto se puede evitar, intentando editar los archivos antes de mergear las branches. tambien, los programadores pueden trabajar en ramas aisladas e independientes de las otras. 
+
+Ejercicio practico
+
+10.
+con el comando git diff main suprema, puedo ver que aparecen palabras en rojo(las que no aparecen en un archivo y si en otro) y verdes(que aparecen en los 2 archivos comparados). ademas, cuando corro el comando git diff main bife, no observo nada.
+
+11.
+con el comando git status, aparece el archivo juanmartin_lagomarsino.txt como untracked files y me recomienda hacer un git add.
+
+12.
+Si, lo hizo automaticamente
+
+13.
+No, me pide que lo solucione manualmente.
+
+14.
+Al ejecutarlo, observo que mis archivos milanesa.txt aparece modificado, y el archivo juanmartin_lagomarsino.txt me pide hacer un git add.
+
+15.
+puedo observar que en el archivo aparece tanto el pollo como el bife y un par de signos igual y signos al lado de nombres de branches.
