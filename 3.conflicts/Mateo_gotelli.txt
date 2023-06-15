@@ -1,0 +1,16 @@
+3.1. Preguntas 
+1. Un conflicto en Git ocurre cuando hay cambios incompatibles en los archivos durante una fusión o rebase.
+Los conflictos son situaciones que requieren intervención manual para resolver diferencias entre cambios.
+Los conflictos pueden ocurrir al fusionar ramas con cambios incompatibles en las mismas líneas de código.
+No se considera ni bueno ni malo, es simplemente una parte normal del proceso de desarrollo colaborativo.
+2. Los conflictos se pueden evitar mediante una buena comunicación y coordinación del trabajo en equipo.
+Algunas prácticas para evitar conflictos incluyen trabajar en ramas separadas y mantener el repositorio actualizado.
+La resolución de conflictos implica revisar los cambios conflictivos y combinar manualmente las diferencias.
+En resumen, los conflictos son situaciones que requieren atención y resolución manual para mantener la coherencia del código fuente.
+3.2. Ejercicio Práctico
+se ven las diferencias entre los dos main branches (suprema y bife)
+11 veo que se modifico y que no se puede commitear
+12 si, funciono
+13 si, funciono
+14 se puede ver todo lo que fue modificado y los commits restantes
+15 en mi caso quedo pollo
