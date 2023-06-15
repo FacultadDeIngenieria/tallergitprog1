@@ -1,0 +1,71 @@
+Preguntas
+Preguntas 3
+
+
+Explicacion:
+
+10.1 
+git diff main suprema
+diff --git a/3.conflicts/milanesa.txt b/3.conflicts/milanesa.txt
+index 5255304..1d61938 100644
+--- a/3.conflicts/milanesa.txt
++++ b/3.conflicts/milanesa.txt
+@@ -1,2 +1,2 @@
+ pan rallado
+-lomo
+\ No newline at end of file
++pollo
+
+git diff main bife
+diff --git a/3.conflicts/milanesa.txt b/3.conflicts/milanesa.txt
+index 5255304..7ed435b 100644
+--- a/3.conflicts/milanesa.txt
++++ b/3.conflicts/milanesa.txt
+@@ -1,2 +1,2 @@
+ pan rallado
+-lomo
+\ No newline at end of file
++bife
+
+11. 
+git status
+En la rama main
+Tu rama está adelantada a 'origin/main' por 11 commits.
+  (usa "git push" para publicar tus commits locales)
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	../1.commit/juan_cruz_garcia_ferrer.txt
+	../2.branchs/juan_cruz_garcia_ferrer.txt
+	juan_cruz_garcia_ferrer.txt
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+
+12. Si, funciono, bife aparece merged con master
+git branch
+  bife
+* main
+  suprema
+13. No funciono, lo tuve que hacer manual 
+
+14.
+git status
+En la rama main
+Tu rama está adelantada a 'origin/main' por 14 commits.
+  (usa "git push" para publicar tus commits locales)
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	../1.commit/juan_cruz_garcia_ferrer.txt
+	../2.branchs/juan_cruz_garcia_ferrer.txt
+	juan_cruz_garcia_ferrer.txt
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+
+15. Veo el merged entre las 3 branches
+
+17.
+git merge suprema
+Ya está actualizado.
+
+18. No necesito resolverlo manualmente ya que se hizo automático el 

@@ -1,0 +1,202 @@
+ Preguntas
+
+Preguntas 2
+
+¿Qué es un branch?
+En Git, un branch es una línea independiente de desarrollo que parte del commit actual y permite trabajar en cambios aislados del resto del repositorio. 
+
+¿Por qué pueden ser útiles los branches?
+Los "branches" son una herramienta muy útil en el proceso de desarrollo de software. Permiten a los desarrolladores trabajar en diferentes aspectos de un proyecto de forma independiente, sin afectar 
+el trabajo de otros. Esto permite una mayor flexibilidad en el proceso de desarrollo y facilita la colaboración entre desarrolladores. Además, los "branches" permiten el control de versiones de un 
+proyecto, lo que permite a los desarrolladores rastrear los cambios y las versiones del proyecto a lo largo del tiempo. En resumen, los "branches" son una herramienta importante para el desarrollo 
+de software eficiente y de alta calidad.
+
+¿Cómo se crea una branch?
+Para crear una nueva rama o "branch" en Git, se puede utilizar el comando git branch seguido del nombre de la nueva rama. Después, para moverse a la nueva rama recién creada, se utiliza el comando 
+git checkout seguido del nombre de la nueva rama. También es posible crear y moverse a una nueva rama en un solo comando utilizando el comando git checkout con la opción -b. Es importante verificar 
+que se encuentra en la rama correcta antes de hacer cambios significativos en una nueva rama.
+
+¿Cómo se cambia a una branch?
+Para cambiar a una rama específica en Git, se utiliza el comando git checkout seguido del nombre de la rama a la que se desea cambiar. Primero, se verifican las ramas disponibles con git branch, 
+luego se selecciona la rama deseada y se ejecuta git checkout seguido del nombre de la rama. También es posible crear y cambiar a una nueva rama en un solo comando utilizando git checkout con la 
+opción -b.
+
+¿Cómo se elimina una branch?
+Para eliminar una rama en Git, se utiliza el comando git branch con la opción -d seguido del nombre de la rama que se desea eliminar. Primero, se verifica que no se está trabajando en la rama que se 
+desea eliminar. Luego, se ejecuta el comando git branch -d seguido del nombre de la rama. También es posible eliminar una rama remota en Git utilizando el comando git push con la opción --delete.
+
+¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Para crear y cambiar a una nueva rama en Git en un solo paso, se utiliza el comando git checkout -b seguido del nombre de la nueva rama que se desea crear. Esto crea una nueva rama a partir de la 
+rama actual y se cambia automáticamente a la nueva rama.
+
+¿Qué es un merge?
+Un "merge" en Git es el proceso de combinar los cambios de dos o más ramas en una sola rama. El objetivo del "merge" es conservar todos los cambios realizados en ambas ramas mientras se resuelven 
+posibles conflictos. Esto es importante para la colaboración en equipo en proyectos de software, ya que permite a los desarrolladores trabajar en diferentes ramas de manera independiente y luego 
+fusionar sus cambios para formar una versión completa del proyecto.
+
+¿Cómo se realiza un merge?
+Para realizar un "merge" en Git, primero se debe estar en la rama en la que se desean combinar los cambios y luego utilizar el comando git merge seguido del nombre de la rama que se desea fusionar. 
+Git buscará los cambios en ambas ramas y los combinará de manera que se puedan conservar todos los cambios mientras se resuelven posibles conflictos.
+
+¿Que es un tag?
+Un "tag" en Git es una etiqueta que se puede colocar en un commit específico para marcar un punto importante en la historia del proyecto. Los "tags" se utilizan comúnmente para marcar versiones 
+estables del software y son útiles para los usuarios que desean descargar una versión específica del proyecto.
+
+¿Cómo se crea un tag?
+ara crear un "tag" en Git, se puede usar el comando git tag seguido del nombre del "tag" y del SHA del commit que se desea etiquetar.
+
+EXPLICACION:
+
+6.
+git graph
+* 46b974d (HEAD -> experimento) agrego el oregano arriba de la albahaca
+* 50f1b55 agregue la albahaca arriba del queso
+* e6f856b (main) Borre sandwich2_feo.txt
+* a4ac9db Cambie el sandwich2.txt por sandwich2_feo.txt
+* 154a467 Agrego sandwich2.txt a mi repositorio local
+* d5c4e01 Agrego salsas
+* 74e3d56 Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+10.
+git graph
+* 9a010f0 (HEAD -> anana) agrego al anana debajo del queso
+| * 46b974d (experimento) agrego el oregano arriba de la albahaca
+| * 50f1b55 agregue la albahaca arriba del queso
+|/  
+* e6f856b (main) Borre sandwich2_feo.txt
+* a4ac9db Cambie el sandwich2.txt por sandwich2_feo.txt
+* 154a467 Agrego sandwich2.txt a mi repositorio local
+* d5c4e01 Agrego salsas
+* 74e3d56 Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+13.
+git graph
+* 7486947 (HEAD -> main) agrego la cebolla abajo de la salsa
+| * 9a010f0 (anana) agrego al anana debajo del queso
+|/  
+| * 46b974d (experimento) agrego el oregano arriba de la albahaca
+| * 50f1b55 agregue la albahaca arriba del queso
+|/  
+* e6f856b Borre sandwich2_feo.txt
+* a4ac9db Cambie el sandwich2.txt por sandwich2_feo.txt
+* 154a467 Agrego sandwich2.txt a mi repositorio local
+* d5c4e01 Agrego salsas
+* 74e3d56 Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+15. 
+git graph
+*   87e3107 (HEAD -> main) hice un merge entre la branch anana y master
+|\  
+| * 9a010f0 (anana) agrego al anana debajo del queso
+* | 7486947 agrego la cebolla abajo de la salsa
+|/  
+| * 46b974d (experimento) agrego el oregano arriba de la albahaca
+| * 50f1b55 agregue la albahaca arriba del queso
+|/  
+* e6f856b Borre sandwich2_feo.txt
+* a4ac9db Cambie el sandwich2.txt por sandwich2_feo.txt
+* 154a467 Agrego sandwich2.txt a mi repositorio local
+* d5c4e01 Agrego salsas
+* 74e3d56 Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+16. Esta mergeadas master y anana
+git branch --merged
+  anana
+* main
+
+18. 
+git graph
+*   7b4ed80 (HEAD -> main) hice un merge entre experimento y master
+|\  
+| * 46b974d (experimento) agrego el oregano arriba de la albahaca
+| * 50f1b55 agregue la albahaca arriba del queso
+* |   87e3107 hice un merge entre la branch anana y master
+|\ \  
+| * | 9a010f0 (anana) agrego al anana debajo del queso
+| |/  
+* / 7486947 agrego la cebolla abajo de la salsa
+|/  
+* e6f856b Borre sandwich2_feo.txt
+* a4ac9db Cambie el sandwich2.txt por sandwich2_feo.txt
+* 154a467 Agrego sandwich2.txt a mi repositorio local
+* d5c4e01 Agrego salsas
+* 74e3d56 Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+19. ¿Tuvo que hacer un merge manual, o git lo hizo automáticamente? ¿Por qué?
+
+Si, porque me tiraba error
+
+20. las branches mergeadas son nana, experimento y master
+git branch --merged
+  anana
+  experimento
+* main
+
+23. Ahora no hay ninguna branch mergeada a la master
+
+git branch --merged
+* main
+
+24. ahora no me aparecen mas las branches experimento y alana
+
+git graph
+*   7b4ed80 (HEAD -> main) hice un merge entre experimento y master
+|\  
+| * 46b974d agrego el oregano arriba de la albahaca
+| * 50f1b55 agregue la albahaca arriba del queso
+* |   87e3107 hice un merge entre la branch anana y master
+|\ \  
+| * | 9a010f0 agrego al anana debajo del queso
+| |/  
+* / 7486947 agrego la cebolla abajo de la salsa
+|/  
+* e6f856b Borre sandwich2_feo.txt
+* a4ac9db Cambie el sandwich2.txt por sandwich2_feo.txt
+* 154a467 Agrego sandwich2.txt a mi repositorio local
+* d5c4e01 Agrego salsas
+* 74e3d56 Agrego mi sandwich.txt
+
+27. Al final te muestra los condimentos que se agregaron a la branch main, cuando hicimos los emerge
+git show pizza
+tag pizza
+Tagger: ls <juancruzgarciaferrer@gmail.com>
+Date:   Fri Jun 9 11:30:55 2023 -0300
+
+Receta de la pizza.
+
+commit 7b4ed8017ca4062f489d465b1d87411bb1b16b4d (HEAD -> main, tag: pizza)
+Merge: 87e3107 46b974d
+Author: ls <juancruzgarciaferrer@gmail.com>
+Date:   Fri Jun 9 11:26:49 2023 -0300
+
+    hice un merge entre experimento y master
+
+diff --cc 2.branchs/pizza.txt
+index 8a01068,b3c440f..5b1450f
+--- a/2.branchs/pizza.txt
++++ b/2.branchs/pizza.txt
+@@@ -1,5 -1,5 +1,7 @@@
++ oregano
++ albahaca
+  queso
+ +anana
+  salsa de tomate
+ +cebolla
+  masa de pizza
+
+
