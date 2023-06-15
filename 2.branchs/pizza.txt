@@ -1,10 +1,3 @@
-oregano
-albahaca
 queso
-<<<<<<< HEAD
-cebolla
-=======
-anana
->>>>>>> anana
 salsa de tomate
 masa de pizza

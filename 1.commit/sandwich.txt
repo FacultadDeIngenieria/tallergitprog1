@@ -1,9 +1,4 @@
 pan
-mayonesa
 queso
-jamon
-queso
-tomate
-mayonesa
-jamon
+medallón
 pan
