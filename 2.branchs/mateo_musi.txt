@@ -1,0 +1,22 @@
+2.1)
+1- Una branch es un grupo de commits que crea una sola narrativa
+2- Las branches permiten crear listas o eliminar ramas del sistema segun sea necesario.
+3- Una branch se crea con el comando git branch 
+4- Para cambiar a una branch hay que usar el comando git checkout
+5- Una branch se elimina usando el comando git branch -d
+6- Para crear y cambiarse a una bransh directamente se utiliza git checkout -b
+7- Una merge permite tomar las líneas independientes de desarrollo creadas por git branch e integrarlas en una sola rama
+8- Para realizar una merge se usa el comando git merge
+9- Un tag es una etiqueta de referencia que apunta a puntos concretos en el historial de git
+10- Un tag se crea usando git tag
+
+2.2)
+6- Se observan todos los archivos commiteados desde el mas nuevo al mas viejo
+10- Se observan las distintas ramas que hay con sus respectuvos commits y vemos que estoy en la branch anana y que en la misma esta comiteado un archivo con el mensaje "Pizza con anana"
+13- Se observan las distintas ramas que hay con sus respectuvos commits y vemos que estoy en la branch master y que en la misma esta comiteado un archivo con el mensaje de "Pizza con cebolla"
+15- Observamos como se unieron las branches main y anana, ya que los commist estan juntos
+16- 2023 y anana estan mergeadas a main
+18- Se observa como se unieron main y experimento porque necesitaba hacerse unos cambio e hice un commit con ellos
+19- Lo hice manualmente
+20- experimento, anana y 2023
+24- Observo que las branches anan y experimento ya no estan

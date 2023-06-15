@@ -1,0 +1,85 @@
+Ejercicio 1
+
+1.1 Preguntas
+
+1. Con el comando git init
+
+2. En la lista Notebooks elija el block de notas que desea actualizar. En la lista Git repositories, seleccione el repositorio
+que $
+repository.
+
+3. Si
+
+4. git add
+
+5. git diff
+
+6. git commit
+
+7. Un commit es una acción que se realiza para guardar los cambios realizados en un archivo o conjunto de archivos en un
+sistema de control de versiones, como Git.
+
+Ejercicio Practico 1.2
+
+3.
+On branch Mateo_Musi
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   sandwich.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Mateo_Musi.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+No esta en el repositorio
+
+5.
+On branch Mateo_Musi
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   sandwich.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Mateo_Musi.txt
+
+Aca ya esta en el repositorio
+
+7.
+El archivo "sandiwich.txt" ya esta comitiado
+ 
+9.
+commit 7ab6d7c693e32823506aeb3dabb046b595e75d44 (HEAD -> Mateo_Musi)
+Author: Mateo Musi <mmusi@mail.austral.edu.ar>
+Date:   Thu Apr 27 14:48:24 2023 -0300
+
+    Agrego mi sandwich.txt
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD, main, 2023+, 2023)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01
+Author: Sebastian Iglesias <sebastian@getcaribou.com>
+Date:   Mon Apr 17 21:58:56 2023 -0300
+
+    Initial commit - repo setup
+
+commit 140733d1b371966335eace561a02d3464af47664
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Mon Apr 17 20:02:55 2023 -0300
+
+
+10.
+con el comando git log --oneline escribe todo en una sola linea y con el comando de git log --stat te dice cuantas 
+modificaciones se le hicieron
+
+11.
+con el comando de git diff te dice cual fue el ultimo commit agregado
+
+
