@@ -1,0 +1,306 @@
+Preguntas:
+Teoricas
+1. Para inicializar un repositorio local en Git, debes ejecutar el comando "git init" en la carpeta que deseas convertir en un repositorio
+2. Para que un directorio deje de ser controlado por Git y se elimine del repositorio, hay que ejecutar el comando "git rm -r --cached.” para eliminar todos los archivos y subdirectorios de la carpeta del repositorio Git y dejarlos en la carpeta local.
+3. Si agregas un archivo a un directorio que ya está siendo controlado por Git, el archivo estará automáticamente bajo el control de versión de Git. Git monitorea todos los cambios en el directorio y sus subdirectorios, incluyendo nuevos archivos agregados.
+4. Para agregar un archivo al repositorio local en Git, debes usar el comando "git add". Este comando le indica a Git que debe comenzar a monitorear los cambios en el archivo especificado y agregarlo al índice de Git, lo que significa que se incluirá en la próxima confirmación de cambios.
+5. Para determinar qué archivos han sido modificados en el repositorio local, debes ejecutar el comando "git status". Este comando muestra el estado actual del repositorio, incluidos los cambios que aún no se han agregado al índice de Git y los archivos que se han modificado desde la última confirmación de cambios.
+6. Para realizar una confirmación de cambios (commit) en Git, debes usar el comando "git commit". Este comando toma todos los cambios que se han agregado al índice de Git y los guarda en el historial de versiones del repositorio.
+7. Un commit es un registro en el historial de versiones que guarda un conjunto de cambios realizados en un archivo en un momento determinado. Cada commit se identifica por un número único y contiene un mensaje que describe los cambios realizados.
+
+PREGUNTAS
+
+¿Qué es un branch?
+En Git, un branch es una línea independiente de desarrollo que parte del commit actual y permite trabajar en cambios aislados del resto del repositorio. 
+
+¿Por qué pueden ser útiles los branches?
+Los "branches" son una herramienta muy útil en el proceso de desarrollo de software. Permiten a los desarrolladores trabajar en diferentes aspectos de un proyecto de forma independiente, sin afectar 
+el trabajo de otros. Esto permite una mayor flexibilidad en el proceso de desarrollo y facilita la colaboración entre desarrolladores. Además, los "branches" permiten el control de versiones de un 
+proyecto, lo que permite a los desarrolladores rastrear los cambios y las versiones del proyecto a lo largo del tiempo. En resumen, los "branches" son una herramienta importante para el desarrollo 
+de software eficiente y de alta calidad.
+
+¿Cómo se crea una branch?
+Para crear una nueva rama o "branch" en Git, se puede utilizar el comando git branch seguido del nombre de la nueva rama. Después, para moverse a la nueva rama recién creada, se utiliza el comando 
+git checkout seguido del nombre de la nueva rama. También es posible crear y moverse a una nueva rama en un solo comando utilizando el comando git checkout con la opción -b. Es importante verificar 
+que se encuentra en la rama correcta antes de hacer cambios significativos en una nueva rama.
+
+¿Cómo se cambia a una branch?
+Para cambiar a una rama específica en Git, se utiliza el comando git checkout seguido del nombre de la rama a la que se desea cambiar. Primero, se verifican las ramas disponibles con git branch, 
+luego se selecciona la rama deseada y se ejecuta git checkout seguido del nombre de la rama. También es posible crear y cambiar a una nueva rama en un solo comando utilizando git checkout con la 
+opción -b.
+
+¿Cómo se elimina una branch?
+Para eliminar una rama en Git, se utiliza el comando git branch con la opción -d seguido del nombre de la rama que se desea eliminar. Primero, se verifica que no se está trabajando en la rama que se 
+desea eliminar. Luego, se ejecuta el comando git branch -d seguido del nombre de la rama. También es posible eliminar una rama remota en Git utilizando el comando git push con la opción --delete.
+
+¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Para crear y cambiar a una nueva rama en Git en un solo paso, se utiliza el comando git checkout -b seguido del nombre de la nueva rama que se desea crear. Esto crea una nueva rama a partir de la 
+rama actual y se cambia automáticamente a la nueva rama.
+
+¿Qué es un merge?
+Un "merge" en Git es el proceso de combinar los cambios de dos o más ramas en una sola rama. El objetivo del "merge" es conservar todos los cambios realizados en ambas ramas mientras se resuelven 
+posibles conflictos. Esto es importante para la colaboración en equipo en proyectos de software, ya que permite a los desarrolladores trabajar en diferentes ramas de manera independiente y luego 
+fusionar sus cambios para formar una versión completa del proyecto.
+
+¿Cómo se realiza un merge?
+Para realizar un "merge" en Git, primero se debe estar en la rama en la que se desean combinar los cambios y luego utilizar el comando git merge seguido del nombre de la rama que se desea fusionar. 
+Git buscará los cambios en ambas ramas y los combinará de manera que se puedan conservar todos los cambios mientras se resuelven posibles conflictos.
+
+¿Que es un tag?
+Un "tag" en Git es una etiqueta que se puede colocar en un commit específico para marcar un punto importante en la historia del proyecto. Los "tags" se utilizan comúnmente para marcar versiones 
+estables del software y son útiles para los usuarios que desean descargar una versión específica del proyecto.
+
+¿Cómo se crea un tag?
+ara crear un "tag" en Git, se puede usar el comando git tag seguido del nombre del "tag" y del SHA del commit que se desea etiquetar.
+
+¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+
+Un conflicto ocurre cuando dos o más personas realizan cambios en las mismas líneas de un archivo y estos cambios no se pueden fusionar automáticamente. No es ni bueno ni malo en sí mismo, pero es una realidad inevitable al trabajar en colaboración. Resolver los conflictos de manera efectiva puede fortalecer el trabajo en equipo y mejorar el resultado final del proyecto.
+
+¿Se puede evitar un conflicto? ¿Cómo?
+
+es difícil evitar por completo los conflictos, ya que ocurren cuando dos o más personas realizan cambios en las mismas partes de un archivo. Sin embargo, se pueden tomar medidas para reducir su frecuencia. Esto incluye una comunicación efectiva entre el equipo, el uso de ramas separadas, mantenerse actualizado con los cambios y utilizar herramientas como pull requests. Cuando los conflictos surgen, es importante abordarlos de manera rápida y constructiva utilizando las herramientas de resolución proporcionadas por GitHub.
+
+3. 
+ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   sandwich.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        felipe_heguiabehere.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+5. 
+ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   sandwich.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        felipe_heguiabehere.txt
+7. 
+
+ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        felipe_heguiabehere.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+9. 
+ git log
+commit a77a798074820dbacb2c8862d93f67c9a94895f3 (HEAD -> main)
+Author: Felipe Heguiabehere <fheguiabehere@mail.austral.edu.ar>
+Date:   Fri Jun 9 12:30:03 2023 -0300
+
+    Agrego salsas
+
+commit 77fce8d20951dde1b8b97983d31784b61e60dda6
+Author: Felipe Heguiabehere <fheguiabehere@mail.austral.edu.ar>
+Date:   Fri Jun 9 12:28:36 2023 -0300
+
+    Agrego mi sandwich.txt
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD, origin/2023)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01
+Author: Sebastian Iglesias <sebastian@getcaribou.com>
+Date:   Mon Apr 17 21:58:56 2023 -0300
+
+    Initial commit - repo setup
+
+commit 140733d1b371966335eace561a02d3464af47664
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Mon Apr 17 20:02:55 2023 -0300
+
+    Initial commit
+
+
+10.1.
+ git log --oneline
+a77a798 (HEAD -> main) Agrego salsas
+77fce8d Agrego mi sandwich.txt
+579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+786904f Initial commit - repo setup
+140733d Initial commit
+
+
+10.2. 
+git log --stat
+commit a77a798074820dbacb2c8862d93f67c9a94895f3 (HEAD -> main)
+Author: Felipe Heguiabehere <fheguiabehere@mail.austral.edu.ar>
+Date:   Fri Jun 9 12:30:03 2023 -0300
+
+    Agrego salsas
+
+ 1.commit/sandwich.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 77fce8d20951dde1b8b97983d31784b61e60dda6
+Author: Felipe Heguiabehere <fheguiabehere@mail.austral.edu.ar>
+Date:   Fri Jun 9 12:28:36 2023 -0300
+
+    Agrego mi sandwich.txt
+
+ 1.commit/sandwich.txt | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD, origin/2023)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+ README.md | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01
+Author: Sebastian Iglesias <sebastian@getcaribou.com>
+Date:   Mon Apr 17 21:58:56 2023 -0300
+
+    Initial commit - repo setup
+
+ .gitignore               |  2 ++
+ 1.commit/README.md       | 55 ++++++++++++++++++++++++++++++++++
+ 1.commit/sandwich.txt    |  4 +++
+ 2.branchs/README.md      | 78 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 2.branchs/pizza.txt      |  3 ++
+ 3.conflicts/README.md    | 48 +++++++++++++++++++++++++++++
+ 3.conflicts/milanesa.txt |  2 ++
+ README.md                | 55 ++++++++++++++++++++++++++++++++--
+ 8 files changed, 245 insertions(+), 2 deletions(-)
+
+commit 140733d1b371966335eace561a02d3464af47664
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Mon Apr 17 20:02:55 2023 -0300
+
+    Initial commit
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+14.
+git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    sandwich2.txt -> sandwich2_feo.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        felipe_heguiabehere.txt
+
+ git log --oneline
+d584ad8 (HEAD -> main) cambie sandwich2.txt por sandwich2_feo.txt
+612710a Agregue sandwich2.txt al repositorio local
+a77a798 Agrego salsas
+77fce8d Agrego mi sandwich.txt
+579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+786904f Initial commit - repo setup
+140733d Initial commit
+
+15. 
+git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    sandwich2_feo.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        felipe_heguiabehere.txt
+
+
+git log --oneline
+495c159 (HEAD -> main) Borre el archivo sandwich2_feo.txt
+d584ad8 cambie sandwich2.txt por sandwich2_feo.txt
+612710a Agregue sandwich2.txt al repositorio local
+a77a798 Agrego salsas
+77fce8d Agrego mi sandwich.txt
+579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+786904f Initial commit - repo setup
+140733d Initial commit
+
+16. 
+
+ git log --stat
+commit 495c159bff4e1b250fc15850a6b8519646bd485c (HEAD -> main)
+Author: Felipe Heguiabehere <fheguiabehere@mail.austral.edu.ar>
+Date:   Fri Jun 9 12:38:23 2023 -0300
+
+    Borre el archivo sandwich2_feo.txt
+
+ 1.commit/sandwich2_feo.txt | 6 ------
+ 1 file changed, 6 deletions(-)
+
+commit d584ad8c4ebeb0177a0c6d6b52ef6feed903d465
+Author: Felipe Heguiabehere <fheguiabehere@mail.austral.edu.ar>
+Date:   Fri Jun 9 12:36:26 2023 -0300
+
+    cambie sandwich2.txt por sandwich2_feo.txt
+
+ 1.commit/{sandwich2.txt => sandwich2_feo.txt} | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 612710a4799f1aa711579c150132a97e21acdbaf
+Author: Felipe Heguiabehere <fheguiabehere@mail.austral.edu.ar>
+Date:   Fri Jun 9 12:34:45 2023 -0300
+
+    Agregue sandwich2.txt al repositorio local
+
+ 1.commit/sandwich2.txt | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit a77a798074820dbacb2c8862d93f67c9a94895f3
+Author: Felipe Heguiabehere <fheguiabehere@mail.austral.edu.ar>
+Date:   Fri Jun 9 12:30:03 2023 -0300
+
+    Agrego salsas
+
+ 1.commit/sandwich.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 77fce8d20951dde1b8b97983d31784b61e60dda6
+Author: Felipe Heguiabehere <fheguiabehere@mail.austral.edu.ar>
+Date:   Fri Jun 9 12:28:36 2023 -0300
+
+    Agrego mi sandwich.txt
+
+ 1.commit/sandwich.txt | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD, origin/2023)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+ README.md | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01

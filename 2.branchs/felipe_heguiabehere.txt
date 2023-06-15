@@ -1,0 +1,136 @@
+Preguntas:
+
+6. 
+git graph
+* 0988b1e (HEAD -> experimento) agregue oregano arriba de albahaca
+* 17e4e48 agregue albahaca arriba del queso
+* 495c159 (main) Borre el archivo sandwich2_feo.txt
+* d584ad8 cambie sandwich2.txt por sandwich2_feo.txt
+* 612710a Agregue sandwich2.txt al repositorio local
+* a77a798 Agrego salsas
+* 77fce8d Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+
+10. 
+git graph
+* c94436e (HEAD -> anana) Agregue anana debajo del queso
+| * 0988b1e (experimento) agregue oregano arriba de albahaca
+| * 17e4e48 agregue albahaca arriba del queso
+|/
+* 495c159 (main) Borre el archivo sandwich2_feo.txt
+* d584ad8 cambie sandwich2.txt por sandwich2_feo.txt
+* 612710a Agregue sandwich2.txt al repositorio local
+* a77a798 Agrego salsas
+* 77fce8d Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+13. 
+git graph
+* 5b51720 (HEAD -> main) Agrego cebolla abajo de la salsa
+| * c94436e (anana) Agregue anana debajo del queso
+|/
+| * 0988b1e (experimento) agregue oregano arriba de albahaca
+| * 17e4e48 agregue albahaca arriba del queso
+|/
+* 495c159 Borre el archivo sandwich2_feo.txt
+* d584ad8 cambie sandwich2.txt por sandwich2_feo.txt
+* 612710a Agregue sandwich2.txt al repositorio local
+* a77a798 Agrego salsas
+* 77fce8d Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+
+16. Las mergeadas son master y anana
+ git branch --merged
+  anana
+* main
+
+18. 
+  git graph
+*   28e55b6 (HEAD -> main) Hice un merge entre experimento y master
+|\
+| * 0988b1e (experimento) agregue oregano arriba de albahaca
+| * 17e4e48 agregue albahaca arriba del queso
+* |   089f241 hice el merge entre anana y master
+|\ \
+| * | c94436e (anana) Agregue anana debajo del queso
+| |/
+* / 5b51720 Agrego cebolla abajo de la salsa
+|/
+* 495c159 Borre el archivo sandwich2_feo.txt
+* d584ad8 cambie sandwich2.txt por sandwich2_feo.txt
+* 612710a Agregue sandwich2.txt al repositorio local
+* a77a798 Agrego salsas
+* 77fce8d Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+19. Si, tuve que hacer un merge manual para ambos
+
+20. anana y experimento
+git branch --merged
+  anana
+  experimento
+* main
+
+23. no hay ninguna branch mergeada a master ya que las borre
+ git branch --merged
+* main
+
+24. 
+ git graph
+*   28e55b6 (HEAD -> main) Hice un merge entre experimento y master
+|\
+| * 0988b1e agregue oregano arriba de albahaca
+| * 17e4e48 agregue albahaca arriba del queso
+* |   089f241 hice el merge entre anana y master
+|\ \
+| * | c94436e Agregue anana debajo del queso
+| |/
+* / 5b51720 Agrego cebolla abajo de la salsa
+|/
+* 495c159 Borre el archivo sandwich2_feo.txt
+* d584ad8 cambie sandwich2.txt por sandwich2_feo.txt
+* 612710a Agregue sandwich2.txt al repositorio local
+* a77a798 Agrego salsas
+* 77fce8d Agrego mi sandwich.txt
+* 579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+* 786904f Initial commit - repo setup
+* 140733d Initial commit
+
+27. abajo de todo muestra los ingredientes que se agregaron a main despues de los merge
+git show pizza
+tag pizza
+Tagger: Felipe Heguiabehere <fheguiabehere@mail.austral.edu.ar>
+Date:   Fri Jun 9 13:19:35 2023 -0300
+
+Receta de la pizza.
+
+commit 28e55b6c65b2966a108b0735cde2aee5f98912aa (HEAD -> main, tag: pizza)
+Merge: 089f241 0988b1e
+Author: Felipe Heguiabehere <fheguiabehere@mail.austral.edu.ar>
+Date:   Fri Jun 9 13:01:38 2023 -0300
+
+    Hice un merge entre experimento y master
+
+diff --cc 2.branchs/pizza.txt
+index 8a01068,b3c440f..5b1450f
+--- a/2.branchs/pizza.txt
++++ b/2.branchs/pizza.txt
+@@@ -1,5 -1,5 +1,7 @@@
++ oregano
++ albahaca
+  queso
+ +anana
+  salsa de tomate
+ +cebolla
+  masa de pizza
+
