@@ -1,1 +1,23 @@
+1.1. Preguntas
+Para inicializar un repositorio local, se debe ejecutar el comando git init. Esto creará un nuevo repositorio en el directorio actual y configurará la estructura necesaria de Git para comenzar a rastrear los cambios en los archivos.
 
+Para que un directorio deje de ser controlado por Git, se debe ejecutar el comando git rm --cached <directorio>. Esto eliminará el directorio del índice de Git, pero no eliminará los archivos físicamente del sistema de archivos.
+
+Si se agrega un archivo a un directorio que ya está siendo controlado por Git, el archivo no será controlado automáticamente por Git. Es necesario utilizar el comando git add <archivo> para agregar explícitamente el archivo al área de preparación (staging area) y comenzar a rastrear los cambios en él.
+
+El comando utilizado para agregar un archivo al repositorio local es git add <archivo>. Este comando agrega el archivo especificado al área de preparación (staging area), lo que significa que los cambios en ese archivo se incluirán en el próximo commit.
+
+Para determinar qué archivos han sido modificados en el repositorio, se puede ejecutar el comando git status. Este comando mostrará una lista de los archivos modificados en comparación con la versión anterior y también indicará los archivos que están en el área de preparación (staging area).
+
+El comando utilizado para hacer un commit es git commit -m "mensaje del commit". Este comando toma todos los cambios en el área de preparación y los guarda como un nuevo commit en el historial del repositorio, junto con un mensaje descriptivo que explica los cambios realizados.
+
+En palabras simples, un commit es una acción en Git que guarda un conjunto de cambios realizados en los archivos del repositorio en un momento específico.
+1.2. Ejercicio Práctico
+El archivo sandwich.txt ha experimentado modificaciones y se le ha realizado un commit previamente. Además, se ha creado un nuevo archivo llamado "mateo_gotelli.txt" que aún no ha sido añadido al repositorio de Git.
+Al ejecutar el comando "git add sandwich.txt", el archivo se ha incluido en el área de preparación (staging area) en lugar de mantenerse en su estado modificado. La visualización en verde indica que está en el área de preparación.
+Una vez que se realizó el commit, sandwich.txt ya no se muestra en el estado, y solo aparece mateo_gotelli.txt
+El comando git log te permite ver todos los cambios que se le hicieron al archivo y quien los hizo.
+El comando muestra las diferencias entre otras versiones del archivo con distintos colores. uno de los archivos es rojo y el otro verde
+Después de realizar un commit con el cambio de nombre del archivo, se muestra que no existen cambios pendientes. igual, cuando ejecuto "git log --oneline", aparece una nueva entrada que corresponde al nuevo commit.
+El comando muestra que el archivo se borro correctamente
+veo que el archivo fue borrado.
