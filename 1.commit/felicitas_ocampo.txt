@@ -1,0 +1,110 @@
+
+1. commit 
+1.1 preguntas 
+1. el repositorio local se inicializa con el comando git init.
+2. para que un directorio deje de ser controlado por git se debe usar el comando git rm -r --cached nombre_del_directorio.
+3. si agregas un archivo a un directorio que ya esta siendo controlado por git, ese archivo esta siendo controlado por git. 
+4. el comando que se utiliza para agregar un archivo al repositorio local es git add y el nombre del archivo. 
+5. para saber que archivos han sido modificados, el comando que se debe realizar es git status.
+6. para hacer un commit el comando que se debe ejecutar es git commit -m y luego poner el mensaje del commit entre comillas.
+7. un commit es un registro de cambios en el repositorio, es una forma de guardar y registrar los cambios realizados en uno o varios archivos. 
+ 
+pan
+mayonesa 
+queso
+tomate
+lechuga
+palta
+medallon
+pan
+  
+1.2 
+3. git status
+On branch felicitas_ocampo
+changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+       modified:   sandwich.txt
+
+untracked files: 
+  (use "git add <file>..." to include in what will be commited)
+       felicitas_ocampo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a") 
+
+la salida de este comando significa que el archivo "sandwich.txt" ha sido modificado pero no se ha agragado al area ("staged") y que hay un archivo "felicitas_ocampo.txt" que no se ha agregado al control de versiones de git.  
+
+5. 
+on branch felicitas_ocampo
+changes to be commited:
+   (use "git restore --staged <file>..." to unstage)
+        modified:    sandwich.txt
+
+untracked files: 
+  (use "git add <file>..." to include in what will be commited)
+       felicitas_ocampo.txt
+
+la salida de este comando significa que el archivo "sandwich.txt" ha sido modificado y agregado al area de preparacion ("staged") para la confirmacion utilizando el comando "git add". 
+
+7. 
+on branch felicitas_ocampo
+untracked files:
+   (use "git add <file>..." to include in what will be committed)
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lo que significa esta salida del comando es que git ha detectado la precencia de archivos nuevos que aun no han sido agragados al control de versiones. 
+
+9. git log
+commit 7fa8414ab37f6803e0dd33729221452c2c5d66bb (HEAD -> felicitas_ocampo)
+Author: Felicitas Ocampo <focampo@mail.austral.edu.ar>
+Date:   Thu Apr 27 15:36:51 2023 -0300
+
+    Agrego salsas
+
+commit fcdb43dfdf39411d72c84b194264ed4ace690d01
+Author: Felicitas Ocampo <focampo@mail.austral.edu.ar>
+Date:   Wed Apr 26 23:16:05 2023 -0300
+
+    agrego mi sandwich.txt
+
+lo que muestra la salida del comando git log son los commits que se realizaron con la fecha y hora en la que se realizaron,los commits aparecen desde el ultimo commit que se realizo y luego aparece el primer commit. 
+
+10. 
+7fa8414 (HEAD -> felicitas_ocampo) Agrego salsas
+fcdb43d agrego mi sandwich.txt
+579a34f (origin/main, origin/HEAD, origin/2023, main, 2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+786904f Initial commit - repo setup
+140733d Initial commit
+
+el comando git log --oneline muestra al inicio una identificacion abreviada. luego en la primer linea ademas de mostrar la identificacion abreviada muestra que la rama actual es "felicitas_ocampo" y que se agrego una caracteristica de "salsas" en esta confirmacion. 
+la segunda linea "fcdb43d agrego mi sandwich.txt" muestra una identificacion abreviada y que se ha agregado un archivo "sandwich.txt" en esta confirmacion.
+la tercera linea muestra una identificacion abreviada y que la confirmacion se realizo en la rama "main" y que se ha agregado una caracteristica para instalar claves SSH en windows con gir bash.
+la cuarta linea ademas de mostrar una identificacion abreviada muestra la confirmacion inicial en el repositorio y que se ha creado un repositorio vacio.
+ 
+11. este punto no pude hacerlo ya que no tengo instalado ese tool
+
+14. git status
+On branch felicitas_ocampo
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        felicitas_ocampo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+la salida de ste comando significa que me encuentro en la rama "felicitas_ocampo" y muestra que hay un archivo no rastreado en el directorio de trabajo llamado "felicitas_ocampo.txt". la ultima linea significa que hay archivos nuevos o modificados en el directorio. 
+ 
+15.  
+git status
+On branch felicitas_ocampo
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    sandwich2_feo.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        felicitas_ocampo.txt
+
+luego de haber borrado el archivo "sandwich2_feo.txt" y luego de haber hecho un commit y git log --oneline lo que cambio de la salida del cmando es que ahora muestra que se borro un archivo. 
+
+16. lo que se muestra luego de hacer git log --stat son todos los commits que se hicieron, a que hora, quien, y los ordena del ultimo comitt que se hizo hasta el primero. 
