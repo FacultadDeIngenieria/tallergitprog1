@@ -1,0 +1,30 @@
+1.1
+1. git init
+2. git rm --cached 
+3. git add 
+4. git status
+5. git commit -m 
+6. Un commit es una confirmación de cambios en un repositorio de control de versiones que registra una instantánea de los archivos en un momento específico junto con un mensaje descriptivo.
+
+
+1.2.3 Se puede ver que sandwich.txt esta modificado, ya fue comiteado antes, pero hay un archivo 
+facundo_pyznar.txt que es nuevo y nunca fue agregado a git.
+
+1.2.5 Despues de hacer git add sandwich.txt paso de estar en modified a staging. 
+
+1.2.7 Ya hice el commit del archivo sandwich.txt, entonces ahora solo se puede ver el archivo 
+facundo_pyznar.txt
+
+1.2.9 Los commits mas recientes aparecen arriba y los mas viejos abajo de todo.
+
+1.2.10.1 El 'git log --oneline' solo te muestra los titulos de los commits.
+1.2.10.2 El 'git log --stat' te muestra toda la informacion mas precisa acerca de los commits que 
+hiciste.
+
+1.2.11 El comando "git diff" se utiliza para mostrar las diferencias entre los cambios realizados en el directorio de trabajo y el estado registrado en el repositorio de Git
+
+1.2.15. Después de realizar un commit en Git, el comando git status mostrará que no hay cambios pendientes en el directorio de trabajo y que la rama actual está actualizada con la última confirmación. El comando git log --oneline mostrará una lista simplificada de los commits realizados en la rama actual, en orden cronológico inverso, con una abreviatura del hash del commit y su mensaje de confirmación.
+
+1.2.16. Esto proporciona una visión más detallada de los commits, incluyendo los elementos eliminados. 
+ 
+
