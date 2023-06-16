@@ -1,0 +1,17 @@
+ Con el comando git init
+ Con el comando rm -rf .git
+ Hay que agregarlo como git add y el nombre del archivo
+ git add "nombre del archivo
+ git status ==> este comando muestra las modificaciones 
+ git commit -m 
+ es una serie de cambios
+ no estan guardados los cambios que se hicieron, me da dos opciones cambiarlos o restaurarlo.
+Me aparece un Julio_Bellot.txt nuevo que no estaba en commit por ello me dice que puedo subirlo.
+ Al usar el "git add" el archivo "sandwich.txt" esta en verde que significa que los cambios fueron guardados en stage.
+Mi txt esta en rojo porque esta en modified.
+ Al hacer el commit mi sandwich.txt desaparecio porque ya esta en commmit
+ Me muestra el procedimiento que hubó al ingresar datos, desde que agregue la tarea, al punto de lo que yo agregé. (Son los historiales de commits)
+ Se ve que muestras las cosas que agregue al texto en ese momento
+ Al hacer status me mostro el nombre que tenia con el nuevo nombre que le puse, mientras que en el log no mostro nada
+ Muestra que fue separado del commit, te dira que fue removido
+ Veo todos los cambios que hubieron durante la trayectoria del ejercicio
