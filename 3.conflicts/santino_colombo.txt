@@ -1,0 +1,12 @@
+Teorica:
+1. Un conflicto, es un error que ocurre cuando se modifica el mismo archivo en varias branchs, en mi opinion es algo malo, ya que es un problema a solucionar que hace que se pierda tiempo.
+2. Si se puede evitar, la solucion es utilizar una unica branch o ir fusionando frecuentmente
+
+Practica:
+
+10. Puedo observar el cambio que se le realizo al archivo original y al guardado
+11. Puedo observar como se me permite hacer un commit
+12. Si funciono
+13. No funciono
+14. Aparece que no puedo commitear el archivo modificado.
+15. Observo pan rallado y bife

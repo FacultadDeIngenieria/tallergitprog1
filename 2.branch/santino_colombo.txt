@@ -1,0 +1,26 @@
+Teorico:
+1. Un branch es una rama del codigo original
+2. Los branches son utiles porque nos hacen posible trabajar en diferentes versiones de un pryecto sin interefir con las otras ramas
+3. Para crear una branch es necesario usar el comando, git branch y el nombre de de la branch
+4. Para moverse a otra branch es necesario, haber creado la branch, y usar el comando git checkout y el nombre de la branch
+5. Para eliminar una branch se utiliza el comando, git branch -d y el nombre de  la branch
+6. Para crear una branch y cambiar a esta misma es necesario usar el comando, git checkout -b y el nombre de la rama
+7. El merge es una union de todas las ramas, para formar una sola
+8. Para hacer un merge, se debe utilizar e lcomando, git merge y el nombre de la branch, y ademas se debe estar en la branch a unir.
+9. Los tags son puntos especificos del repositorio, que marca un commit y no varia.
+10. Para crear un tags se debe utilizar el comando, git tag -a el nombre del archivo -m y el nombre del commit
+
+
+Practica:
+10. Se ven los commits, junto a sus ramas y sus comentarios.
+13. Aparecen todas las modificaciones que le hice a los commits pizza.txt.
+15. Aparecen los comentarios de los commits, y un comentario diciendo Merge branch 'anana'
+16. Estan mergeadas las branchs anana y master
+18. No cambio nada
+19. Git realizo un merge automatico
+20. estan mergeado el branch anana
+23. No hay ninguna branch mergeada
+24. Aparecen los comentarios de los commits y un comenatrio diciendo Merge branch 'anana'
+
+ 
+ 
