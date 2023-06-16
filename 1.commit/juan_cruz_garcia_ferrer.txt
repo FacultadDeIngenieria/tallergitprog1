@@ -1,0 +1,226 @@
+Preguntas
+1. Para inicializar un repositorio local en Git, debes ejecutar el comando "git init" en la carpeta que deseas convertir en un repositorio
+2. Para que un directorio deje de ser controlado por Git y se elimine del repositorio, hay que ejecutar el comando "git rm -r --cached.” para eliminar todos los archivos y subdirectorios de la 
+carpeta del repositorio Git y dejarlos en la carpeta local.
+3. Si agregas un archivo a un directorio que ya está siendo controlado por Git, el archivo estará automáticamente bajo el control de versión de Git. Git monitorea todos los cambios en el directorio 
+y sus subdirectorios, incluyendo nuevos archivos agregados.
+4. Para agregar un archivo al repositorio local en Git, debes usar el comando "git add". Este comando le indica a Git que debe comenzar a monitorear los cambios en el archivo especificado y 
+agregarlo al índice de Git, lo que significa que se incluirá en la próxima confirmación de cambios.
+5. Para determinar qué archivos han sido modificados en el repositorio local, debes ejecutar el comando "git status". Este comando muestra el estado actual del repositorio, incluidos los cambios que 
+aún no se han agregado al índice de Git y los archivos que se han modificado desde la última confirmación de cambios.
+6. Para realizar una confirmación de cambios (commit) en Git, debes usar el comando "git commit". Este comando toma todos los cambios que se han agregado al índice de Git y los guarda en el 
+historial de versiones del repositorio.
+7. Un commit es un registro en el historial de versiones que guarda un conjunto de cambios realizados en un archivo en un momento determinado. Cada commit se identifica por un número único y 
+contiene un mensaje que describe los cambios realizados.
+
+Explicacion:
+
+3. 
+git status
+En la rama main
+Tu rama está actualizada con 'origin/main'.
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+	modificados:     sandwich.txt
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	juan_cruz_garcia_ferrer.txt
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+
+
+5. 
+git status
+En la rama main
+Tu rama está actualizada con 'origin/main'.
+
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+	modificados:     sandwich.txt
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	juan_cruz_garcia_ferrer.txt
+
+7. 
+git status
+En la rama main
+Tu rama está adelantada a 'origin/main' por 1 commit.
+  (usa "git push" para publicar tus commits locales)
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	juan_cruz_garcia_ferrer.txt
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+
+9. 
+git log
+commit d5c4e0115e1fa53ba3713c57615f1b2e1f2f8fc8 (HEAD -> main)
+Author: ls <juancruzgarciaferrer@gmail.com>
+Date:   Fri Jun 9 10:56:21 2023 -0300
+
+    Agrego salsas
+
+commit 74e3d56d22aea8bc855814689160681d762f585a
+Author: ls <juancruzgarciaferrer@gmail.com>
+Date:   Fri Jun 9 10:55:05 2023 -0300
+
+    Agrego mi sandwich.txt
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD, origin/2023)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01
+Author: Sebastian Iglesias <sebastian@getcaribou.com>
+Date:   Mon Apr 17 21:58:56 2023 -0300
+
+10.1. 
+
+git log --oneline
+d5c4e01 (HEAD -> main) Agrego salsas
+74e3d56 Agrego mi sandwich.txt
+579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+786904f Initial commit - repo setup
+140733d Initial commit
+
+
+10.2
+
+git log --stat
+commit d5c4e0115e1fa53ba3713c57615f1b2e1f2f8fc8 (HEAD -> main)
+Author: ls <juancruzgarciaferrer@gmail.com>
+Date:   Fri Jun 9 10:56:21 2023 -0300
+
+    Agrego salsas
+
+ 1.commit/sandwich.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 74e3d56d22aea8bc855814689160681d762f585a
+Author: ls <juancruzgarciaferrer@gmail.com>
+Date:   Fri Jun 9 10:55:05 2023 -0300
+
+    Agrego mi sandwich.txt
+
+ 1.commit/sandwich.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD, origin/2023)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+14.
+
+git status
+En la rama main
+Tu rama está adelantada a 'origin/main' por 3 commits.
+  (usa "git push" para publicar tus commits locales)
+
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+	renombrados:     sandwich2.txt -> sandwich2_feo.txt
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	juan_cruz_garcia_ferrer.txt
+
+15. 
+
+git status
+En la rama main
+Tu rama está adelantada a 'origin/main' por 4 commits.
+  (usa "git push" para publicar tus commits locales)
+
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+	borrados:        sandwich2_feo.txt
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	juan_cruz_garcia_ferrer.txt
+
+
+
+git log --oneline
+e6f856b (HEAD -> main) Borre sandwich2_feo.txt
+a4ac9db Cambie el sandwich2.txt por sandwich2_feo.txt
+154a467 Agrego sandwich2.txt a mi repositorio local
+d5c4e01 Agrego salsas
+74e3d56 Agrego mi sandwich.txt
+579a34f (origin/main, origin/HEAD, origin/2023) Agrego instrucciones para instalar claves ssh en windows con git bash.
+786904f Initial commit - repo setup
+140733d Initial commit
+
+16.
+
+git log --stat
+commit e6f856bc08c7685a6bb6927d50a53a8882818874 (HEAD -> main)
+Author: ls <juancruzgarciaferrer@gmail.com>
+Date:   Fri Jun 9 11:08:50 2023 -0300
+
+    Borre sandwich2_feo.txt
+
+ 1.commit/sandwich2_feo.txt | 7 -------
+ 1 file changed, 7 deletions(-)
+
+commit a4ac9db44be51c08df4310e9f592d4af4cfca39f
+Author: ls <juancruzgarciaferrer@gmail.com>
+Date:   Fri Jun 9 11:06:39 2023 -0300
+
+    Cambie el sandwich2.txt por sandwich2_feo.txt
+
+ 1.commit/{sandwich2.txt => sandwich2_feo.txt} | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 154a467950cb61ff4d21bf61635e99e0d46e3c3e
+Author: ls <juancruzgarciaferrer@gmail.com>
+Date:   Fri Jun 9 11:04:21 2023 -0300
+
+    Agrego sandwich2.txt a mi repositorio local
+
+ 1.commit/sandwich2.txt | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit d5c4e0115e1fa53ba3713c57615f1b2e1f2f8fc8
+Author: ls <juancruzgarciaferrer@gmail.com>
+Date:   Fri Jun 9 10:56:21 2023 -0300
+
+    Agrego salsas
+
+ 1.commit/sandwich.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 74e3d56d22aea8bc855814689160681d762f585a
+Author: ls <juancruzgarciaferrer@gmail.com>
+Date:   Fri Jun 9 10:55:05 2023 -0300
+
+    Agrego mi sandwich.txt
+
+ 1.commit/sandwich.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 579a34f2db78787d6f499242919e873d7a447480 (origin/main, origin/HEAD, origin/2023)
+Author: Sebastian Iglesias <sebiglesias@users.noreply.github.com>
+Date:   Wed Apr 19 17:27:00 2023 -0300
+
+    Agrego instrucciones para instalar claves ssh en windows con git bash.
+
+ README.md | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+commit 786904f65d58dafd7c392efdc806cd91ba0cbb01
+Author: Sebastian Iglesias <sebastian@getcaribou.com>
+Date:   Mon Apr 17 21:58:56 2023 -0300
+
+    Initial commit - repo setup
+
+ .gitignore               |  2 ++
+ 1.commit/README.md       | 55 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
