@@ -1,0 +1,9 @@
+ Un conflicto es cuando hay un problema al unir dos brach dado que se sobreponen alguna información. Es bueno dado que así sabes que hay algun problema
+ Intentando no cambiar la misma linea de codigo a la vez
+ Los cambios que hubieron en el archivo mnilanesa tanto en la branch "suprema" como en la de "bife"
+ Nada dado que no hubó cambios en la branch master
+ Si
+ Si, pero tuvo que arreglar el conflicto
+ Que el both modifico milanesa.txt
+ Que la branch de suprema puso pollo y la brach de bife puso bife
+ 
