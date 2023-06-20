@@ -1,0 +1,17 @@
+1.1.1 Con el comando git init
+1.1.2 Con el comando rm -rf .git
+1.1.3 No hasta que lo agreges con git add "nombre del archivo"
+1.1.4 git add "nombre del archivo
+1.1.5 git status ==> este comando te dira lo que todo lo que fue modificado
+1.1.6 git commit -m 
+1.1.7 Es un conjunto de cambios que se realizaron
+1.2.3 Veo que me dice que sandwich.txt esta modificado pero no estan guardados los cambios que se hicieron, me da dos opciones cambiarlos o restaurarlo.
+Me aparece un Julio_Bellot.txt nuevo que no estaba en commit por ello me dice que puedo subirlo.
+1.2.5 Al usar el "git add" el archivo "sandwich.txt" esta en verde que significa que los cambios fueron guardados en stage.
+Mi txt esta en rojo porque esta en modified.
+1.2.7 Al hacer el commit mi sandwich.txt desaparecio porque ya esta en commmit
+1.2.9 Me muestra el procedimiento que hubó al ingresar datos, desde que agregue la tarea, al punto de lo que yo agregé. (Son los historiales de commits)
+1.2.11 Se ve que muestras las cosas que agregue al texto en ese momento
+1.2.14 Al hacer status me mostro el nombre que tenia con el nuevo nombre que le puse, mientras que en el log no mostro nada
+1.2.15 Muestra que fue separado del commit, te dira que fue removido
+1.12.16 Veo todos los cambios que hubieron durante la trayectoria del ejercicio
