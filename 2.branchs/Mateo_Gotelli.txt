@@ -1,0 +1,42 @@
+¿Qué es un branch?
+Un branch en Git es una línea de desarrollo independiente que permite trabajar en nuevas funcionalidades, correcciones de errores u otras modificaciones sin afectar la rama principal del repositorio, generalmente conocida como "master" o "main". Cada branch tiene su propio historial de commits y puede ser fusionado con otras ramas mediante un proceso llamado merge.
+
+¿Por qué pueden ser útiles los branches?
+Los branches son útiles en Git porque permiten organizar y trabajar en paralelo en diferentes aspectos del desarrollo de software. Al utilizar branches, varios miembros del equipo pueden trabajar en funcionalidades separadas sin interferir entre sí. Además, los branches facilitan la prueba de nuevas características antes de fusionarlas con la rama principal, lo que ayuda a mantener un flujo de trabajo más ordenado y a reducir los riesgos de conflictos y errores.
+
+¿Cómo se crea una branch?
+Para crear una nueva branch en Git, puedes ejecutar el siguiente comando: git branch <nombre_de_la_branch>. Reemplaza <nombre_de_la_branch> con el nombre que desees para la nueva rama.
+
+¿Cómo se cambia a una branch?
+Para cambiar a una branch específica en Git, debes ejecutar el siguiente comando: git checkout <nombre_de_la_branch>. Reemplaza <nombre_de_la_branch> con el nombre de la rama a la que deseas cambiar.
+
+¿Cómo se elimina una branch?
+Para eliminar una branch en Git, puedes ejecutar el siguiente comando: git branch -d <nombre_de_la_branch>. Reemplaza <nombre_de_la_branch> con el nombre de la rama que deseas eliminar. Es importante tener en cuenta que no puedes eliminar la branch actual en la que te encuentras, debes cambiar a otra rama antes de eliminarla.
+
+¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Para crear una nueva branch y cambiar a ella en un solo paso, puedes ejecutar el siguiente comando: git checkout -b <nombre_de_la_branch>. Reemplaza <nombre_de_la_branch> con el nombre que deseas para la nueva rama.
+
+¿Qué es un merge?
+Un merge en Git es el proceso de combinar los cambios de una branch con otra branch, generalmente fusionando una rama secundaria (feature branch) con la rama principal (master o main). Durante el merge, Git analiza los cambios realizados en ambas ramas y fusiona los commits de forma que los cambios de ambas ramas estén presentes en la rama resultante.
+
+¿Cómo se realiza un merge?
+Para realizar un merge en Git, primero debes cambiar a la rama de destino (la rama en la que deseas fusionar los cambios) y luego ejecutar el siguiente comando: git merge <nombre_de_la_branch>. Reemplaza <nombre_de_la_branch> con el nombre de la rama que deseas fusionar con la rama actual.
+
+¿Qué es un tag?
+Un tag en Git es una referencia a un punto específico en el historial de commits del repositorio. Se utiliza para marcar versiones importantes o hitos en el proyecto, como versiones estables o lanzamientos específicos. Los tags suelen ser utilizados para identificar puntos fijos en el tiempo y facilitar la navegación y referenciación de versiones específicas del código.
+
+¿Cómo se crea un tag?
+Para crear un tag en Git, puedes ejecutar el siguiente comando: git tag <nombre_del_tag>. Reemplaza <nombre_del_tag> con el nombre que desees para el tag. Por ejemplo, puedes usar git tag v1.0 para crear un tag con el nombre "v1.0". Además, puedes especificar opciones adicionales, como incluir un mensaje descriptivo, utilizando la bandera -a: git tag -a <nombre_del_tag> -m "Mensaje descriptivo".
+
+2.2. Ejercicio Práctico
+
+veo todos los cambios (commits) en los branches. Al utilizar el comando git log, puedo ver todos los commits realizados en los branches, incluyendo información sobre quién realizó los commits, qué modificaciones se realizaron y cuándo se realizaron.
+Al ejecutar el comando git log --oneline, puedo visualizar todos los cambios realizados en los branches, incluyendo la creación de un nuevo branch llamado "anana".
+Al utilizar el comando git log --oneline, puedo observar que los cambios realizados en el branch "anana" han sido fusionados exitosamente con el branch "experimento_master".
+Al ejecutar el comando git log --oneline --merged, puedo ver todos los cambios realizados en los branches que han sido fusionados (merged) con la rama actual.
+Durante el proceso de merge, Git puede realizar automáticamente la fusión de los cambios si no hay conflictos entre las ramas. Esto significa que los cambios se aplican automáticamente y no requieren intervención manual.
+Después de realizar la fusión (merge), los cambios del branch "anana" se han incorporado a la rama "main" y ahora están fusionados.
+
+24. En este contexto, "ninguna" se refiere a que no se observan diferencias o cambios adicionales en el estado actual del repositorio.
+
+Después de eliminar un branch, su historial de commits ya no se muestra en el resultado del comando git log. Esto es porque la rama y sus commits asociados han sido eliminados del repositorio.
