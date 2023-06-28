@@ -1,0 +1,50 @@
+2.1.1
+Una branch es una rama, un conjunto de commits que se desprenden de otro ya creado.
+
+2.1.2
+Para trabajar en el mismo archivo desde diferentes computadoras
+
+2.1.3
+git branch "nombre de la branch"
+
+2.1.4
+git chekout "nombre de la branch"
+
+2.1.5
+git branch -d "nombre de la branch"
+
+2.1.6
+git checkout -b "nombre de la branch"
+
+2.1.7
+Un merge es una union de 2 branches y sus commits.
+
+2.1.8
+git merge "nombre de la branch que se quiere unir con la branch actual".
+
+2.1.9
+Un tag es una nota que se le puede poner a un commit.
+
+2.1.10
+git tag -a "nombre del tag" -m "mensaje que se le quiere agregar al tag"
+
+2.2.6
+-Muestra todos los cambios comiteados y sus comentarios
+2.2.10
+-Se ve la nueva branch y todos los cambios hechos
+2.2.13
+-El commit hecho y el cambio de branch
+2.2.15
+-para poder hacer el merge tuve que añadir el archivo pizza.txt, despues hice el commit del merge
+2.2.16
+-2023 y anana
+2.2.17
+- Se ve que los cambios de las 3 branchs estan conectadas
+2.2.19
+- tuve que hacerlo manual porque hubo un conflict
+2.2.20
+-las mismas que antes y experimento
+2.2.23
+-solo 2023 porque elimine las otras dos
+2.2.24
+-Lo mismo que antes pero sin aclarar las branches eliminadas
