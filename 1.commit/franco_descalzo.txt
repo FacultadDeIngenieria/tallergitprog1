@@ -1,0 +1,19 @@
+1.1 Preguntas
+
+1. Para inicializar un repositorio local hay que suar el comando git init.
+2. Para que un directorio sea controlado por git hay que usar el comando rm --r <nombre_del_archivo>
+3. Si
+4. Para agregar un archivo al repostorio local es necesario usar el comando git add
+5. Para saber si un archivo fue modificado hay que usar el comando git status
+6. git commit
+7. Commit crea un registro de los cambios realizados.
+
+1.2
+3. El archivo sandwich.txt ha sido modificado, ya fue confirmado previamente y existe un archivo nuevo llamado francp_descalzo.txt que no ha sido añadido a Git.
+5. Al usar el comando "git add sandwich.txt", el archivo fue agregado al staging area en lugar de permanecer en estado modificado. Se muestra en rojo porque se encuentra en estado modificado.
+7. Una vez que hice commit, no se ve mas sandwich.txt y nomas aparece franco_descalzo.txt
+9. El comando git log te permite ver todos los cambios que se hicieron del file cuando y quien.
+11. El commando muestra las diferencias entre diferentes versiones del file y lo muestra usando colores. Los dos files que se comparan aparecen uno en blanco y otro en rojo.
+14. Después de realizar un commit con el cambio de nombre del archivo, se muestra que no existen cambios pendientes. Sin embargo, al ejecutar el comando "git log --oneline", se visualiza una nueva entrada correspondiente al nuevo commit.
+15. El comando online muestra que se pudo borrar el archivo.
+16. Muestra que el archivo fue borrado.
